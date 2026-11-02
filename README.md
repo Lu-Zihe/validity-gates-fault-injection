@@ -28,7 +28,7 @@ A Chinese-language overview of the same material is kept in `README.zh.md`.
 | Claimed vs measured injection rate | 10% vs 0.13%, a factor of 76.9 | `gates/gate_check.py --p1` |
 | Post-fix injection rate | 8.94% | `experiment/data/` |
 | Mutation score | 90.5% (19/21); 19/19 excluding 2 equivalent mutants | `mutation/mutation_results.csv` |
-| Repository audit | 6 of 10 in the legged_gym lineage misroute the seed | `audit/audit_21repos.csv` |
+| Repository audit | 12 of 18 in the legged_gym lineage misroute the seed (6/10 first round, 6/8 query round) | `audit/audit_21repos.csv`, `audit/audit_expanded_8repos.json` |
 | Two-coder agreement | 71% first round, 96% after the rules were written | `coding/` |
 | Controlled experiment, seeds 42 / 7 / 2026 | +14.8 / +20.0 / +5.6 pp (mean 13.5) | `experiment/data/*.json` |
 | Training-budget sweep | 100, 300, 500, 600, 800 iterations | `experiment/data/sens_iter.json` |

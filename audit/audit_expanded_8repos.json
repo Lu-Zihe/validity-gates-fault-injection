@@ -1,0 +1,648 @@
+[
+ {
+  "name": "DDTRobot__ddt_rl_isaacgym",
+  "path": "C:\\Users\\hp\\Desktop\\aic\\论文路线\\63-审计扩样\\repos\\DDTRobot__ddt_rl_isaacgym",
+  "n_py": 39,
+  "C1_seed": {
+   "seed_flag_files": [
+    "configs\\base\\legged_robot_config.py",
+    "utils\\helpers.py"
+   ],
+   "routing": [
+    {
+     "file": "utils\\helpers.py",
+     "line": 127,
+     "base": "cfg_train"
+    }
+   ],
+   "set_seed_calls": [
+    {
+     "file": "utils\\helpers.py",
+     "line": 67,
+     "arg": "seed"
+    },
+    {
+     "file": "utils\\helpers.py",
+     "line": 69,
+     "arg": "seed"
+    },
+    {
+     "file": "utils\\task_registry.py",
+     "line": 63,
+     "arg": "env_cfg.seed"
+    }
+   ],
+   "verdict": "MISROUTED_seed_to_train_cfg",
+   "evidence": [
+    "utils\\helpers.py:127: cfg_train.seed = args.seed"
+   ]
+  },
+  "C2_eval": {
+   "play_files": [],
+   "verdict": "no_eval_entry",
+   "detail": []
+  },
+  "C3_injection": {
+   "injection_files": [
+    "configs\\base\\legged_robot.py",
+    "configs\\base\\legged_robot_config.py",
+    "configs\\d1\\d1_flat_config.py",
+    "configs\\d1\\d1_rough_config.py",
+    "configs\\d1h\\d1h_flat_config.py",
+    "configs\\d1h\\d1h_rough_config.py",
+    "configs\\tita\\tita.py",
+    "configs\\tita\\tita_flat_config.py",
+    "modules\\actor_critic.py",
+    "modules\\common_modules.py",
+    "runner\\on_constraint_policy_runner.py",
+    "scripts\\simple_play.py",
+    "utils\\helpers.py",
+    "utils\\logger.py",
+    "utils\\task_registry.py",
+    "utils\\terrain.py"
+   ],
+   "audit_files": [],
+   "verdict": "no_audit_signal",
+   "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上",
+  "repo": "DDTRobot__ddt_rl_isaacgym"
+ },
+ {
+  "name": "Manaro-Alpha__legged_gym_RMA",
+  "path": "C:\\Users\\hp\\Desktop\\aic\\论文路线\\63-审计扩样\\repos\\Manaro-Alpha__legged_gym_RMA",
+  "n_py": 61,
+  "C1_seed": {
+   "seed_flag_files": [
+    "legged_gym\\legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\legged_gym\\utils\\helpers.py"
+   ],
+   "routing": [
+    {
+     "file": "legged_gym\\legged_gym\\utils\\helpers.py",
+     "line": 159,
+     "base": "cfg_train"
+    }
+   ],
+   "set_seed_calls": [
+    {
+     "file": "legged_gym\\legged_gym\\utils\\helpers.py",
+     "line": 74,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\legged_gym\\utils\\helpers.py",
+     "line": 76,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\legged_gym\\utils\\task_registry.py",
+     "line": 93,
+     "arg": "env_cfg.seed"
+    }
+   ],
+   "verdict": "MISROUTED_seed_to_train_cfg",
+   "evidence": [
+    "legged_gym\\legged_gym\\utils\\helpers.py:159: cfg_train.seed = args.seed"
+   ]
+  },
+  "C2_eval": {
+   "play_files": [
+    "legged_gym\\legged_gym\\scripts\\play.py"
+   ],
+   "verdict": "partial",
+   "detail": [
+    {
+     "file": "legged_gym\\legged_gym\\scripts\\play.py",
+     "headless": false,
+     "num_envs_1": false,
+     "deterministic": false,
+     "noise_off": true,
+     "score": 1
+    }
+   ]
+  },
+  "C3_injection": {
+   "injection_files": [
+    "legged_gym\\go1_gym_deploy\\envs\\lcm_agent.py",
+    "legged_gym\\go1_gym_deploy\\utils\\cheetah_state_estimator.py",
+    "legged_gym\\go1_gym_deploy\\utils\\deployment_runner.py",
+    "legged_gym\\legged_gym\\envs\\a1\\a1_config.py",
+    "legged_gym\\legged_gym\\envs\\anymal_c\\anymal.py",
+    "legged_gym\\legged_gym\\envs\\anymal_c\\mixed_terrains\\anymal_c_rough_config.py",
+    "legged_gym\\legged_gym\\envs\\base\\legged_robot.py",
+    "legged_gym\\legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\legged_gym\\envs\\cassie\\cassie_config.py",
+    "legged_gym\\legged_gym\\envs\\go1\\go1_config.py",
+    "legged_gym\\legged_gym\\scripts\\play.py",
+    "legged_gym\\legged_gym\\scripts\\play_student.py",
+    "legged_gym\\legged_gym\\utils\\helpers.py",
+    "legged_gym\\legged_gym\\utils\\logger.py",
+    "legged_gym\\legged_gym\\utils\\task_registry.py",
+    "legged_gym\\legged_gym\\utils\\terrain.py",
+    "rsl_rl-1.0.2\\rsl_rl\\modules\\actor_critic.py",
+    "rsl_rl-1.0.2\\rsl_rl\\modules\\actor_critic_RMA.py"
+   ],
+   "audit_files": [],
+   "verdict": "no_audit_signal",
+   "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上",
+  "repo": "Manaro-Alpha__legged_gym_RMA"
+ },
+ {
+  "name": "aCodeDog__genesis_legged_gym",
+  "path": "C:\\Users\\hp\\Desktop\\aic\\论文路线\\63-审计扩样\\repos\\aCodeDog__genesis_legged_gym",
+  "n_py": 38,
+  "C1_seed": {
+   "seed_flag_files": [
+    "legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\envs\\g1\\base\\legged_robot_config.py",
+    "legged_gym\\envs\\pointfoot\\pointfoot_rough_config.py",
+    "legged_gym\\scripts\\play.py",
+    "legged_gym\\utils\\helpers.py"
+   ],
+   "routing": [
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 134,
+     "base": "cfg_train"
+    }
+   ],
+   "set_seed_calls": [
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 73,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 75,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\utils\\task_registry.py",
+     "line": 93,
+     "arg": "env_cfg.seed"
+    }
+   ],
+   "verdict": "MISROUTED_seed_to_train_cfg",
+   "evidence": [
+    "legged_gym\\utils\\helpers.py:134: cfg_train.seed = args.seed"
+   ]
+  },
+  "C2_eval": {
+   "play_files": [
+    "legged_gym\\scripts\\play.py"
+   ],
+   "verdict": "partial",
+   "detail": [
+    {
+     "file": "legged_gym\\scripts\\play.py",
+     "headless": false,
+     "num_envs_1": false,
+     "deterministic": false,
+     "noise_off": true,
+     "score": 1
+    }
+   ]
+  },
+  "C3_injection": {
+   "injection_files": [
+    "legged_gym\\envs\\a1\\a1_config.py",
+    "legged_gym\\envs\\anymal_c\\anymal.py",
+    "legged_gym\\envs\\anymal_c\\mixed_terrains\\anymal_c_rough_config.py",
+    "legged_gym\\envs\\base\\legged_robot.py",
+    "legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\envs\\cassie\\cassie_config.py",
+    "legged_gym\\envs\\g1\\g1.py",
+    "legged_gym\\envs\\g1\\g1_config.py",
+    "legged_gym\\envs\\g1\\base\\legged_robot.py",
+    "legged_gym\\envs\\g1\\base\\legged_robot_config.py",
+    "legged_gym\\envs\\g1\\g1_rough\\g1_rough_config.py",
+    "legged_gym\\envs\\g1_23\\g1_23config.py",
+    "legged_gym\\envs\\go2\\go2_config.py",
+    "legged_gym\\envs\\pointfoot\\pointfoot_rough_config.py",
+    "legged_gym\\scripts\\play.py",
+    "legged_gym\\utils\\gymutil.py",
+    "legged_gym\\utils\\helpers.py",
+    "legged_gym\\utils\\logger.py",
+    "legged_gym\\utils\\task_registry.py",
+    "legged_gym\\utils\\terrain.py",
+    "legged_gym\\utils\\terrain_utils.py"
+   ],
+   "audit_files": [],
+   "verdict": "no_audit_signal",
+   "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上",
+  "repo": "aCodeDog__genesis_legged_gym"
+ },
+ {
+  "name": "cmjang__legged_gym_handstand",
+  "path": "C:\\Users\\hp\\Desktop\\aic\\论文路线\\63-审计扩样\\repos\\cmjang__legged_gym_handstand",
+  "n_py": 23,
+  "C1_seed": {
+   "seed_flag_files": [
+    "legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\utils\\helpers.py"
+   ],
+   "routing": [
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 135,
+     "base": "cfg_train"
+    }
+   ],
+   "set_seed_calls": [
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 74,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 76,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\utils\\task_registry.py",
+     "line": 93,
+     "arg": "env_cfg.seed"
+    }
+   ],
+   "verdict": "MISROUTED_seed_to_train_cfg",
+   "evidence": [
+    "legged_gym\\utils\\helpers.py:135: cfg_train.seed = args.seed"
+   ]
+  },
+  "C2_eval": {
+   "play_files": [
+    "legged_gym\\scripts\\play.py"
+   ],
+   "verdict": "partial",
+   "detail": [
+    {
+     "file": "legged_gym\\scripts\\play.py",
+     "headless": false,
+     "num_envs_1": false,
+     "deterministic": false,
+     "noise_off": true,
+     "score": 1
+    }
+   ]
+  },
+  "C3_injection": {
+   "injection_files": [
+    "legged_gym\\envs\\a1\\a1_config.py",
+    "legged_gym\\envs\\anymal_c\\anymal.py",
+    "legged_gym\\envs\\anymal_c\\mixed_terrains\\anymal_c_rough_config.py",
+    "legged_gym\\envs\\base\\legged_robot.py",
+    "legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\envs\\cassie\\cassie_config.py",
+    "legged_gym\\scripts\\play.py",
+    "legged_gym\\utils\\helpers.py",
+    "legged_gym\\utils\\logger.py",
+    "legged_gym\\utils\\task_registry.py",
+    "legged_gym\\utils\\terrain.py"
+   ],
+   "audit_files": [],
+   "verdict": "no_audit_signal",
+   "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上",
+  "repo": "cmjang__legged_gym_handstand"
+ },
+ {
+  "name": "engineai-robotics__engineai_legged_gym",
+  "path": "C:\\Users\\hp\\Desktop\\aic\\论文路线\\63-审计扩样\\repos\\engineai-robotics__engineai_legged_gym",
+  "n_py": 37,
+  "C1_seed": {
+   "seed_flag_files": [
+    "legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\envs\\zqsa01\\zqsa01_config.py",
+    "legged_gym\\scripts\\play.py",
+    "legged_gym\\utils\\helpers.py"
+   ],
+   "routing": [
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 135,
+     "base": "cfg_train"
+    }
+   ],
+   "set_seed_calls": [
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 74,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 76,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\utils\\task_registry.py",
+     "line": 93,
+     "arg": "env_cfg.seed"
+    }
+   ],
+   "verdict": "MISROUTED_seed_to_train_cfg",
+   "evidence": [
+    "legged_gym\\utils\\helpers.py:135: cfg_train.seed = args.seed"
+   ]
+  },
+  "C2_eval": {
+   "play_files": [
+    "legged_gym\\scripts\\play.py"
+   ],
+   "verdict": "partial",
+   "detail": [
+    {
+     "file": "legged_gym\\scripts\\play.py",
+     "headless": false,
+     "num_envs_1": false,
+     "deterministic": false,
+     "noise_off": true,
+     "score": 1
+    }
+   ]
+  },
+  "C3_injection": {
+   "injection_files": [
+    "legged_gym\\envs\\base\\legged_robot.py",
+    "legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\envs\\zqsa01\\zqsa01.py",
+    "legged_gym\\envs\\zqsa01\\zqsa01_config.py",
+    "legged_gym\\scripts\\play.py",
+    "legged_gym\\scripts\\sim2sim_zqsa01.py",
+    "legged_gym\\utils\\helpers.py",
+    "legged_gym\\utils\\logger.py",
+    "legged_gym\\utils\\task_registry.py",
+    "legged_gym\\utils\\terrain.py",
+    "rsl_rl\\rsl_rl\\modules\\actor_critic.py"
+   ],
+   "audit_files": [],
+   "verdict": "no_audit_signal",
+   "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上",
+  "repo": "engineai-robotics__engineai_legged_gym"
+ },
+ {
+  "name": "fan-ziqi__rl_amp",
+  "path": "C:\\Users\\hp\\Desktop\\aic\\论文路线\\63-审计扩样\\repos\\fan-ziqi__rl_amp",
+  "n_py": 63,
+  "C1_seed": {
+   "seed_flag_files": [
+    "legged_gym\\legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\legged_gym\\utils\\helpers.py"
+   ],
+   "routing": [
+    {
+     "file": "legged_gym\\legged_gym\\utils\\helpers.py",
+     "line": 135,
+     "base": "cfg_train"
+    }
+   ],
+   "set_seed_calls": [
+    {
+     "file": "legged_gym\\legged_gym\\utils\\helpers.py",
+     "line": 74,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\legged_gym\\utils\\helpers.py",
+     "line": 76,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\legged_gym\\utils\\task_registry.py",
+     "line": 93,
+     "arg": "env_cfg.seed"
+    }
+   ],
+   "verdict": "MISROUTED_seed_to_train_cfg",
+   "evidence": [
+    "legged_gym\\legged_gym\\utils\\helpers.py:135: cfg_train.seed = args.seed"
+   ]
+  },
+  "C2_eval": {
+   "play_files": [
+    "legged_gym\\legged_gym\\scripts\\play.py"
+   ],
+   "verdict": "partial",
+   "detail": [
+    {
+     "file": "legged_gym\\legged_gym\\scripts\\play.py",
+     "headless": false,
+     "num_envs_1": false,
+     "deterministic": false,
+     "noise_off": true,
+     "score": 1
+    }
+   ]
+  },
+  "C3_injection": {
+   "injection_files": [
+    "datasets\\retarget_config.py",
+    "datasets\\retarget_kp_motions.py",
+    "legged_gym\\legged_gym\\envs\\a1\\a1_amp_config.py",
+    "legged_gym\\legged_gym\\envs\\a1\\a1_config.py",
+    "legged_gym\\legged_gym\\envs\\anymal_c\\anymal.py",
+    "legged_gym\\legged_gym\\envs\\anymal_c\\mixed_terrains\\anymal_c_rough_config.py",
+    "legged_gym\\legged_gym\\envs\\base\\legged_robot.py",
+    "legged_gym\\legged_gym\\envs\\base\\legged_robot_amp.py",
+    "legged_gym\\legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\legged_gym\\envs\\cassie\\cassie_config.py",
+    "legged_gym\\legged_gym\\scripts\\play.py",
+    "legged_gym\\legged_gym\\scripts\\replay_amp_data.py",
+    "legged_gym\\legged_gym\\utils\\helpers.py",
+    "legged_gym\\legged_gym\\utils\\logger.py",
+    "legged_gym\\legged_gym\\utils\\task_registry.py",
+    "legged_gym\\legged_gym\\utils\\terrain.py",
+    "legged_gym\\legged_gym\\utils\\kinematics\\frame.py",
+    "legged_gym\\legged_gym\\utils\\kinematics\\transforms\\rotation_conversions.py",
+    "legged_gym\\legged_gym\\utils\\kinematics\\transforms\\transform3d.py",
+    "legged_gym\\legged_gym\\utils\\kinematics\\urdf_parser_py\\urdf.py",
+    "legged_gym\\legged_gym\\utils\\kinematics\\urdf_parser_py\\xml_reflection\\core.py",
+    "rsl_rl\\rsl_rl\\datasets\\pose3d.py",
+    "rsl_rl\\rsl_rl\\modules\\actor_critic.py"
+   ],
+   "audit_files": [
+    "legged_gym\\legged_gym\\utils\\kinematics\\urdf_parser_py\\xml_reflection\\core.py"
+   ],
+   "verdict": "has_audit_signal",
+   "evidence": [
+    "legged_gym\\legged_gym\\utils\\kinematics\\urdf_parser_py\\xml_reflection\\core.py:323: assert default is None, 'Default does not make sense for a required field'  # noqa"
+   ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上",
+  "repo": "fan-ziqi__rl_amp"
+ },
+ {
+  "name": "generalroboticslab__legged_env",
+  "path": "C:\\Users\\hp\\Desktop\\aic\\论文路线\\63-审计扩样\\repos\\generalroboticslab__legged_env",
+  "n_py": 18,
+  "C1_seed": {
+   "seed_flag_files": [],
+   "routing": [],
+   "set_seed_calls": [
+    {
+     "file": "envs\\train.py",
+     "line": 150,
+     "arg": "cfg.seed"
+    }
+   ],
+   "verdict": "no_seed_flag",
+   "evidence": []
+  },
+  "C2_eval": {
+   "play_files": [],
+   "verdict": "no_eval_entry",
+   "detail": []
+  },
+  "C3_injection": {
+   "injection_files": [
+    "assets\\joint_monkey.py",
+    "envs\\dyanmics_matching.py",
+    "envs\\parallel_train.py",
+    "envs\\common\\buffer.py",
+    "envs\\common\\publisher.py",
+    "envs\\common\\terrain.py",
+    "envs\\common\\urdf_utils.py",
+    "envs\\tasks\\legged_terrain.py"
+   ],
+   "audit_files": [
+    "envs\\tasks\\legged_terrain.py"
+   ],
+   "verdict": "has_audit_signal",
+   "evidence": [
+    "envs\\tasks\\legged_terrain.py:208: np.testing.assert_almost_equal(np.square(rot).sum(), 1, decimal=6, err_msg=\"env.baseInitSt"
+   ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上",
+  "repo": "generalroboticslab__legged_env"
+ },
+ {
+  "name": "lupinjia__LeggedGym-Ex",
+  "path": "C:\\Users\\hp\\Desktop\\aic\\论文路线\\63-审计扩样\\repos\\lupinjia__LeggedGym-Ex",
+  "n_py": 90,
+  "C1_seed": {
+   "seed_flag_files": [
+    "legged_gym\\envs\\base\\legged_robot_nav_config.py",
+    "legged_gym\\envs\\go2\\go2_ts_depth\\go2_ts_depth_config.py"
+   ],
+   "routing": [],
+   "set_seed_calls": [
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 49,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\utils\\helpers.py",
+     "line": 51,
+     "arg": "seed"
+    },
+    {
+     "file": "legged_gym\\utils\\task_registry.py",
+     "line": 60,
+     "arg": "env_cfg.seed"
+    }
+   ],
+   "verdict": "declared_and_seeded_routing_unclear",
+   "evidence": []
+  },
+  "C2_eval": {
+   "play_files": [
+    "legged_gym\\scripts\\play.py"
+   ],
+   "verdict": "partial",
+   "detail": [
+    {
+     "file": "legged_gym\\scripts\\play.py",
+     "headless": false,
+     "num_envs_1": true,
+     "deterministic": false,
+     "noise_off": false,
+     "score": 1
+    }
+   ]
+  },
+  "C3_injection": {
+   "injection_files": [
+    "legged_gym\\envs\\base\\common_cfgs.py",
+    "legged_gym\\envs\\base\\legged_robot.py",
+    "legged_gym\\envs\\base\\legged_robot_config.py",
+    "legged_gym\\envs\\base\\legged_robot_dreamwaq.py",
+    "legged_gym\\envs\\base\\legged_robot_ee.py",
+    "legged_gym\\envs\\base\\legged_robot_nav.py",
+    "legged_gym\\envs\\base\\legged_robot_nav_config.py",
+    "legged_gym\\envs\\base\\legged_robot_ts.py",
+    "legged_gym\\envs\\base\\legged_robot_ts_depth.py",
+    "legged_gym\\envs\\bipedal_walker\\bipedal_walker.py",
+    "legged_gym\\envs\\bipedal_walker\\bipedal_walker_config.py",
+    "legged_gym\\envs\\g1\\g1.py",
+    "legged_gym\\envs\\g1\\g1_config.py",
+    "legged_gym\\envs\\g1\\g1_deepmimic\\g1_deepmimic.py",
+    "legged_gym\\envs\\g1\\g1_deepmimic\\g1_deepmimic_config.py",
+    "legged_gym\\envs\\g1\\g1_motion_vis\\g1_motion_vis.py",
+    "legged_gym\\envs\\go2\\go2.py",
+    "legged_gym\\envs\\go2\\go2_config.py",
+    "legged_gym\\envs\\go2\\go2_cat\\go2_cat.py",
+    "legged_gym\\envs\\go2\\go2_cat\\go2_cat_config.py",
+    "legged_gym\\envs\\go2\\go2_cts\\go2_cts.py",
+    "legged_gym\\envs\\go2\\go2_cts\\go2_cts_config.py",
+    "legged_gym\\envs\\go2\\go2_dreamwaq\\go2_dreamwaq.py",
+    "legged_gym\\envs\\go2\\go2_dreamwaq\\go2_dreamwaq_config.py",
+    "legged_gym\\envs\\go2\\go2_ee\\go2_ee.py",
+    "legged_gym\\envs\\go2\\go2_ee\\go2_ee_config.py",
+    "legged_gym\\envs\\go2\\go2_nav\\go2_nav.py",
+    "legged_gym\\envs\\go2\\go2_nav\\go2_nav_config.py",
+    "legged_gym\\envs\\go2\\go2_sysid\\go2_sysid.py",
+    "legged_gym\\envs\\go2\\go2_sysid\\go2_sysid_config.py",
+    "legged_gym\\envs\\go2\\go2_ts\\go2_ts.py",
+    "legged_gym\\envs\\go2\\go2_ts\\go2_ts_config.py",
+    "legged_gym\\envs\\go2\\go2_ts_depth\\go2_ts_depth.py",
+    "legged_gym\\envs\\go2\\go2_ts_depth\\go2_ts_depth_config.py",
+    "legged_gym\\envs\\go2\\go2_wtw\\go2_wtw.py",
+    "legged_gym\\envs\\go2\\go2_wtw\\go2_wtw_config.py",
+    "legged_gym\\envs\\k1\\k1.py",
+    "legged_gym\\envs\\k1\\k1_config.py",
+    "legged_gym\\envs\\k1\\k1_amp\\k1_amp.py",
+    "legged_gym\\envs\\k1\\k1_amp\\k1_amp_config.py",
+    "legged_gym\\envs\\k1\\k1_cts_amp\\k1_cts_amp.py",
+    "legged_gym\\envs\\k1\\k1_deepmimic\\k1_deepmimic.py",
+    "legged_gym\\envs\\k1\\k1_deepmimic\\k1_deepmimic_config.py",
+    "legged_gym\\envs\\k1\\k1_motion_vis\\k1_motion_vis.py",
+    "legged_gym\\envs\\tron1pf\\tron1pf.py",
+    "legged_gym\\envs\\tron1pf\\tron1pf_config.py",
+    "legged_gym\\envs\\tron1pf\\tron1pf_ee\\tron1pf_ee.py",
+    "legged_gym\\envs\\tron1pf\\tron1pf_ee\\tron1pf_ee_config.py",
+    "legged_gym\\envs\\tron1sf\\tron1sf.py",
+    "legged_gym\\envs\\tron1sf\\tron1sf_config.py",
+    "legged_gym\\scripts\\play.py",
+    "legged_gym\\scripts\\process_reference_motion.py",
+    "legged_gym\\simulator\\genesis_simulator.py",
+    "legged_gym\\simulator\\isaacgym_simulator.py",
+    "legged_gym\\simulator\\isaaclab_simulator.py",
+    "legged_gym\\simulator\\simulator.py",
+    "legged_gym\\utils\\helpers.py",
+    "legged_gym\\utils\\logger.py",
+    "legged_gym\\utils\\math_utils.py",
+    "legged_gym\\utils\\motion_loader.py",
+    "legged_gym\\utils\\task_registry.py",
+    "legged_gym\\utils\\terrain.py",
+    "legged_gym\\utils\\terrain_utils.py",
+    "legged_gym\\utils\\viser_viewer.py"
+   ],
+   "audit_files": [],
+   "verdict": "no_audit_signal",
+   "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上",
+  "repo": "lupinjia__LeggedGym-Ex"
+ }
+]
