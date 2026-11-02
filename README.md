@@ -85,6 +85,7 @@ Code is released under the MIT license (see `LICENSE`). Data under `data/`, `aud
 
 A `CITATION.cff` is provided. Please cite the paper rather than this repository once it is published.
 
-## Review-time anonymity
+## Author
 
-This repository is served through an anonymized mirror during review. Author names, affiliation and contact details are withheld until acceptance.
+Maintained by Lu Zihe (GitHub: [Lu-Zihe](https://github.com/Lu-Zihe); ORCID: 0009-0006-5228-5847).
+The journal operates a single-anonymized review process, so this repository is public during review.

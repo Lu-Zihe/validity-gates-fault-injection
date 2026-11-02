@@ -1,5 +1,5 @@
 ﻿cff-version: 1.2.0
-message: "Placeholder record. Author names, affiliation, license and DOI are filled in upon acceptance. Do not cite until completed."
+message: "Citable artifact. Update the DOI and repository URL upon acceptance."
 title: "Validity Gates for Fault-Injection Protocols in Robot Learning Simulations"
 abstract: >-
   Companion artifacts: executable validity gates (injection P1 / measurement P2 /
@@ -10,8 +10,9 @@ type: software
 version: "0.1.0"
 date-released: "2026-11-02"
 authors:
-  - name: "Anonymous (double-blind review)"
-repository-code: "TODO: repository URL after acceptance"
+  - family-names: "Lu"
+    given-names: "Zihe"
+repository-code: "https://github.com/Lu-Zihe/validity-gates-fault-injection"
 license: MIT
 keywords:
   - fault injection
