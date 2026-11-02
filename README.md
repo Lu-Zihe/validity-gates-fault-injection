@@ -32,6 +32,7 @@ A Chinese-language overview of the same material is kept in `README.zh.md`.
 | Two-coder agreement | 71% first round, 96% after the rules were written | `coding/` |
 | Controlled experiment, seeds 42 / 7 / 2026 | +14.8 / +20.0 / +5.6 pp (mean 13.5) | `experiment/data/*.json` |
 | Training-budget sweep | 100, 300, 500, 600, 800 iterations | `experiment/data/sens_iter.json` |
+| Fault-mode sensitivity | free swinging, seed 42: +9.1 pp [3.6, 14.7] | `experiment/data/fs_*.json` |
 
 ## Quick start
 

@@ -1,0 +1,17 @@
+{
+  "tag": "fs_base42",
+  "timestamp": "2026-11-02T20:53:55",
+  "exp_name": "e1_free_swing",
+  "model_dir": "base_lock",
+  "checkpoint": 3000,
+  "fault_mode": "free_swing",
+  "num_envs": 512,
+  "n_episodes": 570,
+  "n_falls": 236,
+  "fall_rate": 0.414,
+  "rmst_steps": 673.13,
+  "mean_ep_len": 673.13,
+  "n_faulted_envs": 61,
+  "n_physics_changed": 61,
+  "protocol": "fault-only: lock@p=1.0, DR/curriculum OFF, 1001-step cap"
+}

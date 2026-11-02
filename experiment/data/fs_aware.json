@@ -1,0 +1,17 @@
+{
+  "tag": "fs_aware",
+  "timestamp": "2026-11-02T21:24:36",
+  "exp_name": "e1_free_swing",
+  "model_dir": "Nov02_20-54-14_a1_rescue_fault_free_swing",
+  "checkpoint": 3500,
+  "fault_mode": "free_swing",
+  "num_envs": 512,
+  "n_episodes": 529,
+  "n_falls": 149,
+  "fall_rate": 0.2817,
+  "rmst_steps": 798.35,
+  "mean_ep_len": 798.35,
+  "n_faulted_envs": 61,
+  "n_physics_changed": 61,
+  "protocol": "fault-only: lock@p=1.0, DR/curriculum OFF, 1001-step cap"
+}
