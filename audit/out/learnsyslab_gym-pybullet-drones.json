@@ -1,0 +1,47 @@
+{
+  "name": "learnsyslab_gym-pybullet-drones",
+  "path": "repos/learnsyslab_gym-pybullet-drones",
+  "n_py": 29,
+  "C1_seed": {
+    "seed_flag_files": [
+      "gym_pybullet_drones/examples/learn.py",
+      "gym_pybullet_drones/examples/play.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [],
+    "verdict": "declared_but_no_seed_call",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [
+      "gym_pybullet_drones/examples/play.py"
+    ],
+    "verdict": "partial",
+    "detail": [
+      {
+        "file": "gym_pybullet_drones/examples/play.py",
+        "headless": false,
+        "num_envs_1": false,
+        "deterministic": true,
+        "noise_off": false,
+        "score": 1
+      }
+    ]
+  },
+  "C3_injection": {
+    "injection_files": [
+      "gym_pybullet_drones/envs/BaseAviary.py",
+      "gym_pybullet_drones/examples/beta.py",
+      "gym_pybullet_drones/examples/downwash.py",
+      "gym_pybullet_drones/examples/learn.py",
+      "gym_pybullet_drones/examples/mrac.py",
+      "gym_pybullet_drones/examples/pid.py",
+      "gym_pybullet_drones/examples/pid_velocity.py",
+      "gym_pybullet_drones/examples/play.py"
+    ],
+    "audit_files": [],
+    "verdict": "no_audit_signal",
+    "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

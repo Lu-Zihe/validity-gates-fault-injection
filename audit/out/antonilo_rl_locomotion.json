@@ -1,0 +1,56 @@
+{
+  "name": "antonilo_rl_locomotion",
+  "path": "repos/antonilo_rl_locomotion",
+  "n_py": 20,
+  "C1_seed": {
+    "seed_flag_files": [
+      "raisimGymTorch/env/RaisimGymVecEnv.py",
+      "raisimGymTorch/env/envs/dagger_a1/evaluate_policy.py",
+      "raisimGymTorch/env/envs/rsg_a1_task/evaluate_policy.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "raisimGymTorch/env/envs/dagger_a1/dagger.py",
+        "line": 42,
+        "arg": "rng_seed"
+      },
+      {
+        "file": "raisimGymTorch/env/envs/dagger_a1/evaluate_policy.py",
+        "line": 68,
+        "arg": "rng_seed"
+      },
+      {
+        "file": "raisimGymTorch/env/envs/rsg_a1_task/evaluate_policy.py",
+        "line": 60,
+        "arg": "rng_seed"
+      },
+      {
+        "file": "raisimGymTorch/env/envs/rsg_a1_task/runner.py",
+        "line": 38,
+        "arg": "rng_seed"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      "raisimGymTorch/env/envs/dagger_a1/dagger.py",
+      "raisimGymTorch/env/envs/dagger_a1/evaluate_policy.py",
+      "raisimGymTorch/env/envs/dagger_a1/viz_policy.py",
+      "raisimGymTorch/env/envs/rsg_a1_task/evaluate_policy.py",
+      "raisimGymTorch/env/envs/rsg_a1_task/runner.py",
+      "raisimGymTorch/env/envs/rsg_a1_task/viz_policy.py"
+    ],
+    "audit_files": [],
+    "verdict": "no_audit_signal",
+    "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

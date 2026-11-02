@@ -1,0 +1,186 @@
+{
+  "name": "google-deepmind_mujoco_playground",
+  "path": "repos/google-deepmind_mujoco_playground",
+  "n_py": 116,
+  "C1_seed": {
+    "seed_flag_files": [
+      "learning/train_jax_ppo.py",
+      "learning/train_rsl_rl.py",
+      "mujoco_playground/config/locomotion_params.py",
+      "mujoco_playground/config/manipulation_params.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "learning/train_jax_ppo.py",
+        "line": 500,
+        "arg": "_SEED.value"
+      },
+      {
+        "file": "learning/train_jax_ppo.py",
+        "line": 535,
+        "arg": "<expr>"
+      },
+      {
+        "file": "learning/train_jax_ppo.py",
+        "line": 457,
+        "arg": "_SEED.value"
+      },
+      {
+        "file": "learning/train_rsl_rl.py",
+        "line": 239,
+        "arg": "_SEED.value"
+      },
+      {
+        "file": "mujoco_playground/_src/mjx_env.py",
+        "line": 305,
+        "arg": "0"
+      },
+      {
+        "file": "mujoco_playground/_src/wrapper_test.py",
+        "line": 176,
+        "arg": "0"
+      },
+      {
+        "file": "mujoco_playground/_src/wrapper_test.py",
+        "line": 212,
+        "arg": "0"
+      },
+      {
+        "file": "mujoco_playground/_src/wrapper_test.py",
+        "line": 78,
+        "arg": "0"
+      },
+      {
+        "file": "mujoco_playground/_src/wrapper_test.py",
+        "line": 132,
+        "arg": "0"
+      },
+      {
+        "file": "mujoco_playground/_src/wrapper_torch.py",
+        "line": 104,
+        "arg": "self.seed"
+      },
+      {
+        "file": "mujoco_playground/_src/dm_control_suite/dm_control_suite_test.py",
+        "line": 37,
+        "arg": "42"
+      },
+      {
+        "file": "mujoco_playground/_src/dm_control_suite/dm_control_suite_test.py",
+        "line": 69,
+        "arg": "42"
+      },
+      {
+        "file": "mujoco_playground/_src/locomotion/locomotion_test.py",
+        "line": 33,
+        "arg": "42"
+      },
+      {
+        "file": "mujoco_playground/_src/manipulation/manipulation_test.py",
+        "line": 36,
+        "arg": "42"
+      },
+      {
+        "file": "mujoco_playground/experimental/madrona_benchmarking/benchmark.py",
+        "line": 247,
+        "arg": "seed"
+      },
+      {
+        "file": "mujoco_playground/experimental/madrona_benchmarking/benchmark.py",
+        "line": 174,
+        "arg": "0"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      "learning/train_jax_ppo.py",
+      "learning/train_rsl_rl.py",
+      "mujoco_playground/_src/registry.py",
+      "mujoco_playground/_src/registry_test.py",
+      "mujoco_playground/_src/reward.py",
+      "mujoco_playground/_src/wrapper.py",
+      "mujoco_playground/_src/wrapper_test.py",
+      "mujoco_playground/_src/wrapper_torch.py",
+      "mujoco_playground/_src/dm_control_suite/__init__.py",
+      "mujoco_playground/_src/dm_control_suite/acrobot.py",
+      "mujoco_playground/_src/dm_control_suite/ball_in_cup.py",
+      "mujoco_playground/_src/dm_control_suite/cartpole.py",
+      "mujoco_playground/_src/dm_control_suite/cheetah.py",
+      "mujoco_playground/_src/dm_control_suite/finger.py",
+      "mujoco_playground/_src/dm_control_suite/fish.py",
+      "mujoco_playground/_src/dm_control_suite/hopper.py",
+      "mujoco_playground/_src/dm_control_suite/humanoid.py",
+      "mujoco_playground/_src/dm_control_suite/pendulum.py",
+      "mujoco_playground/_src/dm_control_suite/point_mass.py",
+      "mujoco_playground/_src/dm_control_suite/reacher.py",
+      "mujoco_playground/_src/dm_control_suite/swimmer.py",
+      "mujoco_playground/_src/dm_control_suite/walker.py",
+      "mujoco_playground/_src/locomotion/__init__.py",
+      "mujoco_playground/_src/locomotion/apollo/base.py",
+      "mujoco_playground/_src/locomotion/apollo/joystick.py",
+      "mujoco_playground/_src/locomotion/barkour/joystick.py",
+      "mujoco_playground/_src/locomotion/berkeley_humanoid/joystick.py",
+      "mujoco_playground/_src/locomotion/berkeley_humanoid/randomize.py",
+      "mujoco_playground/_src/locomotion/g1/joystick.py",
+      "mujoco_playground/_src/locomotion/g1/randomize.py",
+      "mujoco_playground/_src/locomotion/go1/getup.py",
+      "mujoco_playground/_src/locomotion/go1/handstand.py",
+      "mujoco_playground/_src/locomotion/go1/joystick.py",
+      "mujoco_playground/_src/locomotion/go1/randomize.py",
+      "mujoco_playground/_src/locomotion/h1/inplace_gait_tracking.py",
+      "mujoco_playground/_src/locomotion/h1/joystick.py",
+      "mujoco_playground/_src/locomotion/h1/joystick_gait_tracking.py",
+      "mujoco_playground/_src/locomotion/op3/joystick.py",
+      "mujoco_playground/_src/locomotion/spot/getup.py",
+      "mujoco_playground/_src/locomotion/spot/joystick.py",
+      "mujoco_playground/_src/locomotion/spot/joystick_gait_tracking.py",
+      "mujoco_playground/_src/locomotion/t1/joystick.py",
+      "mujoco_playground/_src/locomotion/t1/randomize.py",
+      "mujoco_playground/_src/manipulation/__init__.py",
+      "mujoco_playground/_src/manipulation/manipulation_test.py",
+      "mujoco_playground/_src/manipulation/aero_hand/rotate_z.py",
+      "mujoco_playground/_src/manipulation/aloha/handover.py",
+      "mujoco_playground/_src/manipulation/aloha/single_peg_insertion.py",
+      "mujoco_playground/_src/manipulation/franka_emika_panda/open_cabinet.py",
+      "mujoco_playground/_src/manipulation/franka_emika_panda/panda.py",
+      "mujoco_playground/_src/manipulation/franka_emika_panda/pick.py",
+      "mujoco_playground/_src/manipulation/franka_emika_panda/pick_cartesian.py",
+      "mujoco_playground/_src/manipulation/franka_emika_panda/randomize_vision.py",
+      "mujoco_playground/_src/manipulation/franka_emika_panda_robotiq/push_cube.py",
+      "mujoco_playground/_src/manipulation/leap_hand/reorient.py",
+      "mujoco_playground/_src/manipulation/leap_hand/rotate_z.py",
+      "mujoco_playground/config/dm_control_suite_params.py",
+      "mujoco_playground/config/locomotion_params.py",
+      "mujoco_playground/config/manipulation_params.py",
+      "mujoco_playground/experimental/madrona_benchmarking/benchmark.py",
+      "mujoco_playground/experimental/madrona_benchmarking/make_plots.py",
+      "mujoco_playground/experimental/sim2sim/play_apollo_joystick.py",
+      "mujoco_playground/experimental/sim2sim/play_bh_joystick.py",
+      "mujoco_playground/experimental/sim2sim/play_g1_joystick.py",
+      "mujoco_playground/experimental/sim2sim/play_go1_joystick.py",
+      "mujoco_playground/experimental/sim2sim/play_t1_joystick.py",
+      "mujoco_playground/experimental/utils/plotting.py"
+    ],
+    "audit_files": [
+      "mujoco_playground/_src/wrapper_test.py"
+    ],
+    "verdict": "has_audit_signal",
+    "evidence": [
+      "mujoco_playground/_src/wrapper_test.py:83: np.testing.assert_allclose(state.obs['pixels/view_0'], first_qpos[..., :1])",
+      "mujoco_playground/_src/wrapper_test.py:89: np.testing.assert_allclose(state.data.qpos, first_qpos, atol=1e-6)",
+      "mujoco_playground/_src/wrapper_test.py:90: np.testing.assert_allclose(",
+      "mujoco_playground/_src/wrapper_test.py:137: np.testing.assert_allclose(state.info['AutoResetWrapper_done_count'], 0)",
+      "mujoco_playground/_src/wrapper_test.py:148: np.testing.assert_allclose(state.data.qpos, first_qpos, atol=1e-6)"
+    ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

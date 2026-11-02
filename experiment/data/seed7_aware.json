@@ -1,0 +1,17 @@
+{
+  "tag": "seed7_aware",
+  "timestamp": "2026-11-02T16:14:49",
+  "exp_name": "e1_lock",
+  "model_dir": "Nov02_15-39-06_a1_rescue_fault_lock",
+  "checkpoint": 3500,
+  "fault_mode": "lock",
+  "num_envs": 512,
+  "n_episodes": 533,
+  "n_falls": 148,
+  "fall_rate": 0.2777,
+  "rmst_steps": 821.61,
+  "mean_ep_len": 821.61,
+  "n_faulted_envs": 61,
+  "n_physics_changed": 0,
+  "protocol": "fault-only: lock@p=1.0, DR/curriculum OFF, 1001-step cap"
+}

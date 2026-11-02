@@ -1,0 +1,17 @@
+{
+  "tag": "seed2026_aware",
+  "timestamp": "2026-11-02T15:37:50",
+  "exp_name": "e1_lock",
+  "model_dir": "Nov02_14-58-07_a1_rescue_fault_lock",
+  "checkpoint": 3500,
+  "fault_mode": "lock",
+  "num_envs": 512,
+  "n_episodes": 537,
+  "n_falls": 156,
+  "fall_rate": 0.2905,
+  "rmst_steps": 803.71,
+  "mean_ep_len": 803.71,
+  "n_faulted_envs": 61,
+  "n_physics_changed": 0,
+  "protocol": "fault-only: lock@p=1.0, DR/curriculum OFF, 1001-step cap"
+}

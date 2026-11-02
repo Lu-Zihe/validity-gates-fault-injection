@@ -1,0 +1,9 @@
+﻿repo,C1,C2,C3,证据,备注
+legged_gym,否,否,否,helpers.py:135 cfg_train.seed=args.seed；task_registry 用 env_cfg.seed,评估脚本未全关
+unitree_rl_gym,否,否,否,helpers.py:105 同上游写法,
+humanoid-gym,否,否,否,helpers.py:149 同上游写法,
+parkour,否,否,否,helpers.py:149 同上游写法,
+extreme-parkour,是,否,否,helpers.py:148 env_cfg.seed=args.seed（唯一修复者）,
+fault-locomotion-isaaclab,无法判定,否,否,抓取文件未含 task_registry；29 个文件 0 核对,
+rl_locomotion,无法判定,无法判定,否,抓取文件不含评估入口,
+ASAP,无法判定,无法判定,是,抓取文件含 assert 但可能来自测试（待复核）,

@@ -1,0 +1,343 @@
+{
+  "name": "google_brax",
+  "path": "repos/google_brax",
+  "n_py": 144,
+  "C1_seed": {
+    "seed_flag_files": [
+      "brax/training/learner.py",
+      "brax/training/agents/ppo/train_test.py",
+      "brax/training/agents/sac/train_test.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "brax/base_test.py",
+        "line": 27,
+        "arg": "0"
+      },
+      {
+        "file": "brax/math.py",
+        "line": 352,
+        "arg": "0"
+      },
+      {
+        "file": "brax/math_test.py",
+        "line": 40,
+        "arg": "0"
+      },
+      {
+        "file": "brax/test_utils.py",
+        "line": 109,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/envs/base.py",
+        "line": 146,
+        "arg": "0"
+      },
+      {
+        "file": "brax/envs/wrappers/dm_env.py",
+        "line": 106,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/envs/wrappers/gym.py",
+        "line": 78,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/envs/wrappers/gym.py",
+        "line": 146,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/envs/wrappers/training_test.py",
+        "line": 43,
+        "arg": "0"
+      },
+      {
+        "file": "brax/positional/pipeline_test.py",
+        "line": 60,
+        "arg": "0"
+      },
+      {
+        "file": "brax/spring/pipeline_test.py",
+        "line": 61,
+        "arg": "0"
+      },
+      {
+        "file": "brax/spring/pipeline_test.py",
+        "line": 94,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/learner.py",
+        "line": 637,
+        "arg": "_SEED.value"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 123,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 148,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 185,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 219,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 269,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 292,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 319,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 349,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 420,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 505,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 533,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 575,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/replay_buffers_test.py",
+        "line": 614,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/apg/train.py",
+        "line": 113,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/training/agents/apg/train_test.py",
+        "line": 69,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/apg/train_test.py",
+        "line": 71,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/apg/train_test.py",
+        "line": 73,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/ars/train.py",
+        "line": 102,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/training/agents/ars/train_test.py",
+        "line": 51,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/ars/train_test.py",
+        "line": 52,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/bc/train.py",
+        "line": 164,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/training/agents/bc/train_test.py",
+        "line": 114,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/bc/train_test.py",
+        "line": 116,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/bc/train_test.py",
+        "line": 119,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/es/train.py",
+        "line": 136,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/training/agents/es/train_test.py",
+        "line": 61,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/es/train_test.py",
+        "line": 62,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/ppo/checkpoint_test.py",
+        "line": 85,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/ppo/checkpoint_test.py",
+        "line": 107,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/ppo/train.py",
+        "line": 383,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/training/agents/ppo/train_test.py",
+        "line": 218,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/ppo/train_test.py",
+        "line": 220,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/ppo/train_test.py",
+        "line": 222,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/sac/checkpoint_test.py",
+        "line": 79,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/sac/checkpoint_test.py",
+        "line": 96,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/sac/train.py",
+        "line": 203,
+        "arg": "seed"
+      },
+      {
+        "file": "brax/training/agents/sac/train_test.py",
+        "line": 76,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/sac/train_test.py",
+        "line": 78,
+        "arg": "0"
+      },
+      {
+        "file": "brax/training/agents/sac/train_test.py",
+        "line": 80,
+        "arg": "0"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      "brax/base.py",
+      "brax/kinematics_test.py",
+      "brax/test_utils.py",
+      "brax/envs/ant.py",
+      "brax/envs/base.py",
+      "brax/envs/half_cheetah.py",
+      "brax/envs/hopper.py",
+      "brax/envs/humanoid.py",
+      "brax/envs/inverted_double_pendulum.py",
+      "brax/envs/pusher.py",
+      "brax/envs/reacher.py",
+      "brax/envs/swimmer.py",
+      "brax/envs/walker2d.py",
+      "brax/envs/wrappers/training.py",
+      "brax/envs/wrappers/training_test.py",
+      "brax/io/html.py",
+      "brax/io/json.py",
+      "brax/io/mjcf.py",
+      "brax/io/torch.py",
+      "brax/positional/pipeline_test.py",
+      "brax/spring/pipeline_test.py",
+      "brax/training/checkpoint.py",
+      "brax/training/learner.py",
+      "brax/training/logger.py",
+      "brax/training/networks.py",
+      "brax/training/spectral_norm.py",
+      "brax/training/acme/running_statistics.py",
+      "brax/training/agents/apg/train.py",
+      "brax/training/agents/apg/train_test.py",
+      "brax/training/agents/ars/train.py",
+      "brax/training/agents/ars/train_test.py",
+      "brax/training/agents/es/train.py",
+      "brax/training/agents/es/train_test.py",
+      "brax/training/agents/ppo/losses.py",
+      "brax/training/agents/ppo/train.py",
+      "brax/training/agents/ppo/train_test.py",
+      "brax/training/agents/sac/train.py",
+      "brax/training/agents/sac/train_test.py",
+      "brax/visualizer/visualizer.py"
+    ],
+    "audit_files": [
+      "brax/kinematics_test.py",
+      "brax/positional/pipeline_test.py",
+      "brax/spring/pipeline_test.py",
+      "brax/training/agents/apg/train.py",
+      "brax/training/agents/ppo/train.py",
+      "brax/training/agents/ppo/train_test.py",
+      "brax/training/agents/sac/train.py"
+    ],
+    "verdict": "has_audit_signal",
+    "evidence": [
+      "brax/kinematics_test.py:48: np.testing.assert_almost_equal(x.pos, mj_next.xpos[1:], 3)",
+      "brax/kinematics_test.py:55: np.testing.assert_almost_equal(x.rot, mj_next.xquat[1:], 3)",
+      "brax/kinematics_test.py:66: np.testing.assert_array_almost_equal(xd.ang, xd_mj.ang, 3)",
+      "brax/kinematics_test.py:67: np.testing.assert_array_almost_equal(xd.vel, xd_mj.vel, 3)",
+      "brax/kinematics_test.py:71: np.testing.assert_almost_equal("
+    ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

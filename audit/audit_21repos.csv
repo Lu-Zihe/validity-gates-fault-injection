@@ -1,0 +1,22 @@
+repo,backend,lang,idiom,n_py,C1_applicable,C1,C2,C3,C3_inject_files
+AgibotTech/agibot_x1_train,IsaacGym,PyTorch,legged_gym-like,27,True,MISROUTED_seed_to_train_cfg,partial,no_audit_signal,11
+amazon-far/holosoma,IsaacSim,PyTorch,framework,660,False,n/a(declared_and_seeded_routing_unclear),no_eval_entry,has_audit_signal,328
+antonilo/rl_locomotion,Raisim,PyTorch,legged_gym-like,20,True,declared_and_seeded_routing_unclear,no_eval_entry,no_audit_signal,6
+DLR-RM/stable-baselines3,-,PyTorch,library,97,False,n/a(declared_and_seeded_routing_unclear),no_eval_entry,has_audit_signal,43
+Genesis-Embodied-AI/genesis-world,Genesis,Python,framework,475,False,n/a(declared_and_seeded_routing_unclear),no_eval_entry,has_audit_signal,278
+google-deepmind/dm_control,MuJoCo,Python,library,338,False,n/a(declared_but_no_seed_call),no_eval_entry,has_audit_signal,144
+google-deepmind/mujoco_playground,MuJoCo MJX,JAX,config-driven,116,False,n/a(declared_and_seeded_routing_unclear),no_eval_entry,has_audit_signal,67
+google/brax,Brax,JAX,config-driven,144,False,n/a(declared_and_seeded_routing_unclear),no_eval_entry,has_audit_signal,39
+iit-DLSLab/fault-locomotion-isaaclab,IsaacLab,PyTorch,legged_gym-like,45,True,declared_and_seeded_routing_unclear,absent,no_audit_signal,29
+isaac-sim/IsaacLab,IsaacSim/PhysX,PyTorch,framework,2602,False,n/a(seed_applied),partial,has_audit_signal,1236
+isaac-sim/OmniIsaacGymEnvs,OmniIsaacGym,PyTorch,framework,90,False,n/a(no_seed_flag),no_eval_entry,no_audit_signal,44
+learnsyslab/gym-pybullet-drones,PyBullet,PyTorch,gym-env,29,False,n/a(declared_but_no_seed_call),partial,no_audit_signal,8
+LeCAR-Lab/ASAP,IsaacGym+IsaacLab,PyTorch,legged_gym-like,104,True,declared_and_seeded_routing_unclear,no_eval_entry,has_audit_signal,41
+LeCAR-Lab/HumanoidVerse,IsaacGym+IsaacLab,PyTorch,framework,50,False,n/a(declared_and_seeded_routing_unclear),no_eval_entry,no_audit_signal,16
+limxdynamics/pointfoot-legged-gym,IsaacGym,PyTorch,legged_gym-like,27,True,MISROUTED_seed_to_train_cfg,absent,no_audit_signal,15
+mujocolab/mjlab,MuJoCo Warp,PyTorch,config-driven,291,False,n/a(declared_and_seeded_routing_unclear),absent,has_audit_signal,148
+NVlabs/ProtoMotions,IsaacLab/IsaacGym,PyTorch,framework,699,False,n/a(declared_and_seeded_routing_unclear),no_eval_entry,has_audit_signal,364
+pytorch/rl,-,PyTorch,library,914,False,n/a(declared_and_seeded_routing_unclear),no_eval_entry,has_audit_signal,628
+Toni-SM/skrl,multi,multi,library,520,False,n/a(MISROUTED_seed_to_train_cfg),no_eval_entry,has_audit_signal,258
+unitreerobotics/unitree_rl_mjlab,MuJoCo,PyTorch,config-driven,78,False,n/a(no_seed_flag),absent,has_audit_signal,21
+vwxyzjn/cleanrl,-,PyTorch,single-file,80,False,n/a(declared_and_seeded_routing_unclear),no_eval_entry,no_audit_signal,42

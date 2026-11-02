@@ -1,0 +1,6 @@
+ffective(env, sub, positions, before_t, before_g,
+  File "[workspace]/39-mutation-20261028\_work\legged_gym\utils\fault_detector.py", line 324, in _assert_leg_effective
+    assert_injection_effective(env, None, mode_name, before_g2, after_g2,
+  File "[workspace]/39-mutation-20261028\_work\legged_gym\utils\silent_failure_guards.py", line 365, in assert_injection_effective
+    raise SilentFailureError(
+legged_gym.utils.silent_failure_guards.SilentFailureError: [R8/D3] 注入未生效: mode='lock' leg=FL p_gains 请求 17 个环境，实际物理量变化 0 个（未生效 17 个） ⇒ 这会把「物理正常」的环境计入故障组，系统性污染分母。

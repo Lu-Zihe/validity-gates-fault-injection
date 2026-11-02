@@ -1,0 +1,9 @@
+", line 1048, in <module>
+    sys.exit(main())
+  File "[workspace]/39-mutation-20261028\_work\tests\test_r1_r8_local.py", line 461, in main
+    e_lk, inj_lk, ap_lk = arm("lock")
+  File "[workspace]/39-mutation-20261028\_work\tests\test_r1_r8_local.py", line 446, in arm
+    applied = inj.apply(e, ids)
+  File "[workspace]/39-mutation-20261028\_work\legged_gym\utils\fault_detector.py", line 288, in apply
+    env.nominal_p_gains[sub.unsqueeze(1), cols] * self.lock_stiffness_scale
+AttributeError: 'FakeEnv' object has no attribute 'nominal_p_gains'

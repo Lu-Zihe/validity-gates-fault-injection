@@ -1,0 +1,64 @@
+{
+  "name": "unitreerobotics_unitree_rl_mjlab",
+  "path": "repos/unitreerobotics_unitree_rl_mjlab",
+  "n_py": 78,
+  "C1_seed": {
+    "seed_flag_files": [],
+    "routing": [],
+    "set_seed_calls": [],
+    "verdict": "no_seed_flag",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [
+      "scripts/play.py"
+    ],
+    "verdict": "absent",
+    "detail": [
+      {
+        "file": "scripts/play.py",
+        "headless": false,
+        "num_envs_1": false,
+        "deterministic": false,
+        "noise_off": false,
+        "score": 0
+      }
+    ]
+  },
+  "C3_injection": {
+    "injection_files": [
+      "scripts/csv_to_npz.py",
+      "scripts/play.py",
+      "scripts/train.py",
+      "scripts/visualize_terrain.py",
+      "src/tasks/tracking/tracking_env_cfg.py",
+      "src/tasks/tracking/config/g1/env_cfgs.py",
+      "src/tasks/tracking/config/g1_23dof/env_cfgs.py",
+      "src/tasks/tracking/mdp/commands.py",
+      "src/tasks/velocity/velocity_env_cfg.py",
+      "src/tasks/velocity/config/a2/env_cfgs.py",
+      "src/tasks/velocity/config/as2/env_cfgs.py",
+      "src/tasks/velocity/config/g1/env_cfgs.py",
+      "src/tasks/velocity/config/g1_23dof/env_cfgs.py",
+      "src/tasks/velocity/config/go2/env_cfgs.py",
+      "src/tasks/velocity/config/h1_2/env_cfgs.py",
+      "src/tasks/velocity/config/h2/env_cfgs.py",
+      "src/tasks/velocity/config/r1/env_cfgs.py",
+      "src/tasks/velocity/mdp/curriculums.py",
+      "src/tasks/velocity/mdp/observations.py",
+      "src/tasks/velocity/mdp/rewards.py",
+      "src/tasks/velocity/mdp/velocity_command.py"
+    ],
+    "audit_files": [
+      "scripts/csv_to_npz.py",
+      "src/tasks/velocity/mdp/rewards.py"
+    ],
+    "verdict": "has_audit_signal",
+    "evidence": [
+      "scripts/csv_to_npz.py:281: torch.testing.assert_close(",
+      "scripts/csv_to_npz.py:284: torch.testing.assert_close(",
+      "src/tasks/velocity/mdp/rewards.py:345: assert default_joint_pos is not None"
+    ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

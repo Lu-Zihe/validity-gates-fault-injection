@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 运行产物（脚本会就地写这些）
+gate_report.json
+local_verification_report.json
+mutation_report.md
+_work/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 私有层：本仓库**不含**作者的 legged_gym 代码，误拷进来时不要提交
+代码修复-*/
+legged_gym/
+logs/
+*.sldprt
+*.dcprt
+
+# 大文件（模型权重、云端日志、视频）
+*.pt
+*.pth
+*.ckpt
+*.mp4
+*.zip
+*.tgz

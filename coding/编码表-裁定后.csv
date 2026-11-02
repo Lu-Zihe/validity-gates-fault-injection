@@ -1,0 +1,9 @@
+repo,C1,C2,C3,证据,备注
+legged_gym,否,否,否,helpers.py:135 cfg_train.seed=args.seed（实参 None 不执行）；play.py:48-51 未关 randomize_base_mass（anymal_c_rough_config.py:80=True）；注入写入点前后无回读,
+unitree_rl_gym,否,否,否,helpers.py:105 同上游写法；g1_config.py:31/h1_config.py:38/h1_2_config.py:74 randomize_base_mass=True；注入点无核对,
+humanoid-gym,否,否,否,helpers.py:149 同上游写法；play.py:61-62 关的是不存在的字段且 add_noise=True；注入点无核对,
+parkour,否,否,否,helpers.py:149 同上游写法；play.py:115 terrain.curriculum 关闭被注释；注入点无核对,
+extreme-parkour,是,否,否,helpers.py:147-148 env_cfg.seed=args.seed 且先赋值后 set_seed；play.py:101-102/evaluate.py:107-109 显式置 True；注入点无核对,
+fault-locomotion-isaaclab,无法判定,否,否,抓取文件未含 task_registry；5 个评估入口均未关闭开关（rsl_rl/play.py:84-124）；29 个注入相关文件 0 核对,
+rl_locomotion,无法判定,否,无法判定,抓取文件不含 task_registry；evaluate_policy.py:29-34 四行 randomize_*=False 全被注释；注入写入点在未抓取的 C++ Environment.hpp,
+ASAP,无法判定,无法判定,否,train_agent.py:103-108 seeding 被注释且 envs 未抓取；eval_agent.py 存在但开关在未抓取的 Hydra yaml；helpers.py:39/:49 的 assert 不在写入点 :101,

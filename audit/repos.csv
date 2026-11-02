@@ -1,0 +1,22 @@
+priority,repo,lineage,axes,url,why,status
+1,iit-DLSLab/fault-locomotion-isaaclab,IsaacLab+rsl_rl+MoE,A,https://github.com/iit-DLSLab/fault-locomotion-isaaclab,同故障域；决定"0/9"存亡,本地部分已抓
+2,google-deepmind/mujoco_playground,MuJoCo MJX / JAX,B+C,https://github.com/google-deepmind/mujoco_playground,跨后端+跨语言,待抓
+3,isaac-sim/IsaacLab,IsaacLab 官方,A,https://github.com/isaac-sim/IsaacLab,seed 时机根因；须限定子集,待抓
+4,mujocolab/mjlab,MuJoCo-Warp,B,https://github.com/mujocolab/mjlab,同 API 不同后端=干净控制变量,待抓
+5,google/brax,JAX,C,https://github.com/google/brax,9/9 缺 JAX,待抓
+6,antonilo/rl_locomotion,Raisim,B,https://github.com/antonilo/rl_locomotion,A1 同机型,待抓
+7,amazon-far/holosoma,人形框架,工业界血统,https://github.com/amazon-far/holosoma,大工程,待抓
+8,Genesis-Embodied-AI/genesis-world,Genesis,B,https://github.com/Genesis-Embodied-AI/genesis-world,第三后端,待抓
+9,DLR-RM/stable-baselines3,框架层,seed/eval 事实标准,https://github.com/DLR-RM/stable-baselines3,框架层对照,待抓
+10,vwxyzjn/cleanrl,独立单文件 RL,最小参数管线,https://github.com/vwxyzjn/cleanrl,定位病因,待抓
+11,Toni-SM/skrl,多后端(torch/jax/warp),生态多样性,https://github.com/Toni-SM/skrl,单位成本最高,待抓
+12,LeCAR-Lab/ASAP,人形双栈(IsaacGym+IsaacLab),跨栈对照,https://github.com/LeCAR-Lab/ASAP,跨栈天然对照,待抓
+13,unitreerobotics/unitree_rl_mjlab,MuJoCo,补后端,https://github.com/unitreerobotics/unitree_rl_mjlab,,待抓
+14,isaac-sim/OmniIsaacGymEnvs,Isaac 系,补血统,https://github.com/isaac-sim/OmniIsaacGymEnvs,,待抓
+15,AgibotTech/agibot_x1_train,人形,工业界,https://github.com/AgibotTech/agibot_x1_train,,待抓
+16,LeCAR-Lab/HumanoidVerse,人形多栈,补血统,https://github.com/LeCAR-Lab/HumanoidVerse,,待抓
+17,google-deepmind/dm_control,MuJoCo 官方,基准,https://github.com/google-deepmind/dm_control,,待抓
+18,learnsyslab/gym-pybullet-drones,PyBullet,补后端+非足式,https://github.com/learnsyslab/gym-pybullet-drones,,待抓
+19,pytorch/rl,框架层,补框架,https://github.com/pytorch/rl,,待抓
+20,NVlabs/ProtoMotions,人形,大工程,https://github.com/NVlabs/ProtoMotions,,待抓
+21,limxdynamics/pointfoot-legged-gym,legged_gym fork,补血统,https://github.com/limxdynamics/pointfoot-legged-gym,,待抓

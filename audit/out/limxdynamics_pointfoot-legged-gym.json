@@ -1,0 +1,80 @@
+{
+  "name": "limxdynamics_pointfoot-legged-gym",
+  "path": "repos/limxdynamics_pointfoot-legged-gym",
+  "n_py": 27,
+  "C1_seed": {
+    "seed_flag_files": [
+      "legged_gym/envs/pointfoot_flat/pointfoot_flat_config.py",
+      "legged_gym/envs/solefoot_flat/solefoot_flat_config.py",
+      "legged_gym/envs/wheelfoot_flat/wheelfoot_flat_config.py",
+      "legged_gym/utils/helpers.py"
+    ],
+    "routing": [
+      {
+        "file": "legged_gym/utils/helpers.py",
+        "line": 146,
+        "base": "cfg_train"
+      }
+    ],
+    "set_seed_calls": [
+      {
+        "file": "legged_gym/utils/helpers.py",
+        "line": 80,
+        "arg": "seed"
+      },
+      {
+        "file": "legged_gym/utils/helpers.py",
+        "line": 82,
+        "arg": "seed"
+      },
+      {
+        "file": "legged_gym/utils/task_registry.py",
+        "line": 133,
+        "arg": "env_cfg.seed"
+      }
+    ],
+    "verdict": "MISROUTED_seed_to_train_cfg",
+    "evidence": [
+      "legged_gym/utils/helpers.py:146: cfg_train.seed = args.seed"
+    ]
+  },
+  "C2_eval": {
+    "play_files": [
+      "legged_gym/scripts/play.py"
+    ],
+    "verdict": "absent",
+    "detail": [
+      {
+        "file": "legged_gym/scripts/play.py",
+        "headless": false,
+        "num_envs_1": false,
+        "deterministic": false,
+        "noise_off": false,
+        "score": 0
+      }
+    ]
+  },
+  "C3_injection": {
+    "injection_files": [
+      "legged_gym/algorithm/actor_critic.py",
+      "legged_gym/algorithm/mlp_encoder.py",
+      "legged_gym/algorithm/on_policy_runner.py",
+      "legged_gym/envs/base/base_task.py",
+      "legged_gym/envs/pointfoot_flat/pointfoot_flat.py",
+      "legged_gym/envs/pointfoot_flat/pointfoot_flat_config.py",
+      "legged_gym/envs/solefoot_flat/solefoot_flat.py",
+      "legged_gym/envs/solefoot_flat/solefoot_flat_config.py",
+      "legged_gym/envs/wheelfoot_flat/wheelfoot_flat.py",
+      "legged_gym/envs/wheelfoot_flat/wheelfoot_flat_config.py",
+      "legged_gym/scripts/play.py",
+      "legged_gym/utils/helpers.py",
+      "legged_gym/utils/logger.py",
+      "legged_gym/utils/task_registry.py",
+      "legged_gym/utils/terrain.py"
+    ],
+    "audit_files": [],
+    "verdict": "no_audit_signal",
+    "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

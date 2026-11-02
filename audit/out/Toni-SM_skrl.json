@@ -1,0 +1,1025 @@
+{
+  "name": "Toni-SM_skrl",
+  "path": "repos/Toni-SM_skrl",
+  "n_py": 520,
+  "C1_seed": {
+    "seed_flag_files": [
+      "examples/gym/jax_gym_cartpole_cem.py",
+      "examples/gym/jax_gym_cartpole_dqn.py",
+      "examples/gym/jax_gym_pendulum_ddpg.py",
+      "examples/gym/jax_gym_pendulum_ppo.py",
+      "examples/gym/jax_gym_pendulum_sac.py",
+      "examples/gym/jax_gym_pendulum_td3.py",
+      "examples/gym/torch_gym_cartpole_cem.py",
+      "examples/gym/torch_gym_cartpole_dqn.py",
+      "examples/gym/torch_gym_frozen_lake_q_learning.py",
+      "examples/gym/torch_gym_pendulum_ddpg.py",
+      "examples/gym/torch_gym_pendulum_ddpg_td3_sac_parallel_unshared_memory.py",
+      "examples/gym/torch_gym_pendulum_ddpg_td3_sac_sequential_shared_memory.py",
+      "examples/gym/torch_gym_pendulum_ddpg_td3_sac_sequential_unshared_memory.py",
+      "examples/gym/torch_gym_pendulum_ppo.py",
+      "examples/gym/torch_gym_pendulum_sac.py",
+      "examples/gym/torch_gym_pendulum_td3.py",
+      "examples/gym/torch_gym_pendulum_trpo.py",
+      "examples/gym/torch_gym_pendulumnovel_ddpg.py",
+      "examples/gym/torch_gym_pendulumnovel_ddpg_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_ddpg_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_ddpg_rnn.py",
+      "examples/gym/torch_gym_pendulumnovel_ppo.py",
+      "examples/gym/torch_gym_pendulumnovel_ppo_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_ppo_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_ppo_rnn.py",
+      "examples/gym/torch_gym_pendulumnovel_sac.py",
+      "examples/gym/torch_gym_pendulumnovel_sac_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_sac_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_sac_rnn.py",
+      "examples/gym/torch_gym_pendulumnovel_td3.py",
+      "examples/gym/torch_gym_pendulumnovel_td3_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_td3_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_td3_rnn.py",
+      "examples/gym/torch_gym_pendulumnovel_trpo.py",
+      "examples/gym/torch_gym_pendulumnovel_trpo_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_trpo_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_trpo_rnn.py",
+      "examples/gym/torch_gym_taxi_sarsa.py",
+      "examples/gymnasium/jax_gymnasium_cartpole_cem.py",
+      "examples/gymnasium/jax_gymnasium_cartpole_dqn.py",
+      "examples/gymnasium/jax_gymnasium_pendulum_ddpg.py",
+      "examples/gymnasium/jax_gymnasium_pendulum_ppo.py",
+      "examples/gymnasium/jax_gymnasium_pendulum_sac.py",
+      "examples/gymnasium/jax_gymnasium_pendulum_td3.py",
+      "examples/gymnasium/torch_gymnasium_cartpole_cem.py",
+      "examples/gymnasium/torch_gymnasium_cartpole_dqn.py",
+      "examples/gymnasium/torch_gymnasium_frozen_lake_q_learning.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ddpg.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ddpg_td3_sac_parallel_unshared_memory.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ddpg_td3_sac_sequential_shared_memory.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ddpg_td3_sac_sequential_unshared_memory.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ppo.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_sac.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_td3.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_trpo.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg_rnn.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo_rnn.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_sac.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_sac_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_sac_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_sac_rnn.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_td3.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_td3_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_td3_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_td3_rnn.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo_rnn.py",
+      "examples/gymnasium/torch_gymnasium_taxi_sarsa.py",
+      "examples/gymnasium/warp_gymnasium_pendulum_ddpg.py",
+      "examples/gymnasium/warp_gymnasium_pendulum_ppo.py",
+      "examples/gymnasium/warp_gymnasium_pendulum_sac.py",
+      "examples/mani_skill/jax_mani_skill_push_cube_ppo.py",
+      "examples/mani_skill/torch_mani_skill_push_cube_ppo.py",
+      "examples/mani_skill/warp_mani_skill_push_cube_ppo.py",
+      "examples/shimmy/jax_shimmy_atari_pong_dqn.py",
+      "examples/shimmy/jax_shimmy_dm_control_acrobot_swingup_sparse_sac.py",
+      "examples/shimmy/jax_shimmy_openai_gym_compatibility_pendulum_ddpg.py",
+      "examples/shimmy/torch_shimmy_atari_pong_dqn.py",
+      "examples/shimmy/torch_shimmy_dm_control_acrobot_swingup_sparse_sac.py",
+      "examples/shimmy/torch_shimmy_openai_gym_compatibility_pendulum_ddpg.py",
+      "skrl/envs/loaders/jax/isaaclab_envs.py",
+      "skrl/envs/loaders/jax/playground_envs.py",
+      "skrl/envs/loaders/torch/isaaclab_envs.py",
+      "skrl/envs/loaders/warp/isaaclab_envs.py",
+      "skrl/utils/__init__.py"
+    ],
+    "routing": [
+      {
+        "file": "skrl/envs/loaders/torch/isaaclab_envs.py",
+        "line": 208,
+        "base": "cfg"
+      }
+    ],
+    "set_seed_calls": [
+      {
+        "file": "examples/gym/jax_gym_cartpole_cem.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/jax_gym_cartpole_dqn.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/jax_gym_pendulum_ddpg.py",
+        "line": 34,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/jax_gym_pendulum_ppo.py",
+        "line": 34,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/jax_gym_pendulum_sac.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/jax_gym_pendulum_td3.py",
+        "line": 33,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_cartpole_cem.py",
+        "line": 29,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_cartpole_dqn.py",
+        "line": 27,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_frozen_lake_q_learning.py",
+        "line": 28,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulum_ddpg.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulum_ddpg_td3_sac_parallel_unshared_memory.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulum_ddpg_td3_sac_sequential_shared_memory.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulum_ddpg_td3_sac_sequential_unshared_memory.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulum_ppo.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulum_sac.py",
+        "line": 29,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulum_td3.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulum_trpo.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_ddpg.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_ddpg_gru.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_ddpg_lstm.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_ddpg_rnn.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_ppo.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_ppo_gru.py",
+        "line": 33,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_ppo_lstm.py",
+        "line": 33,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_ppo_rnn.py",
+        "line": 33,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_sac.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_sac_gru.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_sac_lstm.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_sac_rnn.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_td3.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_td3_gru.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_td3_lstm.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_td3_rnn.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_trpo.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_trpo_gru.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_trpo_lstm.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_pendulumnovel_trpo_rnn.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gym/torch_gym_taxi_sarsa.py",
+        "line": 28,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/jax_gymnasium_cartpole_cem.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/jax_gymnasium_cartpole_dqn.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/jax_gymnasium_pendulum_ddpg.py",
+        "line": 34,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/jax_gymnasium_pendulum_ppo.py",
+        "line": 34,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/jax_gymnasium_pendulum_sac.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/jax_gymnasium_pendulum_td3.py",
+        "line": 33,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_cartpole_cem.py",
+        "line": 29,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_cartpole_dqn.py",
+        "line": 27,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_frozen_lake_q_learning.py",
+        "line": 28,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulum_ddpg.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulum_ddpg_td3_sac_parallel_unshared_memory.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulum_ddpg_td3_sac_sequential_shared_memory.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulum_ddpg_td3_sac_sequential_unshared_memory.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulum_ppo.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulum_sac.py",
+        "line": 29,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulum_td3.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulum_trpo.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg_gru.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg_lstm.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg_rnn.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo_gru.py",
+        "line": 33,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo_lstm.py",
+        "line": 33,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo_rnn.py",
+        "line": 33,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_sac.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_sac_gru.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_sac_lstm.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_sac_rnn.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_td3.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_td3_gru.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_td3_lstm.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_td3_rnn.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo_gru.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo_lstm.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo_rnn.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/torch_gymnasium_taxi_sarsa.py",
+        "line": 28,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/warp_gymnasium_pendulum_ddpg.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/warp_gymnasium_pendulum_ppo.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/gymnasium/warp_gymnasium_pendulum_sac.py",
+        "line": 30,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/jax_ant_direct_ddpg.py",
+        "line": 85,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/jax_ant_direct_sac.py",
+        "line": 104,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/jax_ant_direct_td3.py",
+        "line": 85,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_ant_direct_ddpg.py",
+        "line": 88,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_ant_direct_sac.py",
+        "line": 106,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_ant_direct_td3.py",
+        "line": 88,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_box_box_ppo.py",
+        "line": 98,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_box_discrete_ppo.py",
+        "line": 79,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_box_multidiscrete_ppo.py",
+        "line": 81,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_dict_box_ppo.py",
+        "line": 112,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_dict_discrete_ppo.py",
+        "line": 93,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_dict_multidiscrete_ppo.py",
+        "line": 95,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_discrete_box_ppo.py",
+        "line": 104,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_discrete_discrete_ppo.py",
+        "line": 84,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_discrete_multidiscrete_ppo.py",
+        "line": 86,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_multidiscrete_box_ppo.py",
+        "line": 107,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_multidiscrete_discrete_ppo.py",
+        "line": 88,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_multidiscrete_multidiscrete_ppo.py",
+        "line": 90,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_tuple_box_ppo.py",
+        "line": 110,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_tuple_discrete_ppo.py",
+        "line": 91,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/torch_cartpole_direct_tuple_multidiscrete_ppo.py",
+        "line": 93,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/warp_ant_direct_ddpg.py",
+        "line": 90,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/warp_ant_direct_sac.py",
+        "line": 109,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/isaaclab/warp_cartpole_direct_box_box_ppo.py",
+        "line": 100,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/mani_skill/jax_mani_skill_push_cube_ppo.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/mani_skill/torch_mani_skill_push_cube_ppo.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/mani_skill/warp_mani_skill_push_cube_ppo.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/playground/jax_playground_cartpole_balance_ppo.py",
+        "line": 103,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/playground/torch_playground_cartpole_balance_ppo.py",
+        "line": 101,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/playground/warp_playground_cartpole_balance_ppo.py",
+        "line": 103,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/real_world/franka_emika_panda/reaching_franka_isaacgym_skrl_train.py",
+        "line": 19,
+        "arg": "42"
+      },
+      {
+        "file": "examples/real_world/franka_emika_panda/reaching_franka_omniverse_isaacgym_skrl_eval.py",
+        "line": 16,
+        "arg": ""
+      },
+      {
+        "file": "examples/real_world/franka_emika_panda/reaching_franka_omniverse_isaacgym_skrl_train.py",
+        "line": 18,
+        "arg": ""
+      },
+      {
+        "file": "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_omniverse_isaacgym_skrl_eval.py",
+        "line": 16,
+        "arg": ""
+      },
+      {
+        "file": "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_omniverse_isaacgym_skrl_train.py",
+        "line": 18,
+        "arg": ""
+      },
+      {
+        "file": "examples/shimmy/jax_shimmy_atari_pong_dqn.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/shimmy/jax_shimmy_dm_control_acrobot_swingup_sparse_sac.py",
+        "line": 33,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/shimmy/jax_shimmy_openai_gym_compatibility_pendulum_ddpg.py",
+        "line": 35,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/shimmy/torch_shimmy_atari_pong_dqn.py",
+        "line": 29,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/shimmy/torch_shimmy_dm_control_acrobot_swingup_sparse_sac.py",
+        "line": 31,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/shimmy/torch_shimmy_openai_gym_compatibility_pendulum_ddpg.py",
+        "line": 32,
+        "arg": "args.seed"
+      },
+      {
+        "file": "skrl/__init__.py",
+        "line": 274,
+        "arg": "<expr>"
+      },
+      {
+        "file": "skrl/envs/loaders/jax/playground_envs.py",
+        "line": 152,
+        "arg": "args.seed"
+      },
+      {
+        "file": "skrl/utils/__init__.py",
+        "line": 92,
+        "arg": "seed"
+      },
+      {
+        "file": "skrl/utils/__init__.py",
+        "line": 93,
+        "arg": "seed"
+      },
+      {
+        "file": "skrl/utils/runner/jax/runner.py",
+        "line": 37,
+        "arg": "self._cfg.get(...)"
+      },
+      {
+        "file": "skrl/utils/runner/torch/runner.py",
+        "line": 37,
+        "arg": "self._cfg.get(...)"
+      },
+      {
+        "file": "skrl/utils/runner/warp/runner.py",
+        "line": 38,
+        "arg": "self._cfg.get(...)"
+      }
+    ],
+    "verdict": "MISROUTED_seed_to_train_cfg",
+    "evidence": [
+      "skrl/envs/loaders/torch/isaaclab_envs.py:208: cfg.seed = args.seed"
+    ]
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      "docs/source/conf.py",
+      "docs/source/snippets/agents_basic_usage.py",
+      "docs/source/snippets/multi_agents_basic_usage.py",
+      "examples/gym/jax_gym_cartpole_cem.py",
+      "examples/gym/jax_gym_cartpole_dqn.py",
+      "examples/gym/jax_gym_pendulum_ddpg.py",
+      "examples/gym/jax_gym_pendulum_ppo.py",
+      "examples/gym/jax_gym_pendulum_sac.py",
+      "examples/gym/jax_gym_pendulum_td3.py",
+      "examples/gym/torch_gym_cartpole_cem.py",
+      "examples/gym/torch_gym_cartpole_dqn.py",
+      "examples/gym/torch_gym_frozen_lake_q_learning.py",
+      "examples/gym/torch_gym_pendulum_ddpg.py",
+      "examples/gym/torch_gym_pendulum_ddpg_td3_sac_parallel_unshared_memory.py",
+      "examples/gym/torch_gym_pendulum_ddpg_td3_sac_sequential_shared_memory.py",
+      "examples/gym/torch_gym_pendulum_ddpg_td3_sac_sequential_unshared_memory.py",
+      "examples/gym/torch_gym_pendulum_ppo.py",
+      "examples/gym/torch_gym_pendulum_sac.py",
+      "examples/gym/torch_gym_pendulum_td3.py",
+      "examples/gym/torch_gym_pendulum_trpo.py",
+      "examples/gym/torch_gym_pendulumnovel_ddpg.py",
+      "examples/gym/torch_gym_pendulumnovel_ddpg_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_ddpg_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_ddpg_rnn.py",
+      "examples/gym/torch_gym_pendulumnovel_ppo.py",
+      "examples/gym/torch_gym_pendulumnovel_ppo_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_ppo_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_ppo_rnn.py",
+      "examples/gym/torch_gym_pendulumnovel_sac.py",
+      "examples/gym/torch_gym_pendulumnovel_sac_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_sac_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_sac_rnn.py",
+      "examples/gym/torch_gym_pendulumnovel_td3.py",
+      "examples/gym/torch_gym_pendulumnovel_td3_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_td3_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_td3_rnn.py",
+      "examples/gym/torch_gym_pendulumnovel_trpo.py",
+      "examples/gym/torch_gym_pendulumnovel_trpo_gru.py",
+      "examples/gym/torch_gym_pendulumnovel_trpo_lstm.py",
+      "examples/gym/torch_gym_pendulumnovel_trpo_rnn.py",
+      "examples/gym/torch_gym_taxi_sarsa.py",
+      "examples/gymnasium/jax_gymnasium_cartpole_cem.py",
+      "examples/gymnasium/jax_gymnasium_cartpole_dqn.py",
+      "examples/gymnasium/jax_gymnasium_pendulum_ddpg.py",
+      "examples/gymnasium/jax_gymnasium_pendulum_ppo.py",
+      "examples/gymnasium/jax_gymnasium_pendulum_sac.py",
+      "examples/gymnasium/jax_gymnasium_pendulum_td3.py",
+      "examples/gymnasium/torch_gymnasium_cartpole_cem.py",
+      "examples/gymnasium/torch_gymnasium_cartpole_dqn.py",
+      "examples/gymnasium/torch_gymnasium_frozen_lake_q_learning.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ddpg.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ddpg_td3_sac_parallel_unshared_memory.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ddpg_td3_sac_sequential_shared_memory.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ddpg_td3_sac_sequential_unshared_memory.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_ppo.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_sac.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_td3.py",
+      "examples/gymnasium/torch_gymnasium_pendulum_trpo.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ddpg_rnn.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_ppo_rnn.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_sac.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_sac_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_sac_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_sac_rnn.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_td3.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_td3_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_td3_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_td3_rnn.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo_gru.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo_lstm.py",
+      "examples/gymnasium/torch_gymnasium_pendulumnovel_trpo_rnn.py",
+      "examples/gymnasium/torch_gymnasium_taxi_sarsa.py",
+      "examples/gymnasium/warp_gymnasium_pendulum_ddpg.py",
+      "examples/gymnasium/warp_gymnasium_pendulum_ppo.py",
+      "examples/gymnasium/warp_gymnasium_pendulum_sac.py",
+      "examples/isaaclab/jax_ant_direct_ddpg.py",
+      "examples/isaaclab/jax_ant_direct_sac.py",
+      "examples/isaaclab/jax_ant_direct_td3.py",
+      "examples/isaaclab/torch_ant_direct_ddpg.py",
+      "examples/isaaclab/torch_ant_direct_sac.py",
+      "examples/isaaclab/torch_ant_direct_td3.py",
+      "examples/isaaclab/torch_cartpole_direct_box_box_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_box_discrete_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_box_multidiscrete_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_dict_box_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_dict_discrete_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_dict_multidiscrete_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_discrete_box_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_discrete_discrete_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_discrete_multidiscrete_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_multidiscrete_box_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_multidiscrete_discrete_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_multidiscrete_multidiscrete_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_tuple_box_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_tuple_discrete_ppo.py",
+      "examples/isaaclab/torch_cartpole_direct_tuple_multidiscrete_ppo.py",
+      "examples/isaaclab/warp_ant_direct_ddpg.py",
+      "examples/isaaclab/warp_ant_direct_sac.py",
+      "examples/isaaclab/warp_cartpole_direct_box_box_ppo.py",
+      "examples/mani_skill/jax_mani_skill_push_cube_ppo.py",
+      "examples/mani_skill/torch_mani_skill_push_cube_ppo.py",
+      "examples/mani_skill/warp_mani_skill_push_cube_ppo.py",
+      "examples/playground/jax_playground_cartpole_balance_ppo.py",
+      "examples/playground/torch_playground_cartpole_balance_ppo.py",
+      "examples/playground/warp_playground_cartpole_balance_ppo.py",
+      "examples/real_world/franka_emika_panda/reaching_franka_isaacgym_env.py",
+      "examples/real_world/franka_emika_panda/reaching_franka_isaacgym_skrl_eval.py",
+      "examples/real_world/franka_emika_panda/reaching_franka_isaacgym_skrl_train.py",
+      "examples/real_world/franka_emika_panda/reaching_franka_omniverse_isaacgym_env.py",
+      "examples/real_world/franka_emika_panda/reaching_franka_omniverse_isaacgym_skrl_eval.py",
+      "examples/real_world/franka_emika_panda/reaching_franka_omniverse_isaacgym_skrl_train.py",
+      "examples/real_world/franka_emika_panda/reaching_franka_real_env.py",
+      "examples/real_world/franka_emika_panda/reaching_franka_real_skrl_eval.py",
+      "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_omniverse_isaacgym_env.py",
+      "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_omniverse_isaacgym_skrl_eval.py",
+      "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_omniverse_isaacgym_skrl_train.py",
+      "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_real_env.py",
+      "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_real_ros2_env.py",
+      "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_real_ros_env.py",
+      "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_real_ros_ros2_skrl_eval.py",
+      "examples/real_world/kuka_lbr_iiwa/reaching_iiwa_real_skrl_eval.py",
+      "examples/shimmy/jax_shimmy_atari_pong_dqn.py",
+      "examples/shimmy/jax_shimmy_dm_control_acrobot_swingup_sparse_sac.py",
+      "examples/shimmy/jax_shimmy_openai_gym_compatibility_pendulum_ddpg.py",
+      "examples/shimmy/torch_shimmy_atari_pong_dqn.py",
+      "examples/shimmy/torch_shimmy_dm_control_acrobot_swingup_sparse_sac.py",
+      "examples/shimmy/torch_shimmy_openai_gym_compatibility_pendulum_ddpg.py",
+      "skrl/__init__.py",
+      "skrl/agents/jax/base.py",
+      "skrl/agents/jax/a2c/a2c.py",
+      "skrl/agents/jax/a2c/a2c_cfg.py",
+      "skrl/agents/jax/cem/cem.py",
+      "skrl/agents/jax/cem/cem_cfg.py",
+      "skrl/agents/jax/ddpg/ddpg.py",
+      "skrl/agents/jax/ddpg/ddpg_cfg.py",
+      "skrl/agents/jax/ddqn/ddqn.py",
+      "skrl/agents/jax/ddqn/ddqn_cfg.py",
+      "skrl/agents/jax/dqn/dqn.py",
+      "skrl/agents/jax/dqn/dqn_cfg.py",
+      "skrl/agents/jax/ppo/ppo.py",
+      "skrl/agents/jax/ppo/ppo_cfg.py",
+      "skrl/agents/jax/rpo/rpo.py",
+      "skrl/agents/jax/rpo/rpo_cfg.py",
+      "skrl/agents/jax/sac/sac.py",
+      "skrl/agents/jax/sac/sac_cfg.py",
+      "skrl/agents/jax/td3/td3.py",
+      "skrl/agents/jax/td3/td3_cfg.py",
+      "skrl/agents/torch/base.py",
+      "skrl/agents/torch/a2c/a2c.py",
+      "skrl/agents/torch/a2c/a2c_cfg.py",
+      "skrl/agents/torch/a2c/a2c_rnn.py",
+      "skrl/agents/torch/amp/amp.py",
+      "skrl/agents/torch/amp/amp_cfg.py",
+      "skrl/agents/torch/cem/cem.py",
+      "skrl/agents/torch/cem/cem_cfg.py",
+      "skrl/agents/torch/ddpg/ddpg.py",
+      "skrl/agents/torch/ddpg/ddpg_cfg.py",
+      "skrl/agents/torch/ddpg/ddpg_rnn.py",
+      "skrl/agents/torch/ddqn/ddqn.py",
+      "skrl/agents/torch/ddqn/ddqn_cfg.py",
+      "skrl/agents/torch/dqn/dqn.py",
+      "skrl/agents/torch/dqn/dqn_cfg.py",
+      "skrl/agents/torch/ppo/ppo.py",
+      "skrl/agents/torch/ppo/ppo_cfg.py",
+      "skrl/agents/torch/ppo/ppo_rnn.py",
+      "skrl/agents/torch/q_learning/q_learning.py",
+      "skrl/agents/torch/rpo/rpo.py",
+      "skrl/agents/torch/rpo/rpo_cfg.py",
+      "skrl/agents/torch/rpo/rpo_rnn.py",
+      "skrl/agents/torch/sac/sac.py",
+      "skrl/agents/torch/sac/sac_cfg.py",
+      "skrl/agents/torch/sac/sac_rnn.py",
+      "skrl/agents/torch/sarsa/sarsa.py",
+      "skrl/agents/torch/td3/td3.py",
+      "skrl/agents/torch/td3/td3_cfg.py",
+      "skrl/agents/torch/td3/td3_rnn.py",
+      "skrl/agents/torch/trpo/trpo.py",
+      "skrl/agents/torch/trpo/trpo_cfg.py",
+      "skrl/agents/torch/trpo/trpo_rnn.py",
+      "skrl/agents/warp/base.py",
+      "skrl/agents/warp/ddpg/ddpg.py",
+      "skrl/agents/warp/ddpg/ddpg_cfg.py",
+      "skrl/agents/warp/ppo/ppo.py",
+      "skrl/agents/warp/ppo/ppo_cfg.py",
+      "skrl/agents/warp/sac/sac.py",
+      "skrl/agents/warp/sac/sac_cfg.py",
+      "skrl/envs/loaders/jax/isaaclab_envs.py",
+      "skrl/envs/loaders/jax/playground_envs.py",
+      "skrl/envs/loaders/torch/isaaclab_envs.py",
+      "skrl/envs/loaders/torch/playground_envs.py",
+      "skrl/envs/loaders/warp/isaaclab_envs.py",
+      "skrl/envs/loaders/warp/playground_envs.py",
+      "skrl/memories/jax/base.py",
+      "skrl/memories/jax/random.py",
+      "skrl/memories/torch/base.py",
+      "skrl/memories/torch/random.py",
+      "skrl/memories/warp/base.py",
+      "skrl/memories/warp/random.py",
+      "skrl/models/jax/base.py",
+      "skrl/models/jax/categorical.py",
+      "skrl/models/jax/gaussian.py",
+      "skrl/models/jax/multicategorical.py",
+      "skrl/models/torch/base.py",
+      "skrl/models/torch/categorical.py",
+      "skrl/models/torch/gaussian.py",
+      "skrl/models/torch/multicategorical.py",
+      "skrl/models/torch/multivariate_gaussian.py",
+      "skrl/models/warp/base.py",
+      "skrl/multi_agents/jax/base.py",
+      "skrl/multi_agents/jax/ippo/ippo.py",
+      "skrl/multi_agents/jax/ippo/ippo_cfg.py",
+      "skrl/multi_agents/jax/mappo/mappo.py",
+      "skrl/multi_agents/jax/mappo/mappo_cfg.py",
+      "skrl/multi_agents/torch/base.py",
+      "skrl/multi_agents/torch/ippo/ippo.py",
+      "skrl/multi_agents/torch/ippo/ippo_cfg.py",
+      "skrl/multi_agents/torch/mappo/mappo.py",
+      "skrl/multi_agents/torch/mappo/mappo_cfg.py",
+      "skrl/resources/noises/jax/base.py",
+      "skrl/resources/noises/jax/gaussian.py",
+      "skrl/resources/noises/jax/ornstein_uhlenbeck.py",
+      "skrl/resources/noises/torch/base.py",
+      "skrl/resources/noises/torch/gaussian.py",
+      "skrl/resources/noises/torch/ornstein_uhlenbeck.py",
+      "skrl/resources/noises/warp/base.py",
+      "skrl/resources/noises/warp/gaussian.py",
+      "skrl/resources/noises/warp/ornstein_uhlenbeck.py",
+      "skrl/resources/optimizers/jax/adam.py",
+      "skrl/resources/preprocessors/jax/running_standard_scaler.py",
+      "skrl/resources/preprocessors/torch/running_standard_scaler.py",
+      "skrl/resources/preprocessors/warp/running_standard_scaler.py",
+      "skrl/utils/postprocessing.py",
+      "skrl/utils/distributed/jax/launcher.py",
+      "skrl/utils/model_instantiators/jax/categorical.py",
+      "skrl/utils/model_instantiators/jax/deterministic.py",
+      "skrl/utils/model_instantiators/jax/gaussian.py",
+      "skrl/utils/model_instantiators/jax/multicategorical.py",
+      "skrl/utils/model_instantiators/torch/categorical.py",
+      "skrl/utils/model_instantiators/torch/deterministic.py",
+      "skrl/utils/model_instantiators/torch/gaussian.py",
+      "skrl/utils/model_instantiators/torch/multicategorical.py",
+      "skrl/utils/model_instantiators/torch/multivariate_gaussian.py",
+      "skrl/utils/model_instantiators/torch/shared.py",
+      "skrl/utils/model_instantiators/torch/tabular.py",
+      "skrl/utils/model_instantiators/warp/deterministic.py",
+      "skrl/utils/model_instantiators/warp/gaussian.py",
+      "skrl/utils/model_instantiators/warp/shared.py",
+      "skrl/utils/runner/jax/runner.py",
+      "skrl/utils/runner/torch/runner.py",
+      "skrl/utils/runner/warp/runner.py",
+      "tests/utilities.py"
+    ],
+    "audit_files": [
+      "tests/utilities.py"
+    ],
+    "verdict": "has_audit_signal",
+    "evidence": [
+      "tests/utilities.py:55: assert k in default_config, f\"Key '{k}' not in default config\""
+    ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

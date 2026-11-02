@@ -1,0 +1,76 @@
+{
+  "name": "AgibotTech_agibot_x1_train",
+  "path": "repos/AgibotTech_agibot_x1_train",
+  "n_py": 27,
+  "C1_seed": {
+    "seed_flag_files": [
+      "humanoid/envs/base/legged_robot_config.py",
+      "humanoid/envs/x1/x1_dh_stand_config.py",
+      "humanoid/scripts/play.py",
+      "humanoid/utils/helpers.py"
+    ],
+    "routing": [
+      {
+        "file": "humanoid/utils/helpers.py",
+        "line": 147,
+        "base": "cfg_train"
+      }
+    ],
+    "set_seed_calls": [
+      {
+        "file": "humanoid/utils/helpers.py",
+        "line": 79,
+        "arg": "seed"
+      },
+      {
+        "file": "humanoid/utils/helpers.py",
+        "line": 81,
+        "arg": "seed"
+      },
+      {
+        "file": "humanoid/utils/task_registry.py",
+        "line": 94,
+        "arg": "env_cfg.seed"
+      }
+    ],
+    "verdict": "MISROUTED_seed_to_train_cfg",
+    "evidence": [
+      "humanoid/utils/helpers.py:147: cfg_train.seed = args.seed"
+    ]
+  },
+  "C2_eval": {
+    "play_files": [
+      "humanoid/scripts/play.py"
+    ],
+    "verdict": "partial",
+    "detail": [
+      {
+        "file": "humanoid/scripts/play.py",
+        "headless": false,
+        "num_envs_1": false,
+        "deterministic": false,
+        "noise_off": true,
+        "score": 1
+      }
+    ]
+  },
+  "C3_injection": {
+    "injection_files": [
+      "humanoid/algo/ppo/actor_critic_dh.py",
+      "humanoid/envs/base/legged_robot.py",
+      "humanoid/envs/base/legged_robot_config.py",
+      "humanoid/envs/x1/x1_dh_stand_config.py",
+      "humanoid/envs/x1/x1_dh_stand_env.py",
+      "humanoid/scripts/play.py",
+      "humanoid/scripts/sim2sim.py",
+      "humanoid/utils/helpers.py",
+      "humanoid/utils/logger.py",
+      "humanoid/utils/task_registry.py",
+      "humanoid/utils/terrain.py"
+    ],
+    "audit_files": [],
+    "verdict": "no_audit_signal",
+    "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

@@ -1,0 +1,7824 @@
+{
+  "name": "pytorch_rl",
+  "path": "repos/pytorch_rl",
+  "n_py": 914,
+  "C1_seed": {
+    "seed_flag_files": [
+      "benchmarks/bench_gru_reset_backends.py",
+      "benchmarks/ad_hoc/bench_rnn_reset_backends.py",
+      "examples/collectors/isaaclab_rnn_ppo_memory.py",
+      "examples/collectors/profile_isaaclab_collector.py",
+      "examples/collectors/profile_mujoco_playground_collector.py",
+      "examples/envs/benchmark_compile_step_and_maybe_reset.py",
+      "examples/menagerie/ppo.py",
+      "examples/microduck/ppo_mjlab.py",
+      "examples/mujoco_macros/cube_bowl_macros.py",
+      "examples/mujoco_macros/humanoid_macros.py",
+      "examples/mujoco_macros/satellite_macros.py",
+      "examples/multiagent/mappo_vmas.py",
+      "examples/replay-buffers/catframes-in-buffer.py",
+      "examples/replay-buffers/compressed_replay_buffer.py",
+      "examples/satellite/_utils.py",
+      "examples/satellite/sac_per.py",
+      "examples/satellite/sac_per_fully_async.py",
+      "sota-implementations/bandits/dqn.py",
+      "sota-implementations/cql/utils.py",
+      "sota-implementations/offline_to_online/train.py",
+      "sota-implementations/vla_grpo/compare_simplevla_rollouts.py",
+      "sota-implementations/vla_grpo/test_openvla.py",
+      "test/smoke_test_deps.py",
+      "test/test_collectors.py",
+      "test/test_configs.py",
+      "test/test_custom_envs.py",
+      "test/test_exploration.py",
+      "test/collectors/test_evaluator.py",
+      "test/envs/test_env_base.py",
+      "test/envs/test_model_based.py",
+      "test/envs/test_parallel.py",
+      "test/envs/test_special.py",
+      "test/envs/test_step_mdp.py",
+      "test/libs/test_datasets.py",
+      "test/libs/test_envpool.py",
+      "test/libs/test_gym.py",
+      "test/libs/test_misc.py",
+      "test/libs/test_mujoco.py",
+      "test/libs/test_multiagent.py",
+      "test/libs/test_vmas.py",
+      "test/llm/test_llm_envs.py",
+      "test/modules/test_actor.py",
+      "test/modules/test_dreamer_components.py",
+      "test/modules/test_mlp_conv.py",
+      "test/modules/test_planners.py",
+      "test/objectives/test_cql.py",
+      "test/objectives/test_ddpg.py",
+      "test/objectives/test_dqn.py",
+      "test/objectives/test_dreamer_v3.py",
+      "test/objectives/test_dt.py",
+      "test/objectives/test_iql.py",
+      "test/objectives/test_ppo.py",
+      "test/objectives/test_sac.py",
+      "test/rb/test_rb_core.py",
+      "test/transforms/test_action_transforms.py",
+      "test/transforms/test_normalization.py",
+      "test/transforms/test_observation_transforms.py",
+      "torchrl/collectors/_evaluator.py",
+      "torchrl/collectors/_multi_base.py",
+      "torchrl/collectors/_single.py",
+      "torchrl/data/map/hash.py",
+      "torchrl/envs/custom/vla.py",
+      "torchrl/envs/custom/mujoco/menagerie.py",
+      "torchrl/envs/custom/mujoco/microduck.py",
+      "torchrl/envs/libs/brax.py",
+      "torchrl/envs/libs/mujoco_playground.py",
+      "torchrl/envs/llm/datasets/countdown.py",
+      "torchrl/envs/llm/libs/mlgym.py",
+      "torchrl/modules/tensordict_module/actors.py",
+      "torchrl/render/cli.py",
+      "torchrl/trainers/algorithms/configs/modules.py",
+      "tutorials/sphinx-tutorials/microduck.py",
+      "tutorials/sphinx-tutorials/mujoco_cube_bowl_macros.py",
+      "tutorials/sphinx-tutorials/multiagent_competitive_ddpg.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": ".github/unittest/linux_sota/scripts/test_sota.py",
+        "line": 498,
+        "arg": "0"
+      },
+      {
+        "file": ".github/unittest/linux_sota/scripts/test_sota.py",
+        "line": 631,
+        "arg": "12"
+      },
+      {
+        "file": ".github/unittest/linux_sota/scripts/test_sota.py",
+        "line": 642,
+        "arg": "12"
+      },
+      {
+        "file": "benchmarks/bench_collectors.py",
+        "line": 151,
+        "arg": "seed"
+      },
+      {
+        "file": "benchmarks/bench_collectors.py",
+        "line": 259,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/bench_dreamer_v3_env.py",
+        "line": 60,
+        "arg": "<expr>"
+      },
+      {
+        "file": "benchmarks/bench_gru_reset_backends.py",
+        "line": 495,
+        "arg": "args.seed"
+      },
+      {
+        "file": "benchmarks/bench_gru_reset_backends.py",
+        "line": 510,
+        "arg": "args.seed"
+      },
+      {
+        "file": "benchmarks/bench_inference_server.py",
+        "line": 63,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_collectors_benchmark.py",
+        "line": 144,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_collectors_benchmark.py",
+        "line": 662,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_flow_benchmark.py",
+        "line": 61,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_non_tensor_env_benchmark.py",
+        "line": 54,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_objectives_benchmarks.py",
+        "line": 149,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_objectives_benchmarks.py",
+        "line": 91,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_replaybuffer_benchmark.py",
+        "line": 641,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_replaybuffer_benchmark.py",
+        "line": 715,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_replaybuffer_benchmark.py",
+        "line": 245,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_replaybuffer_benchmark.py",
+        "line": 270,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_rnn_reset_backends_benchmark.py",
+        "line": 155,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/test_rnn_reset_backends_benchmark.py",
+        "line": 342,
+        "arg": "reset_seed"
+      },
+      {
+        "file": "benchmarks/ad_hoc/bench_dreamer_v3_learner.py",
+        "line": 256,
+        "arg": "1"
+      },
+      {
+        "file": "benchmarks/ad_hoc/bench_dreamer_v3_learner.py",
+        "line": 282,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/ad_hoc/bench_dreamer_v3_learner.py",
+        "line": 296,
+        "arg": "<expr>(...)"
+      },
+      {
+        "file": "benchmarks/ad_hoc/bench_dreamer_v3_rssm.py",
+        "line": 130,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/ad_hoc/bench_inference_server_cudagraph.py",
+        "line": 161,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/ad_hoc/bench_inference_server_cudagraph.py",
+        "line": 165,
+        "arg": "0"
+      },
+      {
+        "file": "benchmarks/ad_hoc/bench_rnn_reset_backends.py",
+        "line": 373,
+        "arg": "args.seed"
+      },
+      {
+        "file": "benchmarks/ad_hoc/bench_rnn_reset_backends.py",
+        "line": 382,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/collectors/collector_device.py",
+        "line": 133,
+        "arg": "0"
+      },
+      {
+        "file": "examples/collectors/collector_device.py",
+        "line": 134,
+        "arg": "0"
+      },
+      {
+        "file": "examples/collectors/collector_device.py",
+        "line": 137,
+        "arg": "0"
+      },
+      {
+        "file": "examples/collectors/isaaclab_rnn_ppo_memory.py",
+        "line": 287,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/collectors/profile_isaaclab_collector.py",
+        "line": 181,
+        "arg": "args_cli.seed"
+      },
+      {
+        "file": "examples/collectors/profile_isaaclab_collector.py",
+        "line": 195,
+        "arg": "args_cli.seed"
+      },
+      {
+        "file": "examples/collectors/profile_mujoco_playground_collector.py",
+        "line": 355,
+        "arg": "args_cli.seed"
+      },
+      {
+        "file": "examples/collectors/profile_mujoco_playground_collector.py",
+        "line": 369,
+        "arg": "args_cli.seed"
+      },
+      {
+        "file": "examples/envs/benchmark_compile_step_and_maybe_reset.py",
+        "line": 157,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/microduck/heuristic_gait.py",
+        "line": 344,
+        "arg": "seed"
+      },
+      {
+        "file": "examples/microduck/ppo_mjlab.py",
+        "line": 374,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/microduck/ppo_mujoco.py",
+        "line": 1029,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "examples/mujoco_macros/satellite_macros.py",
+        "line": 163,
+        "arg": "int(...)"
+      },
+      {
+        "file": "examples/multiagent/mappo_vmas.py",
+        "line": 111,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/replay-buffers/catframes-in-buffer.py",
+        "line": 60,
+        "arg": "seed"
+      },
+      {
+        "file": "examples/replay-buffers/checkpoint.py",
+        "line": 23,
+        "arg": "0"
+      },
+      {
+        "file": "examples/replay-buffers/checkpoint.py",
+        "line": 24,
+        "arg": "0"
+      },
+      {
+        "file": "examples/replay-buffers/recurrent_slice_sampler_pipeline.py",
+        "line": 57,
+        "arg": "0"
+      },
+      {
+        "file": "examples/rlhf/utils.py",
+        "line": 248,
+        "arg": "1337"
+      },
+      {
+        "file": "examples/satellite/_utils.py",
+        "line": 166,
+        "arg": "seed"
+      },
+      {
+        "file": "examples/services/multi_service_utils.py",
+        "line": 32,
+        "arg": "0"
+      },
+      {
+        "file": "examples/services/multi_service_utils.py",
+        "line": 134,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/a2c/a2c_atari.py",
+        "line": 119,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/a2c/a2c_mujoco.py",
+        "line": 114,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/bandits/dqn.py",
+        "line": 39,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/bandits/dqn.py",
+        "line": 94,
+        "arg": "seed"
+      },
+      {
+        "file": "sota-implementations/cql/cql_offline.py",
+        "line": 56,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/cql/cql_online.py",
+        "line": 65,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/cql/discrete_cql_offline.py",
+        "line": 60,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/cql/discrete_cql_online.py",
+        "line": 65,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/cql/utils.py",
+        "line": 92,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/cql/utils.py",
+        "line": 105,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/cql/utils.py",
+        "line": 144,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/crossq/crossq.py",
+        "line": 68,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/crossq/utils.py",
+        "line": 74,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/crossq/utils.py",
+        "line": 114,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/ddpg/ddpg.py",
+        "line": 92,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/ddpg/utils.py",
+        "line": 88,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/ddpg/utils.py",
+        "line": 103,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/ddpg/utils.py",
+        "line": 137,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/decision_transformer/dt.py",
+        "line": 46,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/decision_transformer/online_dt.py",
+        "line": 44,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/diffusion_bc/diffusion_bc.py",
+        "line": 62,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/diffusion_bc/utils.py",
+        "line": 81,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/discrete_sac/discrete_sac.py",
+        "line": 69,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/discrete_sac/utils.py",
+        "line": 89,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/discrete_sac/utils.py",
+        "line": 144,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/dreamer/dreamer_isaac.py",
+        "line": 116,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/dreamer/dreamer_isaac.py",
+        "line": 245,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/dreamer/dreamer_utils.py",
+        "line": 604,
+        "arg": "<expr>"
+      },
+      {
+        "file": "sota-implementations/dreamer/dreamer_utils.py",
+        "line": 947,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/dreamer/dreamer_utils.py",
+        "line": 584,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/dreamer_v3/dreamer_v3_agent.py",
+        "line": 306,
+        "arg": "seed"
+      },
+      {
+        "file": "sota-implementations/dreamer_v3/train.py",
+        "line": 856,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/dreamer_v3/train.py",
+        "line": 950,
+        "arg": "stream_seed(...)"
+      },
+      {
+        "file": "sota-implementations/dreamer_v3/train.py",
+        "line": 730,
+        "arg": "stream_seed(...)"
+      },
+      {
+        "file": "sota-implementations/dreamer_v3/train.py",
+        "line": 1086,
+        "arg": "stream_seed(...)"
+      },
+      {
+        "file": "sota-implementations/fql/fql.py",
+        "line": 36,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/fql/utils.py",
+        "line": 126,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/fql/utils.py",
+        "line": 127,
+        "arg": "<expr>"
+      },
+      {
+        "file": "sota-implementations/gail/gail.py",
+        "line": 74,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/iql/discrete_iql.py",
+        "line": 68,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/iql/iql_offline.py",
+        "line": 60,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/iql/iql_online.py",
+        "line": 67,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/iql/utils.py",
+        "line": 99,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/iql/utils.py",
+        "line": 143,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/multiagent/iql.py",
+        "line": 39,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/multiagent/maddpg_iddpg.py",
+        "line": 44,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/multiagent/mappo_ippo.py",
+        "line": 40,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/multiagent/qmix_vdn.py",
+        "line": 39,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/multiagent/sac.py",
+        "line": 41,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/offline_to_online/train.py",
+        "line": 105,
+        "arg": "args.seed"
+      },
+      {
+        "file": "sota-implementations/offline_to_online/train.py",
+        "line": 110,
+        "arg": "args.seed"
+      },
+      {
+        "file": "sota-implementations/redq/utils.py",
+        "line": 407,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/redq/utils.py",
+        "line": 1036,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/reward_model_training/reward_model.py",
+        "line": 114,
+        "arg": "int(...)"
+      },
+      {
+        "file": "sota-implementations/reward_model_training/utils.py",
+        "line": 186,
+        "arg": "seed"
+      },
+      {
+        "file": "sota-implementations/sac/sac-async.py",
+        "line": 82,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/sac/sac.py",
+        "line": 90,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/sac/utils.py",
+        "line": 85,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/sac/utils.py",
+        "line": 114,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/sac/utils.py",
+        "line": 144,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/sac/utils.py",
+        "line": 180,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/td3/td3.py",
+        "line": 89,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/td3/utils.py",
+        "line": 87,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/td3/utils.py",
+        "line": 130,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/td3_bc/td3_bc.py",
+        "line": 58,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/td3_bc/utils.py",
+        "line": 83,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/tdmpc2_trainer/train.py",
+        "line": 19,
+        "arg": "seed"
+      },
+      {
+        "file": "sota-implementations/tqc/tqc.py",
+        "line": 56,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/tqc/utils.py",
+        "line": 87,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/tqc/utils.py",
+        "line": 121,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "sota-implementations/transitive_rl/transitive_rl.py",
+        "line": 51,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/transitive_rl/transitive_rl.py",
+        "line": 55,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/transitive_rl/utils.py",
+        "line": 125,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/compare_simplevla_rollouts.py",
+        "line": 232,
+        "arg": "seed"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/compare_simplevla_rollouts.py",
+        "line": 368,
+        "arg": "int(...)"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/test_openvla.py",
+        "line": 416,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/test_openvla.py",
+        "line": 1108,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/test_openvla.py",
+        "line": 1121,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/test_openvla.py",
+        "line": 1129,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/test_openvla.py",
+        "line": 1175,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/test_openvla.py",
+        "line": 1181,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/test_openvla.py",
+        "line": 1299,
+        "arg": "0"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/test_openvla.py",
+        "line": 167,
+        "arg": "1234"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/utils.py",
+        "line": 571,
+        "arg": "worker_seed"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/utils.py",
+        "line": 650,
+        "arg": "seed"
+      },
+      {
+        "file": "sota-implementations/vla_grpo/vla-grpo.py",
+        "line": 52,
+        "arg": "cfg.env.seed"
+      },
+      {
+        "file": "test/test_checkpoint.py",
+        "line": 737,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_checkpoint.py",
+        "line": 743,
+        "arg": "9"
+      },
+      {
+        "file": "test/test_checkpoint.py",
+        "line": 921,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_checkpoint.py",
+        "line": 941,
+        "arg": "1"
+      },
+      {
+        "file": "test/test_configs.py",
+        "line": 1632,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_configs.py",
+        "line": 1741,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_configs.py",
+        "line": 1786,
+        "arg": "1"
+      },
+      {
+        "file": "test/test_configs.py",
+        "line": 1788,
+        "arg": "1"
+      },
+      {
+        "file": "test/test_custom_envs.py",
+        "line": 36,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_custom_envs.py",
+        "line": 66,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_custom_envs.py",
+        "line": 104,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_custom_envs.py",
+        "line": 118,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_custom_envs.py",
+        "line": 150,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_custom_envs.py",
+        "line": 172,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_custom_envs.py",
+        "line": 216,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_custom_envs.py",
+        "line": 229,
+        "arg": "1"
+      },
+      {
+        "file": "test/test_custom_envs.py",
+        "line": 388,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributed.py",
+        "line": 244,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributed.py",
+        "line": 208,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributed.py",
+        "line": 1684,
+        "arg": "42"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 740,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 762,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 775,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 793,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 141,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 178,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 182,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 254,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 256,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 310,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 313,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 330,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 333,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 351,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 367,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 413,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 446,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 478,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 509,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 531,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 556,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 585,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 624,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 700,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 824,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 857,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 884,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 904,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 926,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 958,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 995,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1047,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1068,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1070,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1073,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1089,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1091,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1094,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1125,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1166,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1193,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1222,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1246,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1282,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1303,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1353,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1407,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1453,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1520,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1563,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1602,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1636,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1667,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1700,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1730,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1761,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1787,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1813,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1836,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1859,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1879,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1900,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1923,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1947,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 1982,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2013,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2047,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2063,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2108,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2151,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2202,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2220,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2238,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2272,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_distributions.py",
+        "line": 2306,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 674,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 735,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 812,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 72,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 100,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 139,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 150,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 176,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 201,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 222,
+        "arg": "seed"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 250,
+        "arg": "seed"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 311,
+        "arg": "seed"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 380,
+        "arg": "seed"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 453,
+        "arg": "seed"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 544,
+        "arg": "seed"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 595,
+        "arg": "seed"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 648,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 843,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 940,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1013,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1041,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1061,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1106,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1130,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1159,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1181,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1210,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1237,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1274,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_exploration.py",
+        "line": 1296,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_helpers.py",
+        "line": 324,
+        "arg": "1"
+      },
+      {
+        "file": "test/test_helpers.py",
+        "line": 350,
+        "arg": "1"
+      },
+      {
+        "file": "test/test_helpers.py",
+        "line": 291,
+        "arg": "1"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 992,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 232,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 256,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 300,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 388,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 412,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 482,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 491,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 711,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 766,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 819,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 1070,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 1131,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 1153,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_loggers.py",
+        "line": 1185,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_offline_to_online.py",
+        "line": 707,
+        "arg": "23"
+      },
+      {
+        "file": "test/test_offline_to_online.py",
+        "line": 896,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_postprocs.py",
+        "line": 26,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_shared.py",
+        "line": 52,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_shared.py",
+        "line": 127,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 60,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 85,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 113,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 133,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 184,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 214,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 242,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 293,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 509,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 892,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 1442,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 1458,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 1480,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 1494,
+        "arg": "1"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 1509,
+        "arg": "1"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 1516,
+        "arg": "42"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 1580,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 1588,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 1608,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 2961,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_specs.py",
+        "line": 4003,
+        "arg": "0"
+      },
+      {
+        "file": "test/test_utils.py",
+        "line": 693,
+        "arg": "10"
+      },
+      {
+        "file": "test/test_utils.py",
+        "line": 698,
+        "arg": "10"
+      },
+      {
+        "file": "test/collectors/test_evaluator.py",
+        "line": 1612,
+        "arg": "0"
+      },
+      {
+        "file": "test/collectors/test_evaluator.py",
+        "line": 1618,
+        "arg": "0"
+      },
+      {
+        "file": "test/data/test_vla.py",
+        "line": 400,
+        "arg": "0"
+      },
+      {
+        "file": "test/data/test_vla.py",
+        "line": 415,
+        "arg": "1"
+      },
+      {
+        "file": "test/data/test_vla.py",
+        "line": 432,
+        "arg": "0"
+      },
+      {
+        "file": "test/data/test_vla.py",
+        "line": 482,
+        "arg": "<expr>"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 477,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 592,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 593,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 610,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 611,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 803,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 827,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 852,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 538,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 539,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 562,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 563,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_auto_reset.py",
+        "line": 678,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 340,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 343,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 345,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 445,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 446,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 453,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 454,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 471,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 475,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 483,
+        "arg": ""
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 551,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 553,
+        "arg": "1"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 587,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 589,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 593,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 595,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 602,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 603,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 606,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 607,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 737,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 739,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 744,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 746,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 753,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 754,
+        "arg": "<expr>"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 802,
+        "arg": "100"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 852,
+        "arg": "100"
+      },
+      {
+        "file": "test/envs/test_env_base.py",
+        "line": 353,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_model_based.py",
+        "line": 45,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_model_based.py",
+        "line": 69,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_nested.py",
+        "line": 318,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_nested.py",
+        "line": 338,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1091,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1133,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1134,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1143,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1144,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1277,
+        "arg": "1"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 606,
+        "arg": "1"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 642,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 643,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 656,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 657,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 885,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 889,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 899,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 904,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1180,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1181,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1183,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1184,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1190,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1191,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1193,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1194,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1200,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1201,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1203,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1204,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1282,
+        "arg": "1"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1347,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1258,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_parallel.py",
+        "line": 1219,
+        "arg": "seed"
+      },
+      {
+        "file": "test/envs/test_special.py",
+        "line": 370,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_special.py",
+        "line": 372,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_special.py",
+        "line": 374,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_special.py",
+        "line": 376,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_special.py",
+        "line": 378,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_special.py",
+        "line": 380,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_special.py",
+        "line": 393,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_special.py",
+        "line": 419,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_special.py",
+        "line": 230,
+        "arg": "100"
+      },
+      {
+        "file": "test/envs/test_step_mdp.py",
+        "line": 58,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_step_mdp.py",
+        "line": 161,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_step_mdp.py",
+        "line": 679,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_step_mdp.py",
+        "line": 680,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_step_mdp.py",
+        "line": 682,
+        "arg": "0"
+      },
+      {
+        "file": "test/envs/test_step_mdp.py",
+        "line": 683,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 61,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 62,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 71,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 72,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 102,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 113,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 131,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 134,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 152,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 195,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 268,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 88,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 171,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 246,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 289,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_brax.py",
+        "line": 90,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_datasets.py",
+        "line": 1349,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_datasets.py",
+        "line": 1815,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_datasets.py",
+        "line": 1844,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_datasets.py",
+        "line": 1976,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_datasets.py",
+        "line": 2152,
+        "arg": "dataset_seed"
+      },
+      {
+        "file": "test/libs/test_datasets.py",
+        "line": 734,
+        "arg": "seed"
+      },
+      {
+        "file": "test/libs/test_dm_control.py",
+        "line": 85,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_dm_control.py",
+        "line": 87,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_dm_control.py",
+        "line": 109,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_dm_control.py",
+        "line": 111,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_dm_control.py",
+        "line": 136,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_dm_control.py",
+        "line": 196,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_dm_control.py",
+        "line": 204,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_dm_control.py",
+        "line": 59,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_dm_control.py",
+        "line": 61,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_envpool.py",
+        "line": 86,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_envpool.py",
+        "line": 242,
+        "arg": "seed"
+      },
+      {
+        "file": "test/libs/test_envpool.py",
+        "line": 243,
+        "arg": "seed"
+      },
+      {
+        "file": "test/libs/test_envpool.py",
+        "line": 255,
+        "arg": "seed"
+      },
+      {
+        "file": "test/libs/test_envpool.py",
+        "line": 256,
+        "arg": "seed"
+      },
+      {
+        "file": "test/libs/test_envpool.py",
+        "line": 348,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_envpool.py",
+        "line": 269,
+        "arg": ""
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 804,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 806,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1398,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1400,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1409,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1423,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1425,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1434,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1455,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1457,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1466,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1593,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1602,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1847,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 758,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1857,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 760,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1153,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1241,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1680,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1681,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1688,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1689,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1694,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1695,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_gym.py",
+        "line": 1258,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_habitat.py",
+        "line": 70,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_habitat.py",
+        "line": 84,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_isaac.py",
+        "line": 109,
+        "arg": "<expr>"
+      },
+      {
+        "file": "test/libs/test_isaac.py",
+        "line": 117,
+        "arg": "seed"
+      },
+      {
+        "file": "test/libs/test_isaac.py",
+        "line": 118,
+        "arg": "seed"
+      },
+      {
+        "file": "test/libs/test_jumanji.py",
+        "line": 53,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_jumanji.py",
+        "line": 64,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_jumanji.py",
+        "line": 74,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_jumanji.py",
+        "line": 77,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_jumanji.py",
+        "line": 111,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_jumanji.py",
+        "line": 128,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_jumanji.py",
+        "line": 130,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_jumanji.py",
+        "line": 38,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_jumanji.py",
+        "line": 40,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_libero.py",
+        "line": 126,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_libero.py",
+        "line": 212,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_misc.py",
+        "line": 242,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_misc.py",
+        "line": 246,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mjlab.py",
+        "line": 169,
+        "arg": "123"
+      },
+      {
+        "file": "test/libs/test_mujoco.py",
+        "line": 879,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco.py",
+        "line": 1719,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 97,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 110,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 111,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 113,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 114,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 146,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 160,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 218,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 231,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 257,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 325,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 339,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 360,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 369,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 378,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 385,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 395,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 494,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 517,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 528,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 556,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 572,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 579,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 655,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 669,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 705,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 755,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 770,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 129,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 178,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 208,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 607,
+        "arg": "42"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 608,
+        "arg": "42"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 847,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_mujoco_playground.py",
+        "line": 131,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_safety_gymnasium.py",
+        "line": 35,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_safety_gymnasium.py",
+        "line": 46,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 32,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 113,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 121,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 214,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 249,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 292,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 320,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 391,
+        "arg": "1"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 181,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 223,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 258,
+        "arg": "0"
+      },
+      {
+        "file": "test/libs/test_vmas.py",
+        "line": 63,
+        "arg": "0"
+      },
+      {
+        "file": "test/llm/test_llm_collectors.py",
+        "line": 247,
+        "arg": "0"
+      },
+      {
+        "file": "test/llm/test_llm_collectors.py",
+        "line": 354,
+        "arg": "0"
+      },
+      {
+        "file": "test/llm/test_llm_envs.py",
+        "line": 74,
+        "arg": "seed"
+      },
+      {
+        "file": "test/llm/test_llm_envs.py",
+        "line": 76,
+        "arg": "seed"
+      },
+      {
+        "file": "test/llm/test_llm_envs.py",
+        "line": 490,
+        "arg": "0"
+      },
+      {
+        "file": "test/llm/test_llm_objectives.py",
+        "line": 1260,
+        "arg": "0"
+      },
+      {
+        "file": "test/llm/test_wrapper.py",
+        "line": 75,
+        "arg": "0"
+      },
+      {
+        "file": "test/llm/test_wrapper.py",
+        "line": 77,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 74,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 317,
+        "arg": "seed"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 442,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 242,
+        "arg": "999"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 258,
+        "arg": "1234"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 301,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 303,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 368,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 566,
+        "arg": "17"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 568,
+        "arg": "17"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 577,
+        "arg": "18"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 579,
+        "arg": "18"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 589,
+        "arg": "17"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 1539,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 70,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 239,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 240,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 257,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 265,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 292,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 294,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_actor.py",
+        "line": 250,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 1318,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 1383,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 1448,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 1502,
+        "arg": "2"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 177,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 186,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 254,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 302,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 416,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 418,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 703,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 736,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 790,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 886,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 912,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 951,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 953,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 1146,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 1152,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 1154,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 381,
+        "arg": "17"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 384,
+        "arg": "17"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 395,
+        "arg": "23"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 397,
+        "arg": "23"
+      },
+      {
+        "file": "test/modules/test_dreamer_components.py",
+        "line": 1093,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_mlp_conv.py",
+        "line": 202,
+        "arg": "seed"
+      },
+      {
+        "file": "test/modules/test_mlp_conv.py",
+        "line": 60,
+        "arg": "seed"
+      },
+      {
+        "file": "test/modules/test_mlp_conv.py",
+        "line": 278,
+        "arg": "seed"
+      },
+      {
+        "file": "test/modules/test_mlp_conv.py",
+        "line": 338,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 63,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 138,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 199,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 252,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 282,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 325,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 495,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 546,
+        "arg": "42"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 602,
+        "arg": "42"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 626,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_multiagent_models.py",
+        "line": 640,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_planners.py",
+        "line": 239,
+        "arg": "seed"
+      },
+      {
+        "file": "test/modules/test_planners.py",
+        "line": 261,
+        "arg": "seed"
+      },
+      {
+        "file": "test/modules/test_planners.py",
+        "line": 485,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_planners.py",
+        "line": 487,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_planners.py",
+        "line": 423,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_planners.py",
+        "line": 426,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_planners.py",
+        "line": 435,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_qvalue_actor.py",
+        "line": 606,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_qvalue_actor.py",
+        "line": 674,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_qvalue_actor.py",
+        "line": 485,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2207,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3501,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 620,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 728,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 788,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 839,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 876,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 961,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1034,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1115,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1182,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1294,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1405,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1477,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1544,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1626,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1697,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1729,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1765,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1868,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1912,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1966,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2019,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2112,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2228,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2617,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2728,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2786,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2820,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2855,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2928,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 2992,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3060,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3122,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3210,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3287,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3343,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3390,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3454,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 4099,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 4165,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1071,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1073,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1246,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1250,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1458,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 1460,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3024,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3026,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3166,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3168,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3325,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_rnn.py",
+        "line": 3327,
+        "arg": "1"
+      },
+      {
+        "file": "test/modules/test_td_module.py",
+        "line": 104,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_td_module.py",
+        "line": 160,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_td_module.py",
+        "line": 245,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_td_module.py",
+        "line": 321,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_td_module.py",
+        "line": 436,
+        "arg": "0"
+      },
+      {
+        "file": "test/modules/test_transformer.py",
+        "line": 142,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_act.py",
+        "line": 94,
+        "arg": "42"
+      },
+      {
+        "file": "test/objectives/test_act.py",
+        "line": 171,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_act.py",
+        "line": 311,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_bc.py",
+        "line": 199,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_bc.py",
+        "line": 220,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 152,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 184,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 365,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 371,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 403,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 456,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 507,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 542,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 572,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 599,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 696,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 868,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 921,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 935,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 999,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 1039,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 1121,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 399,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 435,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_cql.py",
+        "line": 609,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 240,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 353,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 380,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 496,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 590,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 622,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 663,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 699,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1012,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1127,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1137,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1171,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1222,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1265,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1344,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1363,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1528,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1580,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1936,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2052,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2097,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2185,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2205,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2370,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2422,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1168,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1201,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1378,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1555,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1557,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 1564,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2220,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2397,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2399,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ddpg.py",
+        "line": 2406,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_diffusion_bc.py",
+        "line": 201,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 248,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 346,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 360,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 427,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 470,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 508,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 570,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 653,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 678,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 710,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 739,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 860,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 888,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 948,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 1161,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 1228,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 1243,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 1323,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 1371,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 1419,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dqn.py",
+        "line": 1597,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 2604,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 532,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1332,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1452,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1785,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1854,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1856,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1870,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1872,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1360,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1396,
+        "arg": "seed"
+      },
+      {
+        "file": "test/objectives/test_dreamer_v3.py",
+        "line": 1398,
+        "arg": "seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 93,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 140,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 152,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 163,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 224,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 232,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 234,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 244,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 259,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 355,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 381,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 413,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 424,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 456,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 568,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 603,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 635,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 648,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_dt.py",
+        "line": 682,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_fql.py",
+        "line": 111,
+        "arg": "7"
+      },
+      {
+        "file": "test/objectives/test_fql.py",
+        "line": 137,
+        "arg": "7"
+      },
+      {
+        "file": "test/objectives/test_fql.py",
+        "line": 139,
+        "arg": "7"
+      },
+      {
+        "file": "test/objectives/test_fql.py",
+        "line": 212,
+        "arg": "7"
+      },
+      {
+        "file": "test/objectives/test_fql.py",
+        "line": 266,
+        "arg": "7"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 297,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 433,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 440,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 468,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 512,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 545,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 718,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 740,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 871,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 934,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 1213,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 1348,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 1379,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 1553,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 1576,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 1708,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 1775,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 465,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 752,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 918,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 1587,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 1759,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_iql.py",
+        "line": 497,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_loss_module.py",
+        "line": 183,
+        "arg": "100"
+      },
+      {
+        "file": "test/objectives/test_loss_module.py",
+        "line": 962,
+        "arg": "42"
+      },
+      {
+        "file": "test/objectives/test_loss_module.py",
+        "line": 1009,
+        "arg": "42"
+      },
+      {
+        "file": "test/objectives/test_loss_module.py",
+        "line": 1143,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 80,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 268,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 281,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 291,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 309,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 318,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 328,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 479,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 543,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 568,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_mappo.py",
+        "line": 589,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 447,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 549,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 641,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 667,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 775,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 886,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1040,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1162,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1208,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1213,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1224,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1244,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1292,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1357,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1383,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1385,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1425,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1524,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1592,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1637,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 1959,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2005,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2029,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2043,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2059,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2467,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2572,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2585,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2659,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2790,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2909,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2951,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 2968,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 3008,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 3065,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 3387,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 3466,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 3511,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 3526,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 3547,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 3597,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_ppo.py",
+        "line": 3631,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 355,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 406,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 594,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 616,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 639,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 645,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 667,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 697,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 758,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 863,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 910,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1101,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1147,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1153,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1172,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1194,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1229,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1294,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1318,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1339,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1360,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1415,
+        "arg": "42"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1696,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1817,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1827,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1859,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1907,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1945,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1978,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2004,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2150,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2223,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2255,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2274,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2512,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2616,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2620,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2647,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2683,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2711,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2798,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2816,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2930,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2938,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2940,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2945,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2947,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2960,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3001,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3004,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3016,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3077,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3093,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3108,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3383,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3492,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3517,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3532,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3620,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3710,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3774,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3821,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3842,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3864,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 4006,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 4060,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 4103,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 4170,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1855,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2015,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2201,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2642,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2824,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3830,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 4066,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 4086,
+        "arg": "self.seed"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 921,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 1890,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 2672,
+        "arg": "1"
+      },
+      {
+        "file": "test/objectives/test_sac.py",
+        "line": 3877,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_tqc.py",
+        "line": 108,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_tqc.py",
+        "line": 168,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_tqc.py",
+        "line": 171,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_transitive_q.py",
+        "line": 184,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_transitive_q.py",
+        "line": 242,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_transitive_q.py",
+        "line": 245,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 114,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 252,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 329,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 381,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 424,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 512,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 513,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 581,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 734,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 750,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 790,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 853,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 910,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1006,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1044,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1083,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1124,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1250,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1316,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1320,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1477,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1557,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1674,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1714,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1828,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1874,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 1939,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2045,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2083,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2177,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2256,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2337,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2407,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2480,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2550,
+        "arg": "seed"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2630,
+        "arg": "seed"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2705,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2740,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2848,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2890,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 2993,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_values.py",
+        "line": 3139,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_vla.py",
+        "line": 107,
+        "arg": "0"
+      },
+      {
+        "file": "test/objectives/test_vla.py",
+        "line": 148,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_composable.py",
+        "line": 156,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_composable.py",
+        "line": 178,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_composable.py",
+        "line": 267,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_composable.py",
+        "line": 430,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_composable.py",
+        "line": 503,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 499,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 647,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 728,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 731,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 735,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 739,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 743,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 753,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 757,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 761,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 930,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 932,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 1034,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 1035,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 1073,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 1074,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_ensemble.py",
+        "line": 257,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_her.py",
+        "line": 30,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_prioritized.py",
+        "line": 36,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_prioritized.py",
+        "line": 403,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1236,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1262,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1278,
+        "arg": "seed"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 459,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 489,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 503,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 523,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 554,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 588,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 817,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 839,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 857,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 877,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1020,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1039,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1110,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1133,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1147,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1164,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 3974,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 4677,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 4702,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 4722,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 762,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1368,
+        "arg": "seed"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1431,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 2157,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 4460,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 4751,
+        "arg": "global_seed"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 246,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 263,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 1761,
+        "arg": "seed"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 2981,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 4530,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 4750,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 4409,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_core.py",
+        "line": 4464,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_rb_transforms.py",
+        "line": 334,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 67,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 101,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 228,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 308,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 355,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 705,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 767,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 857,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 909,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 935,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 962,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1010,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1042,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1064,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1085,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1108,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1165,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1174,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1189,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1212,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1221,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1256,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1276,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1318,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1350,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1373,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1402,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1455,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1479,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1502,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1559,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1610,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1681,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 1754,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2101,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2321,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2336,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2731,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2748,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2761,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2778,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2798,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2832,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2894,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2911,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2991,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 3020,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 3031,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 3081,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 3455,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 501,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 668,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2429,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_samplers.py",
+        "line": 2485,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_storage_map.py",
+        "line": 66,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_storage_map.py",
+        "line": 228,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_storage_map.py",
+        "line": 230,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_storages.py",
+        "line": 539,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_storages.py",
+        "line": 545,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_storages.py",
+        "line": 778,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_writers.py",
+        "line": 45,
+        "arg": "0"
+      },
+      {
+        "file": "test/rb/test_writers.py",
+        "line": 179,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 904,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 1941,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 2029,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 2358,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 2649,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 2848,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 2857,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 2869,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 2882,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_action_transforms.py",
+        "line": 3490,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_clip_transform.py",
+        "line": 35,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 520,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 621,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1057,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1071,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1072,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1091,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1092,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1111,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1112,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1684,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1731,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1732,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1742,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1743,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_compose_and_env.py",
+        "line": 1689,
+        "arg": "100"
+      },
+      {
+        "file": "test/transforms/test_encoder_transforms.py",
+        "line": 929,
+        "arg": "1"
+      },
+      {
+        "file": "test/transforms/test_encoder_transforms.py",
+        "line": 988,
+        "arg": "1"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 118,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 119,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 128,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 129,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 263,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 336,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 554,
+        "arg": "seed"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 669,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 708,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 725,
+        "arg": "42"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 747,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 766,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 801,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 827,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 851,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 902,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1012,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1019,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1052,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1387,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1400,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1401,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1448,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1461,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1462,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1508,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1625,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1627,
+        "arg": "100"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1644,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1646,
+        "arg": "100"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1663,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1665,
+        "arg": "100"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1890,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1925,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 1969,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 2005,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 2046,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 2059,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 2172,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 2173,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 2183,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_env_transforms.py",
+        "line": 2184,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_key_transforms.py",
+        "line": 1005,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_key_transforms.py",
+        "line": 1550,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 127,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 129,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 206,
+        "arg": "<expr>"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 421,
+        "arg": "self.SEED"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 457,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 770,
+        "arg": "<expr>"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 995,
+        "arg": "self.SEED"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 1008,
+        "arg": "self.SEED"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 1040,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 149,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 151,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_normalization.py",
+        "line": 434,
+        "arg": "self.SEED"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 85,
+        "arg": "<expr>"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 145,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 146,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 149,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 150,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 228,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 229,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 241,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 242,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 340,
+        "arg": "10"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 341,
+        "arg": "10"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 344,
+        "arg": "10"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 345,
+        "arg": "10"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 545,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 562,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 885,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 916,
+        "arg": "1"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 938,
+        "arg": "2"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 964,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1001,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1027,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1064,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1173,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1210,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1236,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1273,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1447,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1491,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1584,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 1621,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2057,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2082,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2302,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2343,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2473,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2519,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2820,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2821,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2835,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 2836,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 3169,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 3236,
+        "arg": "1"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 3259,
+        "arg": "2"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 3276,
+        "arg": "3"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 3295,
+        "arg": "4"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 3322,
+        "arg": "5"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 3333,
+        "arg": "6"
+      },
+      {
+        "file": "test/transforms/test_observation_transforms.py",
+        "line": 3431,
+        "arg": "7"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 127,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 151,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 178,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 202,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 323,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 445,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 446,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 448,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 449,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 563,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 681,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 682,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 684,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 685,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 699,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 700,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 706,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 707,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 751,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 857,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 886,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 908,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 935,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 1015,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 1020,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 1048,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 1054,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_reward_transforms.py",
+        "line": 1561,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 694,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 763,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 852,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 1020,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 1064,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 1181,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 1297,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 1359,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 316,
+        "arg": "123"
+      },
+      {
+        "file": "test/transforms/test_tensor_transforms.py",
+        "line": 319,
+        "arg": "123"
+      },
+      {
+        "file": "test/transforms/test_timer_video.py",
+        "line": 91,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_timer_video.py",
+        "line": 97,
+        "arg": "0"
+      },
+      {
+        "file": "test/transforms/test_timer_video.py",
+        "line": 123,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/_utils.py",
+        "line": 1142,
+        "arg": "self.seed"
+      },
+      {
+        "file": "torchrl/collectors/_evaluator.py",
+        "line": 1525,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/collectors/_evaluator.py",
+        "line": 1526,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/collectors/_multi_async.py",
+        "line": 166,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/collectors/_multi_sync.py",
+        "line": 172,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/collectors/_runner.py",
+        "line": 461,
+        "arg": "data_in"
+      },
+      {
+        "file": "torchrl/collectors/_runner.py",
+        "line": 462,
+        "arg": "data_in"
+      },
+      {
+        "file": "torchrl/collectors/_single.py",
+        "line": 1781,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/collectors/_single_async.py",
+        "line": 250,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/collectors/distributed/generic.py",
+        "line": 344,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/data/datasets/huggingface.py",
+        "line": 409,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/data/datasets/lerobot_adapter.py",
+        "line": 297,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/data/replay_buffers/dataloader.py",
+        "line": 294,
+        "arg": "worker.seed"
+      },
+      {
+        "file": "torchrl/envs/batched_envs.py",
+        "line": 1627,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/batched_envs.py",
+        "line": 3351,
+        "arg": "<expr>"
+      },
+      {
+        "file": "torchrl/envs/batched_envs.py",
+        "line": 3495,
+        "arg": "<expr>"
+      },
+      {
+        "file": "torchrl/envs/batched_envs.py",
+        "line": 3496,
+        "arg": "<expr>"
+      },
+      {
+        "file": "torchrl/envs/batched_envs.py",
+        "line": 3824,
+        "arg": "<expr>"
+      },
+      {
+        "file": "torchrl/envs/utils.py",
+        "line": 750,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/custom/pendulum.py",
+        "line": 234,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/custom/pendulum.py",
+        "line": 383,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/custom/trading.py",
+        "line": 339,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/custom/trading.py",
+        "line": 131,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/envs/custom/trading.py",
+        "line": 133,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/custom/vla.py",
+        "line": 428,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/custom/mujoco/base.py",
+        "line": 332,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/custom/mujoco/base.py",
+        "line": 887,
+        "arg": "int(...)"
+      },
+      {
+        "file": "torchrl/envs/custom/mujoco/microduck.py",
+        "line": 2341,
+        "arg": "int(...)"
+      },
+      {
+        "file": "torchrl/envs/libs/_gym_utils.py",
+        "line": 53,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/libs/_gym_utils.py",
+        "line": 193,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/libs/_gym_utils.py",
+        "line": 217,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/libs/brax.py",
+        "line": 297,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/envs/libs/brax.py",
+        "line": 338,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/envs/libs/brax.py",
+        "line": 355,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/libs/brax.py",
+        "line": 366,
+        "arg": "int(...)"
+      },
+      {
+        "file": "torchrl/envs/libs/dm_control.py",
+        "line": 327,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/libs/genesis.py",
+        "line": 441,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/libs/jumanji.py",
+        "line": 451,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/envs/libs/jumanji.py",
+        "line": 460,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/envs/libs/jumanji.py",
+        "line": 541,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/libs/libero.py",
+        "line": 490,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/libs/mujoco_playground.py",
+        "line": 751,
+        "arg": "int(...)"
+      },
+      {
+        "file": "torchrl/envs/libs/mujoco_playground.py",
+        "line": 868,
+        "arg": "int(...)"
+      },
+      {
+        "file": "torchrl/envs/libs/openml.py",
+        "line": 153,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/libs/procgen.py",
+        "line": 189,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/llm/chat.py",
+        "line": 763,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/llm/datasets/gsm8k.py",
+        "line": 105,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/envs/transforms/_base.py",
+        "line": 1406,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/modules/tensordict_module/actors.py",
+        "line": 750,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/modules/tensordict_module/actors.py",
+        "line": 753,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/render/env.py",
+        "line": 89,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/testing/env_creators.py",
+        "line": 59,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/testing/env_creators.py",
+        "line": 157,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/testing/env_helper.py",
+        "line": 79,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/testing/mocking_classes.py",
+        "line": 129,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/testing/mocking_classes.py",
+        "line": 1214,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/testing/mocking_classes.py",
+        "line": 1404,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/testing/mocking_classes.py",
+        "line": 1737,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/testing/mocking_classes.py",
+        "line": 1955,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/testing/mocking_classes.py",
+        "line": 2190,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/testing/mocking_classes.py",
+        "line": 2485,
+        "arg": "0"
+      },
+      {
+        "file": "torchrl/testing/mocking_classes.py",
+        "line": 2876,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/trainers/_ray_execution.py",
+        "line": 83,
+        "arg": "rank_seed"
+      },
+      {
+        "file": "torchrl/trainers/trainers.py",
+        "line": 1407,
+        "arg": "self.seed"
+      },
+      {
+        "file": "torchrl/trainers/trainers.py",
+        "line": 1408,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/trainers/trainers.py",
+        "line": 733,
+        "arg": ""
+      },
+      {
+        "file": "torchrl/trainers/algorithms/offline_to_online.py",
+        "line": 222,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/trainers/algorithms/offline_to_online.py",
+        "line": 211,
+        "arg": "seed"
+      },
+      {
+        "file": "torchrl/trainers/helpers/collectors.py",
+        "line": 311,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "torchrl/trainers/helpers/collectors.py",
+        "line": 363,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/collector_trajectory_assembly.py",
+        "line": 42,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/collector_trajectory_assembly.py",
+        "line": 58,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/export.py",
+        "line": 84,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/export.py",
+        "line": 92,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/getting-started-3.py",
+        "line": 66,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/getting-started-3.py",
+        "line": 69,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/getting-started-5.py",
+        "line": 41,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/getting-started-5.py",
+        "line": 48,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/low_level_controller.py",
+        "line": 40,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/memory_efficient_rl.py",
+        "line": 64,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/multiagent_competitive_ddpg.py",
+        "line": 159,
+        "arg": "seed"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/multiagent_ppo.py",
+        "line": 140,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/pendulum.py",
+        "line": 865,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/pendulum.py",
+        "line": 866,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/pendulum.py",
+        "line": 508,
+        "arg": "seed"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/pendulum.py",
+        "line": 575,
+        "arg": "seed"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/recurrent_sequence_training.py",
+        "line": 112,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/torchrl_demo.py",
+        "line": 441,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/torchrl_envs.py",
+        "line": 133,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/torchrl_envs.py",
+        "line": 134,
+        "arg": "0"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/torchrl_envs.py",
+        "line": 545,
+        "arg": "10"
+      },
+      {
+        "file": "tutorials/sphinx-tutorials/vla.py",
+        "line": 139,
+        "arg": "0"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      ".github/scripts/analyze_flaky_tests.py",
+      ".github/scripts/check_tutorial_time_budget.py",
+      ".github/scripts/collect_nightly_status.py",
+      ".github/scripts/compare_pr_benchmarks.py",
+      ".github/scripts/generate_dashboard.py",
+      ".github/scripts/track_ci_timing.py",
+      ".github/torchrlbot/torchrlbot.py",
+      ".github/unittest/examples/scripts/test_examples.py",
+      ".github/unittest/linux/scripts/run-clang-format.py",
+      ".github/unittest/linux_sota/scripts/test_sota.py",
+      "benchmarks/bench_collectors.py",
+      "benchmarks/bench_gru_reset_backends.py",
+      "benchmarks/bench_inference_server.py",
+      "benchmarks/bench_rnn_backward.py",
+      "benchmarks/bench_rnn_recompute_memory.py",
+      "benchmarks/benchmark_parallel_env_startup.py",
+      "benchmarks/conftest.py",
+      "benchmarks/test_collectors_benchmark.py",
+      "benchmarks/test_envs_benchmark.py",
+      "benchmarks/test_flow_benchmark.py",
+      "benchmarks/test_objectives_benchmarks.py",
+      "benchmarks/test_replaybuffer_benchmark.py",
+      "benchmarks/test_rnn_reset_backends_benchmark.py",
+      "benchmarks/ad_hoc/bench_dreamer_v3_learner.py",
+      "benchmarks/ad_hoc/bench_dreamer_v3_rssm.py",
+      "benchmarks/ad_hoc/bench_inference_server_cudagraph.py",
+      "benchmarks/ad_hoc/bench_rnn_reset_backends.py",
+      "benchmarks/ecosystem/vmas_rllib_vs_torchrl_sampling_performance.py",
+      "benchmarks/storage/benchmark_sample_latency_over_rpc.py",
+      "docs/source/conf.py",
+      "examples/agents/composite_ppo.py",
+      "examples/collectors/async_batched_collector.py",
+      "examples/collectors/collector_device.py",
+      "examples/collectors/isaaclab_rnn_ppo_memory.py",
+      "examples/collectors/isaaclab_rnn_ppo_memory_utils.py",
+      "examples/collectors/multi_weight_updates.py",
+      "examples/collectors/profile_isaaclab_collector.py",
+      "examples/collectors/profile_mujoco_playground_collector.py",
+      "examples/distributed/collectors/multi_nodes/delayed_dist.py",
+      "examples/distributed/collectors/multi_nodes/delayed_rpc.py",
+      "examples/distributed/collectors/multi_nodes/generic.py",
+      "examples/distributed/collectors/multi_nodes/ray_train.py",
+      "examples/distributed/collectors/multi_nodes/rpc.py",
+      "examples/distributed/collectors/multi_nodes/sync.py",
+      "examples/distributed/collectors/single_machine/generic.py",
+      "examples/distributed/collectors/single_machine/rpc.py",
+      "examples/distributed/collectors/single_machine/sync.py",
+      "examples/distributed/replay_buffers/distributed_replay_buffer.py",
+      "examples/envs/benchmark_compile_step_and_maybe_reset.py",
+      "examples/llm/tool_service_example.py",
+      "examples/memmap/memmap_speed_distributed.py",
+      "examples/memmap/memmap_td_distributed.py",
+      "examples/menagerie/ppo.py",
+      "examples/microduck/heuristic_gait.py",
+      "examples/microduck/ppo_mjlab.py",
+      "examples/microduck/ppo_mujoco.py",
+      "examples/mujoco_macros/_viewer.py",
+      "examples/mujoco_macros/cube_bowl_macros.py",
+      "examples/mujoco_macros/humanoid_macros.py",
+      "examples/mujoco_macros/satellite_macros.py",
+      "examples/multiagent/mappo_vmas.py",
+      "examples/replay-buffers/recurrent_slice_sampler_pipeline.py",
+      "examples/satellite/_utils.py",
+      "examples/satellite/sac_per.py",
+      "examples/satellite/sac_per_fully_async.py",
+      "examples/services/multi_service_multiprocess.py",
+      "examples/services/multi_service_ray.py",
+      "examples/services/multi_service_single_process.py",
+      "sota-implementations/a2c/a2c_atari.py",
+      "sota-implementations/a2c/a2c_mujoco.py",
+      "sota-implementations/a2c/utils_atari.py",
+      "sota-implementations/a2c/utils_mujoco.py",
+      "sota-implementations/bandits/dqn.py",
+      "sota-implementations/cql/cql_offline.py",
+      "sota-implementations/cql/cql_online.py",
+      "sota-implementations/cql/discrete_cql_offline.py",
+      "sota-implementations/cql/discrete_cql_online.py",
+      "sota-implementations/cql/utils.py",
+      "sota-implementations/crossq/crossq.py",
+      "sota-implementations/crossq/utils.py",
+      "sota-implementations/ddpg/ddpg.py",
+      "sota-implementations/decision_transformer/dt.py",
+      "sota-implementations/decision_transformer/lamb.py",
+      "sota-implementations/decision_transformer/online_dt.py",
+      "sota-implementations/diffusion_bc/diffusion_bc.py",
+      "sota-implementations/discrete_sac/discrete_sac.py",
+      "sota-implementations/discrete_sac/utils.py",
+      "sota-implementations/dqn/dqn_atari.py",
+      "sota-implementations/dqn/dqn_cartpole.py",
+      "sota-implementations/dreamer/dreamer.py",
+      "sota-implementations/dreamer/dreamer_isaac.py",
+      "sota-implementations/dreamer/dreamer_utils.py",
+      "sota-implementations/dreamer_v3/benchmark.py",
+      "sota-implementations/dreamer_v3/dreamer_v3_agent.py",
+      "sota-implementations/dreamer_v3/dreamer_v3_utils.py",
+      "sota-implementations/dreamer_v3/train.py",
+      "sota-implementations/expert-iteration/ei_utils.py",
+      "sota-implementations/expert-iteration/expert-iteration-async.py",
+      "sota-implementations/expert-iteration/expert-iteration-sync.py",
+      "sota-implementations/fql/fql.py",
+      "sota-implementations/fql/utils.py",
+      "sota-implementations/gail/gail.py",
+      "sota-implementations/gail/ppo_utils.py",
+      "sota-implementations/grpo/grpo-async.py",
+      "sota-implementations/grpo/grpo-sync.py",
+      "sota-implementations/grpo/grpo_utils.py",
+      "sota-implementations/impala/utils.py",
+      "sota-implementations/iql/discrete_iql.py",
+      "sota-implementations/iql/iql_offline.py",
+      "sota-implementations/iql/iql_online.py",
+      "sota-implementations/iql/utils.py",
+      "sota-implementations/offline_to_online/train.py",
+      "sota-implementations/ppo-async/utils_mujoco.py",
+      "sota-implementations/ppo/ppo_atari.py",
+      "sota-implementations/ppo/ppo_mujoco.py",
+      "sota-implementations/ppo/utils_atari.py",
+      "sota-implementations/ppo/utils_mujoco.py",
+      "sota-implementations/redq/redq.py",
+      "sota-implementations/redq/utils.py",
+      "sota-implementations/reward_model_training/reward_model.py",
+      "sota-implementations/reward_model_training/utils.py",
+      "sota-implementations/rnd/rnd_mujoco.py",
+      "sota-implementations/rnd/utils_mujoco.py",
+      "sota-implementations/sac/sac-async.py",
+      "sota-implementations/sac/sac.py",
+      "sota-implementations/sac/utils.py",
+      "sota-implementations/td3/td3.py",
+      "sota-implementations/td3_bc/td3_bc.py",
+      "sota-implementations/tqc/tqc.py",
+      "sota-implementations/tqc/utils.py",
+      "sota-implementations/transitive_rl/transitive_rl.py",
+      "sota-implementations/transitive_rl/utils.py",
+      "sota-implementations/vla_grpo/compare_simplevla_rollouts.py",
+      "sota-implementations/vla_grpo/openvla.py",
+      "sota-implementations/vla_grpo/test_openvla.py",
+      "sota-implementations/vla_grpo/utils.py",
+      "sota-implementations/vla_grpo/openvla_oft/__init__.py",
+      "sota-implementations/vla_grpo/openvla_oft/configuration_prismatic.py",
+      "sota-implementations/vla_grpo/openvla_oft/constants.py",
+      "sota-implementations/vla_grpo/openvla_oft/modeling_prismatic.py",
+      "sota-implementations/vla_grpo/openvla_oft/processing_prismatic.py",
+      "test/conftest.py",
+      "test/smoke_test_deps.py",
+      "test/test_checkpoint.py",
+      "test/test_collectors.py",
+      "test/test_configs.py",
+      "test/test_custom_envs.py",
+      "test/test_distributed.py",
+      "test/test_distributions.py",
+      "test/test_exploration.py",
+      "test/test_helpers.py",
+      "test/test_inference_server.py",
+      "test/test_loggers.py",
+      "test/test_mcts.py",
+      "test/test_offline_to_online.py",
+      "test/test_postprocs.py",
+      "test/test_render.py",
+      "test/test_rlhf.py",
+      "test/test_rnd.py",
+      "test/test_specs.py",
+      "test/test_trainer.py",
+      "test/test_utils.py",
+      "test/compile/test_compile_collectors.py",
+      "test/data/test_vla.py",
+      "test/envs/_envs_common.py",
+      "test/envs/test_auto_reset.py",
+      "test/envs/test_env_base.py",
+      "test/envs/test_model_based.py",
+      "test/envs/test_parallel.py",
+      "test/envs/test_special.py",
+      "test/envs/test_step_mdp.py",
+      "test/libs/test_brax.py",
+      "test/libs/test_craftground.py",
+      "test/libs/test_datasets.py",
+      "test/libs/test_dm_control.py",
+      "test/libs/test_genesis.py",
+      "test/libs/test_isaac.py",
+      "test/libs/test_libero.py",
+      "test/libs/test_mjlab.py",
+      "test/libs/test_mujoco.py",
+      "test/libs/test_mujoco_playground.py",
+      "test/libs/test_multiagent.py",
+      "test/llm/conftest.py",
+      "test/llm/test_data.py",
+      "test/llm/test_llm_envs.py",
+      "test/llm/test_llm_objectives.py",
+      "test/llm/test_llm_updaters.py",
+      "test/llm/test_sglang_updaters.py",
+      "test/llm/test_wrapper.py",
+      "test/modules/conftest.py",
+      "test/modules/test_actor.py",
+      "test/modules/test_decision_transformer.py",
+      "test/modules/test_dreamer_components.py",
+      "test/modules/test_mlp_conv.py",
+      "test/modules/test_planners.py",
+      "test/modules/test_qvalue_actor.py",
+      "test/modules/test_rnn.py",
+      "test/modules/test_transformer.py",
+      "test/objectives/_objectives_common.py",
+      "test/objectives/test_act.py",
+      "test/objectives/test_controllers.py",
+      "test/objectives/test_cql.py",
+      "test/objectives/test_ddpg.py",
+      "test/objectives/test_dqn.py",
+      "test/objectives/test_dreamer.py",
+      "test/objectives/test_dreamer_v3.py",
+      "test/objectives/test_dt.py",
+      "test/objectives/test_fql.py",
+      "test/objectives/test_iql.py",
+      "test/objectives/test_loss_module.py",
+      "test/objectives/test_mappo.py",
+      "test/objectives/test_ppo.py",
+      "test/objectives/test_sac.py",
+      "test/objectives/test_transitive_q.py",
+      "test/objectives/test_values.py",
+      "test/objectives/test_vla.py",
+      "test/rb/test_ensemble.py",
+      "test/rb/test_prioritized.py",
+      "test/rb/test_rb_core.py",
+      "test/rb/test_rb_transforms.py",
+      "test/rb/test_samplers.py",
+      "test/rb/test_storage_map.py",
+      "test/rb/test_storages.py",
+      "test/rb/test_writers.py",
+      "test/services/test_services_fixtures.py",
+      "test/transforms/test_action_transforms.py",
+      "test/transforms/test_clip_transform.py",
+      "test/transforms/test_compose_and_env.py",
+      "test/transforms/test_device_transforms.py",
+      "test/transforms/test_encoder_transforms.py",
+      "test/transforms/test_env_transforms.py",
+      "test/transforms/test_key_transforms.py",
+      "test/transforms/test_module_transforms.py",
+      "test/transforms/test_normalization.py",
+      "test/transforms/test_observation_transforms.py",
+      "test/transforms/test_reward_transforms.py",
+      "test/transforms/test_tensor_transforms.py",
+      "test/transforms/test_timer_video.py",
+      "test/transforms/test_video_transforms.py",
+      "torchrl/__init__.py",
+      "torchrl/_utils.py",
+      "torchrl/_comm/backends.py",
+      "torchrl/_comm/distributed.py",
+      "torchrl/_comm/mailbox.py",
+      "torchrl/_comm/request_reply.py",
+      "torchrl/checkpoint/_checkpoint.py",
+      "torchrl/checkpoint/_hydra.py",
+      "torchrl/collectors/_async_batched.py",
+      "torchrl/collectors/_base.py",
+      "torchrl/collectors/_constants.py",
+      "torchrl/collectors/_evaluation_stats.py",
+      "torchrl/collectors/_evaluator.py",
+      "torchrl/collectors/_multi_async.py",
+      "torchrl/collectors/_multi_base.py",
+      "torchrl/collectors/_multi_sync.py",
+      "torchrl/collectors/_runner.py",
+      "torchrl/collectors/_single.py",
+      "torchrl/collectors/_single_async.py",
+      "torchrl/collectors/collectors.py",
+      "torchrl/collectors/utils.py",
+      "torchrl/collectors/weight_update.py",
+      "torchrl/collectors/distributed/__init__.py",
+      "torchrl/collectors/distributed/_ray_eval_runtime.py",
+      "torchrl/collectors/distributed/default_configs.py",
+      "torchrl/collectors/distributed/generic.py",
+      "torchrl/collectors/distributed/ray.py",
+      "torchrl/collectors/distributed/ray_eval_worker.py",
+      "torchrl/collectors/distributed/rpc.py",
+      "torchrl/collectors/distributed/sync.py",
+      "torchrl/collectors/distributed/utils.py",
+      "torchrl/collectors/llm/base.py",
+      "torchrl/collectors/llm/ray_collector.py",
+      "torchrl/collectors/llm/weight_update/vllm.py",
+      "torchrl/data/__init__.py",
+      "torchrl/data/tensor_specs.py",
+      "torchrl/data/utils.py",
+      "torchrl/data/video.py",
+      "torchrl/data/datasets/_adapter_utils.py",
+      "torchrl/data/datasets/atari_dqn.py",
+      "torchrl/data/datasets/common.py",
+      "torchrl/data/datasets/d4rl.py",
+      "torchrl/data/datasets/gen_dgrl.py",
+      "torchrl/data/datasets/huggingface.py",
+      "torchrl/data/datasets/lerobot.py",
+      "torchrl/data/datasets/lerobot_adapter.py",
+      "torchrl/data/datasets/minari_data.py",
+      "torchrl/data/datasets/openml.py",
+      "torchrl/data/datasets/openx.py",
+      "torchrl/data/datasets/roboset.py",
+      "torchrl/data/datasets/utils.py",
+      "torchrl/data/datasets/vd4rl.py",
+      "torchrl/data/llm/dataset.py",
+      "torchrl/data/llm/history.py",
+      "torchrl/data/llm/prompt.py",
+      "torchrl/data/llm/reward.py",
+      "torchrl/data/llm/topk.py",
+      "torchrl/data/llm/utils.py",
+      "torchrl/data/map/hash.py",
+      "torchrl/data/map/query.py",
+      "torchrl/data/map/tdstorage.py",
+      "torchrl/data/map/tree.py",
+      "torchrl/data/postprocs/postprocs.py",
+      "torchrl/data/replay_buffers/__init__.py",
+      "torchrl/data/replay_buffers/checkpointers.py",
+      "torchrl/data/replay_buffers/dataloader.py",
+      "torchrl/data/replay_buffers/her.py",
+      "torchrl/data/replay_buffers/offline_to_online.py",
+      "torchrl/data/replay_buffers/query.py",
+      "torchrl/data/replay_buffers/ray_buffer.py",
+      "torchrl/data/replay_buffers/sample_units.py",
+      "torchrl/data/replay_buffers/scheduler.py",
+      "torchrl/data/replay_buffers/utils.py",
+      "torchrl/data/replay_buffers/replay_buffers/base.py",
+      "torchrl/data/replay_buffers/replay_buffers/ensemble.py",
+      "torchrl/data/replay_buffers/replay_buffers/prioritized.py",
+      "torchrl/data/replay_buffers/replay_buffers/prioritized_tensordict.py",
+      "torchrl/data/replay_buffers/replay_buffers/tensordict.py",
+      "torchrl/data/replay_buffers/samplers/__init__.py",
+      "torchrl/data/replay_buffers/samplers/_trajectory.py",
+      "torchrl/data/replay_buffers/samplers/base.py",
+      "torchrl/data/replay_buffers/samplers/ensemble.py",
+      "torchrl/data/replay_buffers/samplers/llm.py",
+      "torchrl/data/replay_buffers/samplers/prioritized.py",
+      "torchrl/data/replay_buffers/samplers/prioritized_slice.py",
+      "torchrl/data/replay_buffers/samplers/random.py",
+      "torchrl/data/replay_buffers/samplers/slice.py",
+      "torchrl/data/replay_buffers/samplers/slice_without_replacement.py",
+      "torchrl/data/replay_buffers/samplers/staleness.py",
+      "torchrl/data/replay_buffers/samplers/streaming_slice.py",
+      "torchrl/data/replay_buffers/storages/__init__.py",
+      "torchrl/data/replay_buffers/storages/base.py",
+      "torchrl/data/replay_buffers/storages/ensemble.py",
+      "torchrl/data/replay_buffers/storages/list.py",
+      "torchrl/data/replay_buffers/storages/store.py",
+      "torchrl/data/replay_buffers/storages/tensor.py",
+      "torchrl/data/replay_buffers/storages/utils.py",
+      "torchrl/data/replay_buffers/writers/base.py",
+      "torchrl/data/replay_buffers/writers/max_value.py",
+      "torchrl/data/replay_buffers/writers/round_robin.py",
+      "torchrl/data/vla/metadata.py",
+      "torchrl/data/vla/preprocessing.py",
+      "torchrl/data/vla/schema.py",
+      "torchrl/data/vla/tokenizers.py",
+      "torchrl/envs/__init__.py",
+      "torchrl/envs/async_envs.py",
+      "torchrl/envs/batched_envs.py",
+      "torchrl/envs/common.py",
+      "torchrl/envs/gym_like.py",
+      "torchrl/envs/utils.py",
+      "torchrl/envs/custom/chess.py",
+      "torchrl/envs/custom/llm.py",
+      "torchrl/envs/custom/pendulum.py",
+      "torchrl/envs/custom/tictactoeenv.py",
+      "torchrl/envs/custom/trading.py",
+      "torchrl/envs/custom/vla.py",
+      "torchrl/envs/custom/mujoco/__init__.py",
+      "torchrl/envs/custom/mujoco/_backends.py",
+      "torchrl/envs/custom/mujoco/_math.py",
+      "torchrl/envs/custom/mujoco/_satellite_primitives.py",
+      "torchrl/envs/custom/mujoco/_ur_primitives.py",
+      "torchrl/envs/custom/mujoco/base.py",
+      "torchrl/envs/custom/mujoco/cube_bowl.py",
+      "torchrl/envs/custom/mujoco/menagerie.py",
+      "torchrl/envs/custom/mujoco/microduck.py",
+      "torchrl/envs/custom/mujoco/microduck_controller.py",
+      "torchrl/envs/custom/mujoco/satellite.py",
+      "torchrl/envs/libs/brax.py",
+      "torchrl/envs/libs/craftground.py",
+      "torchrl/envs/libs/dm_control.py",
+      "torchrl/envs/libs/envpool.py",
+      "torchrl/envs/libs/genesis.py",
+      "torchrl/envs/libs/gym.py",
+      "torchrl/envs/libs/habitat.py",
+      "torchrl/envs/libs/isaac_lab.py",
+      "torchrl/envs/libs/jumanji.py",
+      "torchrl/envs/libs/lbforaging.py",
+      "torchrl/envs/libs/libero.py",
+      "torchrl/envs/libs/meltingpot.py",
+      "torchrl/envs/libs/mjlab.py",
+      "torchrl/envs/libs/mujoco_playground.py",
+      "torchrl/envs/libs/openml.py",
+      "torchrl/envs/libs/openspiel.py",
+      "torchrl/envs/libs/pettingzoo.py",
+      "torchrl/envs/libs/procgen.py",
+      "torchrl/envs/libs/robohive.py",
+      "torchrl/envs/libs/unity_mlagents.py",
+      "torchrl/envs/libs/utils.py",
+      "torchrl/envs/libs/vmas.py",
+      "torchrl/envs/llm/chat.py",
+      "torchrl/envs/llm/envs.py",
+      "torchrl/envs/llm/datasets/countdown.py",
+      "torchrl/envs/llm/datasets/gsm8k.py",
+      "torchrl/envs/llm/datasets/ifeval.py",
+      "torchrl/envs/llm/datasets/math.py",
+      "torchrl/envs/llm/libs/mlgym.py",
+      "torchrl/envs/llm/reward/countdown.py",
+      "torchrl/envs/llm/reward/gsm8k.py",
+      "torchrl/envs/llm/reward/math.py",
+      "torchrl/envs/llm/reward/ifeval/_instructions.py",
+      "torchrl/envs/llm/reward/ifeval/_instructions_util.py",
+      "torchrl/envs/llm/reward/ifeval/_scorer.py",
+      "torchrl/envs/llm/transforms/browser.py",
+      "torchrl/envs/llm/transforms/dataloading.py",
+      "torchrl/envs/llm/transforms/kl.py",
+      "torchrl/envs/llm/transforms/reason.py",
+      "torchrl/envs/llm/transforms/tokenizer.py",
+      "torchrl/envs/llm/transforms/tools.py",
+      "torchrl/envs/model_based/imagined.py",
+      "torchrl/envs/model_based/world_model_env.py",
+      "torchrl/envs/transforms/_action.py",
+      "torchrl/envs/transforms/_base.py",
+      "torchrl/envs/transforms/_clip.py",
+      "torchrl/envs/transforms/_device.py",
+      "torchrl/envs/transforms/_env.py",
+      "torchrl/envs/transforms/_keys.py",
+      "torchrl/envs/transforms/_misc.py",
+      "torchrl/envs/transforms/_normalization.py",
+      "torchrl/envs/transforms/_observation.py",
+      "torchrl/envs/transforms/_primitive.py",
+      "torchrl/envs/transforms/_reward.py",
+      "torchrl/envs/transforms/_tensor.py",
+      "torchrl/envs/transforms/_timer.py",
+      "torchrl/envs/transforms/_video.py",
+      "torchrl/envs/transforms/functional.py",
+      "torchrl/envs/transforms/gym_transforms.py",
+      "torchrl/envs/transforms/mean_action_selector.py",
+      "torchrl/envs/transforms/module.py",
+      "torchrl/envs/transforms/r3m.py",
+      "torchrl/envs/transforms/rb_transforms.py",
+      "torchrl/envs/transforms/rnd.py",
+      "torchrl/envs/transforms/utils.py",
+      "torchrl/envs/transforms/vc1.py",
+      "torchrl/envs/transforms/vecnorm.py",
+      "torchrl/envs/transforms/vip.py",
+      "torchrl/modules/functional.py",
+      "torchrl/modules/value_norm.py",
+      "torchrl/modules/value_transforms.py",
+      "torchrl/modules/distributions/continuous.py",
+      "torchrl/modules/distributions/discrete.py",
+      "torchrl/modules/distributions/utils.py",
+      "torchrl/modules/inference_server/_client.py",
+      "torchrl/modules/inference_server/_config.py",
+      "torchrl/modules/inference_server/_factory.py",
+      "torchrl/modules/inference_server/_monarch.py",
+      "torchrl/modules/inference_server/_mp.py",
+      "torchrl/modules/inference_server/_process_slot.py",
+      "torchrl/modules/inference_server/_ray.py",
+      "torchrl/modules/inference_server/_server.py",
+      "torchrl/modules/inference_server/_shared_memory.py",
+      "torchrl/modules/inference_server/_slot.py",
+      "torchrl/modules/inference_server/_slot_utils.py",
+      "torchrl/modules/inference_server/_transport.py",
+      "torchrl/modules/llm/trl_interop.py",
+      "torchrl/modules/llm/backends/sglang/base.py",
+      "torchrl/modules/llm/backends/sglang/sglang_server.py",
+      "torchrl/modules/llm/backends/vllm/base.py",
+      "torchrl/modules/llm/backends/vllm/vllm_async.py",
+      "torchrl/modules/llm/backends/vllm/vllm_sync.py",
+      "torchrl/modules/llm/backends/vllm/vllm_utils.py",
+      "torchrl/modules/llm/policies/common.py",
+      "torchrl/modules/llm/policies/sglang_wrapper.py",
+      "torchrl/modules/llm/policies/transformers_wrapper.py",
+      "torchrl/modules/llm/policies/vllm_wrapper.py",
+      "torchrl/modules/mcts/scores.py",
+      "torchrl/modules/models/act.py",
+      "torchrl/modules/models/batchrenorm.py",
+      "torchrl/modules/models/cross_group_critic.py",
+      "torchrl/modules/models/decision_transformer.py",
+      "torchrl/modules/models/exploration.py",
+      "torchrl/modules/models/flow.py",
+      "torchrl/modules/models/gp.py",
+      "torchrl/modules/models/model_based.py",
+      "torchrl/modules/models/models.py",
+      "torchrl/modules/models/multiagent.py",
+      "torchrl/modules/models/rbf_controller.py",
+      "torchrl/modules/models/tdmpc2.py",
+      "torchrl/modules/models/utils.py",
+      "torchrl/modules/planners/cem.py",
+      "torchrl/modules/planners/mppi.py",
+      "torchrl/modules/tensordict_module/_rnn_precision.py",
+      "torchrl/modules/tensordict_module/_rnn_triton.py",
+      "torchrl/modules/tensordict_module/actors.py",
+      "torchrl/modules/tensordict_module/common.py",
+      "torchrl/modules/tensordict_module/controllers.py",
+      "torchrl/modules/tensordict_module/exploration.py",
+      "torchrl/modules/tensordict_module/probabilistic.py",
+      "torchrl/modules/tensordict_module/rnn.py",
+      "torchrl/modules/tensordict_module/sequence.py",
+      "torchrl/modules/tensordict_module/transformer.py",
+      "torchrl/modules/tensordict_module/zoo/microduck_policy.py",
+      "torchrl/modules/utils/utils.py",
+      "torchrl/modules/vla/common.py",
+      "torchrl/modules/vla/models.py",
+      "torchrl/modules/vla/wrappers.py",
+      "torchrl/objectives/__init__.py",
+      "torchrl/objectives/a2c.py",
+      "torchrl/objectives/act.py",
+      "torchrl/objectives/bc.py",
+      "torchrl/objectives/common.py",
+      "torchrl/objectives/cql.py",
+      "torchrl/objectives/crossq.py",
+      "torchrl/objectives/ddpg.py",
+      "torchrl/objectives/decision_transformer.py",
+      "torchrl/objectives/deprecated.py",
+      "torchrl/objectives/diffusion_bc.py",
+      "torchrl/objectives/dqn.py",
+      "torchrl/objectives/dreamer.py",
+      "torchrl/objectives/dreamer_v3.py",
+      "torchrl/objectives/fql.py",
+      "torchrl/objectives/gail.py",
+      "torchrl/objectives/iql.py",
+      "torchrl/objectives/pilco.py",
+      "torchrl/objectives/ppo.py",
+      "torchrl/objectives/redq.py",
+      "torchrl/objectives/reinforce.py",
+      "torchrl/objectives/rnd.py",
+      "torchrl/objectives/sac.py",
+      "torchrl/objectives/td3.py",
+      "torchrl/objectives/td3_bc.py",
+      "torchrl/objectives/tdmpc2.py",
+      "torchrl/objectives/tqc.py",
+      "torchrl/objectives/transitive_q.py",
+      "torchrl/objectives/utils.py",
+      "torchrl/objectives/world_model_loss.py",
+      "torchrl/objectives/llm/distillation.py",
+      "torchrl/objectives/llm/grpo.py",
+      "torchrl/objectives/llm/reward.py",
+      "torchrl/objectives/llm/sft.py",
+      "torchrl/objectives/multiagent/mappo.py",
+      "torchrl/objectives/multiagent/qmixer.py",
+      "torchrl/objectives/value/advantages.py",
+      "torchrl/objectives/value/functional.py",
+      "torchrl/objectives/value/utils.py",
+      "torchrl/record/recorder.py",
+      "torchrl/record/loggers/common.py",
+      "torchrl/record/loggers/csv.py",
+      "torchrl/record/loggers/mlflow.py",
+      "torchrl/record/loggers/monitoring.py",
+      "torchrl/record/loggers/process.py",
+      "torchrl/record/loggers/ray.py",
+      "torchrl/record/loggers/tensorboard.py",
+      "torchrl/record/loggers/trackio.py",
+      "torchrl/record/loggers/utils.py",
+      "torchrl/record/loggers/wandb.py",
+      "torchrl/render/artifacts.py",
+      "torchrl/render/checkpoint.py",
+      "torchrl/render/cli.py",
+      "torchrl/render/config.py",
+      "torchrl/render/import_utils.py",
+      "torchrl/render/mujoco_wasm.py",
+      "torchrl/render/video.py",
+      "torchrl/services/__init__.py",
+      "torchrl/services/ray_service.py",
+      "torchrl/testing/__init__.py",
+      "torchrl/testing/env_helper.py",
+      "torchrl/testing/mocking_classes.py",
+      "torchrl/testing/modules.py",
+      "torchrl/testing/utils.py",
+      "torchrl/trainers/__init__.py",
+      "torchrl/trainers/_distributed.py",
+      "torchrl/trainers/_execution.py",
+      "torchrl/trainers/trainers.py",
+      "torchrl/trainers/algorithms/a2c.py",
+      "torchrl/trainers/algorithms/cql.py",
+      "torchrl/trainers/algorithms/ddpg.py",
+      "torchrl/trainers/algorithms/dqn.py",
+      "torchrl/trainers/algorithms/dreamer_v3.py",
+      "torchrl/trainers/algorithms/fql.py",
+      "torchrl/trainers/algorithms/grpo.py",
+      "torchrl/trainers/algorithms/iql.py",
+      "torchrl/trainers/algorithms/offline_to_online.py",
+      "torchrl/trainers/algorithms/on_policy.py",
+      "torchrl/trainers/algorithms/ppo.py",
+      "torchrl/trainers/algorithms/reinforce.py",
+      "torchrl/trainers/algorithms/sac.py",
+      "torchrl/trainers/algorithms/td3.py",
+      "torchrl/trainers/algorithms/tdmpc2.py",
+      "torchrl/trainers/algorithms/configs/collectors.py",
+      "torchrl/trainers/algorithms/configs/data.py",
+      "torchrl/trainers/algorithms/configs/entrypoint.py",
+      "torchrl/trainers/algorithms/configs/envs.py",
+      "torchrl/trainers/algorithms/configs/envs_libs.py",
+      "torchrl/trainers/algorithms/configs/hooks.py",
+      "torchrl/trainers/algorithms/configs/logging.py",
+      "torchrl/trainers/algorithms/configs/modules.py",
+      "torchrl/trainers/algorithms/configs/trainers.py",
+      "torchrl/trainers/algorithms/configs/transforms.py",
+      "torchrl/trainers/algorithms/configs/weight_sync_schemes.py",
+      "torchrl/trainers/helpers/collectors.py",
+      "torchrl/trainers/helpers/envs.py",
+      "torchrl/trainers/helpers/logger.py",
+      "torchrl/trainers/helpers/losses.py",
+      "torchrl/trainers/helpers/models.py",
+      "torchrl/trainers/helpers/replay_buffer.py",
+      "torchrl/trainers/helpers/trainers.py",
+      "torchrl/weight_update/_distributed.py",
+      "torchrl/weight_update/_mp.py",
+      "torchrl/weight_update/_ray.py",
+      "torchrl/weight_update/_shared.py",
+      "torchrl/weight_update/weight_sync_schemes.py",
+      "torchrl/weight_update/llm/sglang_nccl.py",
+      "torchrl/weight_update/llm/vllm_double_buffer.py",
+      "torchrl/weight_update/llm/vllm_nccl.py",
+      "tutorials/sphinx-tutorials/checkpointing.py",
+      "tutorials/sphinx-tutorials/coding_ddpg.py",
+      "tutorials/sphinx-tutorials/coding_dqn.py",
+      "tutorials/sphinx-tutorials/coding_ppo.py",
+      "tutorials/sphinx-tutorials/collector_trajectory_assembly.py",
+      "tutorials/sphinx-tutorials/dqn_with_rnn.py",
+      "tutorials/sphinx-tutorials/evaluator.py",
+      "tutorials/sphinx-tutorials/export.py",
+      "tutorials/sphinx-tutorials/getting-started-1.py",
+      "tutorials/sphinx-tutorials/getting-started-2.py",
+      "tutorials/sphinx-tutorials/getting-started-3.py",
+      "tutorials/sphinx-tutorials/llm_browser.py",
+      "tutorials/sphinx-tutorials/low_level_controller.py",
+      "tutorials/sphinx-tutorials/memory_efficient_rl.py",
+      "tutorials/sphinx-tutorials/microduck.py",
+      "tutorials/sphinx-tutorials/mujoco_cube_bowl_macros.py",
+      "tutorials/sphinx-tutorials/multiagent_competitive_ddpg.py",
+      "tutorials/sphinx-tutorials/multiagent_ppo.py",
+      "tutorials/sphinx-tutorials/pendulum.py",
+      "tutorials/sphinx-tutorials/pretrained_models.py",
+      "tutorials/sphinx-tutorials/rb_tutorial.py",
+      "tutorials/sphinx-tutorials/recurrent_sequence_training.py",
+      "tutorials/sphinx-tutorials/torchrl_demo.py",
+      "tutorials/sphinx-tutorials/torchrl_envs.py",
+      "tutorials/sphinx-tutorials/trl_interop.py"
+    ],
+    "audit_files": [
+      ".github/scripts/generate_dashboard.py",
+      ".github/unittest/linux_sota/scripts/test_sota.py",
+      "benchmarks/test_collectors_benchmark.py",
+      "examples/collectors/isaaclab_rnn_ppo_memory.py",
+      "examples/collectors/isaaclab_rnn_ppo_memory_utils.py",
+      "examples/microduck/ppo_mjlab.py",
+      "sota-implementations/vla_grpo/test_openvla.py",
+      "test/test_checkpoint.py",
+      "test/test_collectors.py",
+      "test/test_configs.py",
+      "test/test_custom_envs.py",
+      "test/test_distributed.py",
+      "test/test_distributions.py",
+      "test/test_exploration.py",
+      "test/test_helpers.py",
+      "test/test_inference_server.py",
+      "test/test_loggers.py",
+      "test/test_mcts.py",
+      "test/test_offline_to_online.py",
+      "test/test_postprocs.py",
+      "test/test_render.py",
+      "test/test_rlhf.py",
+      "test/test_rnd.py",
+      "test/test_specs.py",
+      "test/test_trainer.py",
+      "test/test_utils.py",
+      "test/data/test_vla.py",
+      "test/envs/test_auto_reset.py",
+      "test/envs/test_env_base.py",
+      "test/envs/test_model_based.py",
+      "test/envs/test_parallel.py",
+      "test/envs/test_special.py",
+      "test/envs/test_step_mdp.py",
+      "test/libs/test_brax.py",
+      "test/libs/test_datasets.py",
+      "test/libs/test_dm_control.py",
+      "test/libs/test_isaac.py",
+      "test/libs/test_libero.py",
+      "test/libs/test_mujoco.py",
+      "test/libs/test_mujoco_playground.py",
+      "test/libs/test_multiagent.py",
+      "test/llm/test_data.py",
+      "test/llm/test_llm_envs.py",
+      "test/llm/test_llm_objectives.py",
+      "test/llm/test_llm_updaters.py",
+      "test/llm/test_wrapper.py",
+      "test/modules/test_actor.py",
+      "test/modules/test_dreamer_components.py",
+      "test/modules/test_mlp_conv.py",
+      "test/modules/test_planners.py",
+      "test/modules/test_rnn.py",
+      "test/modules/test_transformer.py",
+      "test/objectives/_objectives_common.py",
+      "test/objectives/test_act.py",
+      "test/objectives/test_controllers.py",
+      "test/objectives/test_cql.py",
+      "test/objectives/test_ddpg.py",
+      "test/objectives/test_dqn.py",
+      "test/objectives/test_dreamer_v3.py",
+      "test/objectives/test_dt.py",
+      "test/objectives/test_fql.py",
+      "test/objectives/test_iql.py",
+      "test/objectives/test_loss_module.py",
+      "test/objectives/test_mappo.py",
+      "test/objectives/test_ppo.py",
+      "test/objectives/test_sac.py",
+      "test/objectives/test_transitive_q.py",
+      "test/objectives/test_values.py",
+      "test/objectives/test_vla.py",
+      "test/rb/test_ensemble.py",
+      "test/rb/test_prioritized.py",
+      "test/rb/test_rb_core.py",
+      "test/rb/test_rb_transforms.py",
+      "test/rb/test_samplers.py",
+      "test/rb/test_storage_map.py",
+      "test/rb/test_storages.py",
+      "test/rb/test_writers.py",
+      "test/transforms/test_action_transforms.py",
+      "test/transforms/test_compose_and_env.py",
+      "test/transforms/test_encoder_transforms.py",
+      "test/transforms/test_env_transforms.py",
+      "test/transforms/test_key_transforms.py",
+      "test/transforms/test_module_transforms.py",
+      "test/transforms/test_normalization.py",
+      "test/transforms/test_observation_transforms.py",
+      "test/transforms/test_reward_transforms.py",
+      "test/transforms/test_tensor_transforms.py",
+      "test/transforms/test_video_transforms.py",
+      "torchrl/data/tensor_specs.py",
+      "torchrl/data/map/tree.py",
+      "torchrl/data/replay_buffers/storages/list.py",
+      "torchrl/data/replay_buffers/storages/tensor.py",
+      "torchrl/envs/common.py",
+      "torchrl/envs/custom/mujoco/satellite.py",
+      "torchrl/envs/libs/mujoco_playground.py",
+      "torchrl/envs/llm/datasets/math.py",
+      "torchrl/envs/llm/reward/math.py",
+      "torchrl/envs/transforms/functional.py",
+      "torchrl/modules/tensordict_module/zoo/microduck_policy.py",
+      "torchrl/objectives/ppo.py",
+      "tutorials/sphinx-tutorials/evaluator.py",
+      "tutorials/sphinx-tutorials/low_level_controller.py",
+      "tutorials/sphinx-tutorials/recurrent_sequence_training.py"
+    ],
+    "verdict": "has_audit_signal",
+    "evidence": [
+      ".github/scripts/generate_dashboard.py:492: # Verify input files exist",
+      ".github/unittest/linux_sota/scripts/test_sota.py:647: torch.testing.assert_close(metrics[\"evaluation/return\"], expected)",
+      ".github/unittest/linux_sota/scripts/test_sota.py:711: torch.testing.assert_close(full_weights, resumed_weights, rtol=0, atol=0)",
+      "benchmarks/test_collectors_benchmark.py:483: \"\"\"Execute collector iteration and verify data was stored in replay buffer.\"\"\"",
+      "examples/collectors/isaaclab_rnn_ppo_memory.py:54: _assert_rollout_shapes,"
+    ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "LeCAR-Lab_HumanoidVerse",
+  "path": "repos/LeCAR-Lab_HumanoidVerse",
+  "n_py": 50,
+  "C1_seed": {
+    "seed_flag_files": [
+      "humanoidverse/eval_agent.py",
+      "humanoidverse/utils/common.py",
+      "humanoidverse/utils/spatial_utils/maths.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "humanoidverse/utils/common.py",
+        "line": 77,
+        "arg": "seed"
+      },
+      {
+        "file": "humanoidverse/utils/common.py",
+        "line": 79,
+        "arg": "seed"
+      },
+      {
+        "file": "humanoidverse/utils/spatial_utils/maths.py",
+        "line": 33,
+        "arg": "seed"
+      },
+      {
+        "file": "humanoidverse/utils/spatial_utils/maths.py",
+        "line": 35,
+        "arg": "seed"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      "humanoidverse/eval_agent.py",
+      "humanoidverse/train_agent.py",
+      "humanoidverse/agents/callbacks/analysis_plot_locomotion.py",
+      "humanoidverse/agents/modules/ppo_modules.py",
+      "humanoidverse/envs/env_utils/terrain.py",
+      "humanoidverse/envs/legged_base_task/legged_robot_base.py",
+      "humanoidverse/envs/locomotion/locomotion.py",
+      "humanoidverse/simulator/isaacgym/isaacgym.py",
+      "humanoidverse/simulator/isaacsim/event_cfg.py",
+      "humanoidverse/simulator/isaacsim/events.py",
+      "humanoidverse/simulator/isaacsim/isaaclab_cfg.py",
+      "humanoidverse/simulator/isaacsim/isaaclab_viewpoint_camera_controller.py",
+      "humanoidverse/simulator/isaacsim/isaacsim.py",
+      "humanoidverse/utils/average_meters.py",
+      "humanoidverse/utils/terrain.py",
+      "humanoidverse/utils/spatial_utils/rotations.py"
+    ],
+    "audit_files": [],
+    "verdict": "no_audit_signal",
+    "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

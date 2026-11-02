@@ -1,0 +1,22 @@
+id,file,op,why,applied,verdict,exit,fails,crash
+M01,legged_gym/utils/fault_detector.py,drop_degrade_prob,丢掉 degrade 概率：配置上写了但永远抽不到（D-概率归一化丢失）,applied,killed,1,R4-6     概率口径：0.10 free_swing + 0.10 degrade（旧配置的 0.10+0.10  ;R5-1     旧行为复现：名义故障确实存在（nominal_marked=4） ;R5-2     R8 断言抓住旧行为（nominal_marked>0 ⇒ 必须报错） ,
+M02,legged_gym/utils/fault_detector.py,drop_lock_prob,丢掉 lock 概率：lock 臂退化成空跑,applied,killed,1,R4-4     lock：PD 增益×10 且 p_gains 升为 2D（力矩上限不动） ;R4-5     lock：每步把 dof_pos/dof_vel 钉到锁定值并写回仿真 ,
+M03,legged_gym/utils/fault_detector.py,boundary_le,边界从 < 改 <=：零概率时仍注入（空注入的典型写法）,applied,SURVIVED,0,,
+M04,legged_gym/utils/fault_detector.py,gap_at_boundary,degrade 区间左端点漏掉：边界样本静默丢失,applied,SURVIVED,0,,
+M05,legged_gym/utils/fault_detector.py,stale_state,reset 时不清空旧状态：上一回合的故障残留（D-状态泄漏）,applied,killed,1,G4     reset 后旧故障必须清零  -> AssertionError: reset 后仍有 128 个残留标 ,
+M06,legged_gym/utils/fault_detector.py,lose_mode,不写真实形态，只写 1：所有故障退化成同一种,applied,killed,1,R4-3     degrade：力矩上限 = 标称 × 0.5（旧 weakened 支路的物理本意） ;R4-4     lock：PD 增益×10 且 p_gains 升为 2D（力矩上限不动） ;R4-5     lock：每步把 dof_pos/dof_vel 钉到锁定值并写回仿真 ;R4-6     概率口径：0.10 free_swing + 0.10 degrade（旧配置的 0.10+0.10  ,
+M07,legged_gym/utils/fault_detector.py,skip_refresh,改完状态表不刷新 lock 标志：on_step 按旧标记早退（D-契约违反）,applied,killed(crash),1,,AttributeError: 'FakeEnv' object has no attribute 'nominal_p_gains'
+M08,legged_gym/utils/fault_detector.py,free_swing_noop,free_swing 力矩不置零：标记为故障但物理没变（最经典的静默失效）,applied,killed(crash),1,,legged_gym.utils.silent_failure_guards.SilentFailureError: [R8/D3] 注入未生效: mode='free_swing' leg=FL torque_limits 请求 12 个
+M09,legged_gym/utils/fault_detector.py,degrade_scale_ignored,degrade 忽略 k 系数：衰减形态退化成标称,applied,killed(crash),1,,legged_gym.utils.silent_failure_guards.SilentFailureError: [R8/D3] 注入未生效: mode='degrade' leg=FL torque_limits 请求 19 个环境，
+M10,legged_gym/utils/fault_detector.py,lock_gain_ignored,lock 不放大 PD 增益：硬约束形态没有刚度变化,applied,killed(crash),1,,legged_gym.utils.silent_failure_guards.SilentFailureError: [R8/D3] 注入未生效: mode='lock' leg=FL p_gains 请求 17 个环境，实际物理量变化 0
+M11,legged_gym/utils/fault_detector.py,disable_strict_checks,关掉逐腿生效核对：检查器本身被绕过,applied,killed,1,G1     守卫被调用 + strict_checks 被引用（元检查）  -> AssertionError: ap ,
+M12,legged_gym/utils/fault_detector.py,god_view_wrong,上帝视角全零：策略看不到故障（观测与物理不一致）,applied,killed,1,G5     上帝视角腿数 = 故障腿数  -> AssertionError: 观测标记 0 != 故障腿 32 ,
+M13,legged_gym/utils/silent_failure_guards.py,caliber_tolerance_loose,总注入率容差放到 1.0：配置与声称值再不一致也不报（D6 失效）,applied,killed,1,R7-3     R8 断言抓住『总注入率 0.20』（提交 config 的旧值） ,
+M14,legged_gym/utils/silent_failure_guards.py,effectiveness_always_pass,生效核对恒等于请求数：注入没落地也报成功（D3 失效）,applied,killed,1,G2     校核自反性：before==after 必须报错  -> AssertionError: before== ,
+M15,legged_gym/utils/silent_failure_guards.py,terrain_ratio_zero,地形退化阈值降为 0：退化地形不再算退化（D1 失效）,applied,killed,1,R1-8     R8 断言抓住『gradient 但难度没落到高度场』 ,
+M16,legged_gym/utils/silent_failure_guards.py,energy_tolerance_huge,能耗基准容差放到 1e9：口径漂移不再报（D5 失效）,applied,killed,1,R6-4     R8 断言抓住旧口径（100 W ⇒ 必须报错） ,
+M17,legged_gym/envs/a1_rescue/a1_rescue_phase3_env.py,no_apply,标记了故障但不下沉物理量（最经典的静默失效）,applied,killed,1,R8-4     重置顺序（AST 解析函数体）：课程 → 标称恢复 → DR → 注入 → 自检 ;G1     守卫被调用 + strict_checks 被引用（元检查）  -> AssertionError: re ,
+M18,legged_gym/envs/a1_rescue/a1_rescue_phase3_env.py,no_reset_envs,不重新抽样：沿用上一回合的故障状态,applied,killed,1,G1     守卫被调用 + strict_checks 被引用（元检查）  -> AssertionError: re ,
+M19,legged_gym/envs/a1_rescue/a1_rescue_phase3_env.py,skip_verify,reset 后不跑自检：标记-物理不一致无人发现,applied,killed,1,G1     守卫被调用 + strict_checks 被引用（元检查）  -> AssertionError: re ,
+M20,legged_gym/envs/a1_rescue/a1_rescue_phase3_env.py,no_dr,DR 不落地：环境分布与声称不符（D2 类）,applied,killed,1,R8-4     重置顺序（AST 解析函数体）：课程 → 标称恢复 → DR → 注入 → 自检 ,
+M21,legged_gym/scripts/train.py,run_meta_seed_none,协议指纹里的种子写成 None：事后无法核种子,applied,killed,1,G6     run_meta.seed_effective 必须绑定变量  -> AssertionError: se ,

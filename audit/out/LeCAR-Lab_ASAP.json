@@ -1,0 +1,100 @@
+{
+  "name": "LeCAR-Lab_ASAP",
+  "path": "repos/LeCAR-Lab_ASAP",
+  "n_py": 104,
+  "C1_seed": {
+    "seed_flag_files": [
+      "humanoidverse/utils/common.py",
+      "isaac_utils/isaac_utils/maths.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "humanoidverse/utils/common.py",
+        "line": 105,
+        "arg": "seed"
+      },
+      {
+        "file": "humanoidverse/utils/common.py",
+        "line": 107,
+        "arg": "seed"
+      },
+      {
+        "file": "isaac_utils/isaac_utils/maths.py",
+        "line": 33,
+        "arg": "seed"
+      },
+      {
+        "file": "isaac_utils/isaac_utils/maths.py",
+        "line": 35,
+        "arg": "seed"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      "humanoidverse/eval_agent.py",
+      "humanoidverse/train_agent.py",
+      "humanoidverse/agents/callbacks/analysis_plot_force.py",
+      "humanoidverse/agents/callbacks/analysis_plot_force_estimator.py",
+      "humanoidverse/agents/callbacks/analysis_plot_locomotion.py",
+      "humanoidverse/agents/callbacks/analysis_plot_locomotion_estimate_vel.py",
+      "humanoidverse/agents/callbacks/analysis_plot_motion_tracking.py",
+      "humanoidverse/agents/callbacks/analysis_plot_motion_tracking_openloop.py",
+      "humanoidverse/agents/modules/ppo_modules.py",
+      "humanoidverse/envs/delta_a/delta_a_closed_loop.py",
+      "humanoidverse/envs/delta_a/delta_a_open_loop.py",
+      "humanoidverse/envs/env_utils/terrain.py",
+      "humanoidverse/envs/legged_base_task/legged_robot_base.py",
+      "humanoidverse/envs/locomotion/locomotion.py",
+      "humanoidverse/envs/motion_tracking/motion_tracking.py",
+      "humanoidverse/simulator/isaacgym/isaacgym.py",
+      "humanoidverse/simulator/isaacgym/isaacgym_hoi.py",
+      "humanoidverse/simulator/isaacsim/event_cfg.py",
+      "humanoidverse/simulator/isaacsim/events.py",
+      "humanoidverse/simulator/isaacsim/isaaclab_cfg.py",
+      "humanoidverse/simulator/isaacsim/isaaclab_viewpoint_camera_controller.py",
+      "humanoidverse/simulator/isaacsim/isaacsim.py",
+      "humanoidverse/utils/average_meters.py",
+      "humanoidverse/utils/terrain.py",
+      "humanoidverse/utils/motion_lib/skeleton.py",
+      "humanoidverse/utils/motion_lib/torch_humanoid_batch.py",
+      "humanoidverse/utils/motion_lib/motion_utils/rotation_conversions.py",
+      "isaac_utils/isaac_utils/rotations.py",
+      "scripts/data_process/fit_smpl_shape.py",
+      "scripts/vis/vis_q_mj.py",
+      "sim2real/state_publisher.py",
+      "sim2real/rl_policy/base_policy.py",
+      "sim2real/rl_policy/decoupled_locomotion_stand.py",
+      "sim2real/rl_policy/decoupled_locomotion_stand_height.py",
+      "sim2real/rl_policy/deepmimic_dec_loco.py",
+      "sim2real/rl_policy/deepmimic_dec_loco_height.py",
+      "sim2real/rl_policy/listener_deltaa.py",
+      "sim2real/sim_env/base_sim.py",
+      "sim2real/utils/command_sender.py",
+      "sim2real/utils/robot.py",
+      "sim2real/utils/unitree_sdk2py_bridge.py"
+    ],
+    "audit_files": [
+      "humanoidverse/utils/motion_lib/skeleton.py",
+      "humanoidverse/utils/motion_lib/torch_humanoid_batch.py",
+      "sim2real/rl_policy/deepmimic_dec_loco.py"
+    ],
+    "verdict": "has_audit_signal",
+    "evidence": [
+      "humanoidverse/utils/motion_lib/skeleton.py:303: raise ValueError(\"MJCF parsed incorrectly please verify it.\")",
+      "humanoidverse/utils/motion_lib/skeleton.py:307: raise ValueError(\"MJCF parsed incorrectly please verify it.\")",
+      "humanoidverse/utils/motion_lib/torch_humanoid_batch.py:110: raise ValueError(\"MJCF parsed incorrectly please verify it.\")",
+      "humanoidverse/utils/motion_lib/torch_humanoid_batch.py:114: raise ValueError(\"MJCF parsed incorrectly please verify it.\")",
+      "sim2real/rl_policy/deepmimic_dec_loco.py:156: # Verify that configuration contains the required metadata for the policy"
+    ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

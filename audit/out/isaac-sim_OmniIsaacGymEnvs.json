@@ -1,0 +1,95 @@
+{
+  "name": "isaac-sim_OmniIsaacGymEnvs",
+  "path": "repos/isaac-sim_OmniIsaacGymEnvs",
+  "n_py": 90,
+  "C1_seed": {
+    "seed_flag_files": [],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "omniisaacgymenvs/extension.py",
+        "line": 473,
+        "arg": "self._cfg.seed"
+      },
+      {
+        "file": "omniisaacgymenvs/scripts/random_policy.py",
+        "line": 97,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "omniisaacgymenvs/scripts/rlgames_demo.py",
+        "line": 98,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "omniisaacgymenvs/scripts/rlgames_train.py",
+        "line": 147,
+        "arg": "cfg.seed"
+      },
+      {
+        "file": "omniisaacgymenvs/utils/domain_randomization/randomize.py",
+        "line": 69,
+        "arg": "<expr>"
+      }
+    ],
+    "verdict": "no_seed_flag",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      "omniisaacgymenvs/extension.py",
+      "omniisaacgymenvs/demos/anymal_terrain.py",
+      "omniisaacgymenvs/envs/vec_env_rlgames.py",
+      "omniisaacgymenvs/envs/vec_env_rlgames_mt.py",
+      "omniisaacgymenvs/robots/articulations/factory_franka.py",
+      "omniisaacgymenvs/robots/articulations/franka.py",
+      "omniisaacgymenvs/tasks/allegro_hand.py",
+      "omniisaacgymenvs/tasks/ant.py",
+      "omniisaacgymenvs/tasks/anymal.py",
+      "omniisaacgymenvs/tasks/anymal_terrain.py",
+      "omniisaacgymenvs/tasks/ball_balance.py",
+      "omniisaacgymenvs/tasks/cartpole.py",
+      "omniisaacgymenvs/tasks/crazyflie.py",
+      "omniisaacgymenvs/tasks/franka_cabinet.py",
+      "omniisaacgymenvs/tasks/franka_deformable.py",
+      "omniisaacgymenvs/tasks/humanoid.py",
+      "omniisaacgymenvs/tasks/ingenuity.py",
+      "omniisaacgymenvs/tasks/quadcopter.py",
+      "omniisaacgymenvs/tasks/shadow_hand.py",
+      "omniisaacgymenvs/tasks/target_following.py",
+      "omniisaacgymenvs/tasks/base/rl_task.py",
+      "omniisaacgymenvs/tasks/factory/factory_base.py",
+      "omniisaacgymenvs/tasks/factory/factory_control.py",
+      "omniisaacgymenvs/tasks/factory/factory_schema_config_base.py",
+      "omniisaacgymenvs/tasks/factory/factory_schema_config_task.py",
+      "omniisaacgymenvs/tasks/factory/factory_task_nut_bolt_pick.py",
+      "omniisaacgymenvs/tasks/factory/factory_task_nut_bolt_place.py",
+      "omniisaacgymenvs/tasks/factory/factory_task_nut_bolt_screw.py",
+      "omniisaacgymenvs/tasks/shared/in_hand_manipulation.py",
+      "omniisaacgymenvs/tasks/shared/locomotion.py",
+      "omniisaacgymenvs/tasks/utils/anymal_terrain_generator.py",
+      "omniisaacgymenvs/tasks/warp/ant.py",
+      "omniisaacgymenvs/tasks/warp/cartpole.py",
+      "omniisaacgymenvs/tasks/warp/humanoid.py",
+      "omniisaacgymenvs/tasks/warp/shared/locomotion.py",
+      "omniisaacgymenvs/utils/config_utils/default_scene_params.py",
+      "omniisaacgymenvs/utils/config_utils/sim_config.py",
+      "omniisaacgymenvs/utils/domain_randomization/randomize.py",
+      "omniisaacgymenvs/utils/hydra_cfg/hydra_utils.py",
+      "omniisaacgymenvs/utils/terrain_utils/create_terrain_demo.py",
+      "omniisaacgymenvs/utils/terrain_utils/terrain_utils.py",
+      "omniisaacgymenvs/utils/usd_utils/create_instanceable_assets.py",
+      "omniisaacgymenvs/views/deformable_prim_view.py",
+      "omniisaacgymenvs/views/xform_prim_view.py"
+    ],
+    "audit_files": [],
+    "verdict": "no_audit_signal",
+    "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

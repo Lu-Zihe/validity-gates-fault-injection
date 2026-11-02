@@ -1,0 +1,22 @@
+﻿cff-version: 1.2.0
+message: "Placeholder record. Author names, affiliation, license and DOI are filled in upon acceptance. Do not cite until completed."
+title: "Validity Gates for Fault-Injection Protocols in Robot Learning Simulations"
+abstract: >-
+  Companion artifacts: executable validity gates (injection P1 / measurement P2 /
+  convergence P3), a 66-item CPU-only self-check suite, the static audit tool and raw
+  audit data for 30 public repositories, and mutation-testing data for 21 semantic
+  mutants. Every headline number is recomputable with verify_numbers.py.
+type: software
+version: "0.1.0"
+date-released: "2026-11-02"
+authors:
+  - name: "Anonymous (double-blind review)"
+repository-code: "TODO: repository URL after acceptance"
+license: MIT
+keywords:
+  - fault injection
+  - silent failure
+  - simulation validity
+  - mutation testing
+  - reproducible research
+  - quadruped robot

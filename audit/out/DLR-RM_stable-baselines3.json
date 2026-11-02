@@ -1,0 +1,111 @@
+{
+  "name": "DLR-RM_stable-baselines3",
+  "path": "repos/DLR-RM_stable-baselines3",
+  "n_py": 97,
+  "C1_seed": {
+    "seed_flag_files": [
+      "stable_baselines3/common/env_checker.py",
+      "tests/test_callbacks.py",
+      "tests/test_cnn.py",
+      "tests/test_deterministic.py",
+      "tests/test_dict_env.py",
+      "tests/test_distributions.py",
+      "tests/test_gae.py",
+      "tests/test_her.py",
+      "tests/test_identity.py",
+      "tests/test_monitor.py",
+      "tests/test_run.py",
+      "tests/test_save_load.py",
+      "tests/test_sde.py",
+      "tests/test_spaces.py",
+      "tests/test_train_eval_mode.py",
+      "tests/test_utils.py",
+      "tests/test_vec_envs.py",
+      "tests/test_vec_monitor.py",
+      "tests/test_vec_normalize.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "stable_baselines3/common/utils.py",
+        "line": 40,
+        "arg": "seed"
+      },
+      {
+        "file": "tests/test_sde.py",
+        "line": 21,
+        "arg": "2"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      "docs/conf.py",
+      "stable_baselines3/a2c/a2c.py",
+      "stable_baselines3/common/atari_wrappers.py",
+      "stable_baselines3/common/base_class.py",
+      "stable_baselines3/common/buffers.py",
+      "stable_baselines3/common/callbacks.py",
+      "stable_baselines3/common/distributions.py",
+      "stable_baselines3/common/env_checker.py",
+      "stable_baselines3/common/env_util.py",
+      "stable_baselines3/common/evaluation.py",
+      "stable_baselines3/common/logger.py",
+      "stable_baselines3/common/monitor.py",
+      "stable_baselines3/common/noise.py",
+      "stable_baselines3/common/off_policy_algorithm.py",
+      "stable_baselines3/common/on_policy_algorithm.py",
+      "stable_baselines3/common/policies.py",
+      "stable_baselines3/common/preprocessing.py",
+      "stable_baselines3/common/torch_layers.py",
+      "stable_baselines3/common/utils.py",
+      "stable_baselines3/common/envs/bit_flipping_env.py",
+      "stable_baselines3/common/sb2_compat/rmsprop_tf_like.py",
+      "stable_baselines3/common/vec_env/base_vec_env.py",
+      "stable_baselines3/common/vec_env/stacked_observations.py",
+      "stable_baselines3/common/vec_env/subproc_vec_env.py",
+      "stable_baselines3/common/vec_env/vec_check_nan.py",
+      "stable_baselines3/common/vec_env/vec_frame_stack.py",
+      "stable_baselines3/common/vec_env/vec_normalize.py",
+      "stable_baselines3/ddpg/ddpg.py",
+      "stable_baselines3/dqn/dqn.py",
+      "stable_baselines3/dqn/policies.py",
+      "stable_baselines3/her/her_replay_buffer.py",
+      "stable_baselines3/ppo/ppo.py",
+      "stable_baselines3/sac/policies.py",
+      "stable_baselines3/sac/sac.py",
+      "stable_baselines3/td3/policies.py",
+      "stable_baselines3/td3/td3.py",
+      "tests/test_cnn.py",
+      "tests/test_dict_env.py",
+      "tests/test_envs.py",
+      "tests/test_logger.py",
+      "tests/test_n_step_replay.py",
+      "tests/test_save_load.py",
+      "tests/test_vec_stacked_obs.py"
+    ],
+    "audit_files": [
+      "stable_baselines3/common/base_class.py",
+      "tests/test_envs.py",
+      "tests/test_n_step_replay.py",
+      "tests/test_save_load.py",
+      "tests/test_vec_stacked_obs.py"
+    ],
+    "verdict": "has_audit_signal",
+    "evidence": [
+      "stable_baselines3/common/base_class.py:707: raise KeyError(\"The observation_space and action_space were not given, can't verify new en",
+      "tests/test_envs.py:210: def check_reset_assert_error(env, new_reset_return):",
+      "tests/test_envs.py:232: check_reset_assert_error(env, np.ones((3,)))",
+      "tests/test_envs.py:234: check_reset_assert_error(env, 1)",
+      "tests/test_envs.py:253: check_reset_assert_error(env, (env.observation_space.sample(), False))"
+    ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

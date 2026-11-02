@@ -1,0 +1,20 @@
+# Dependencies, by tier.
+#
+# Tier "light" — no third-party package needed:
+#   verify_numbers.py, gates/gate_check.py --p3, audit scripts
+#
+# Tier "medium" — pandas:
+#   gates/gate_check.py --p2
+#
+pandas>=1.5
+
+# Tier "heavy" — additionally needs the authors' training stack
+# (legged_gym + Isaac Gym), which is not redistributed in this repository:
+#   checker/test_r1_r8_local.py, checker/test_guards_meta.py,
+#   gates/gate_check.py --p1, mutation/mutation_run.py
+#
+# numpy>=1.21
+# torch>=1.13
+
+# Versions used by the authors (2026-11-01, Windows, Python 3.10.4):
+#   pandas 2.3.3 / numpy 2.2.6 / torch 2.13.0+cpu

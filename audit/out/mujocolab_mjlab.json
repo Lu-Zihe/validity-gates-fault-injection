@@ -1,0 +1,567 @@
+{
+  "name": "mujocolab_mjlab",
+  "path": "repos/mujocolab_mjlab",
+  "n_py": 291,
+  "C1_seed": {
+    "seed_flag_files": [
+      "scripts/tools/render_terrain_gallery.py",
+      "tests/test_auto_reset.py",
+      "tests/test_domain_randomization.py",
+      "tests/test_flat_patch_sampling.py",
+      "tests/test_variants.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "src/mjlab/utils/random.py",
+        "line": 23,
+        "arg": "seed"
+      },
+      {
+        "file": "tests/test_delay_buffer.py",
+        "line": 19,
+        "arg": "seed"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 101,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 120,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 143,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 201,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 222,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 249,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 270,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 322,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 358,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 391,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 443,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 582,
+        "arg": "0"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 638,
+        "arg": "1"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 735,
+        "arg": "10"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 935,
+        "arg": "seed"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 941,
+        "arg": "seed"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1085,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1106,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1152,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1173,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1208,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1239,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1263,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1356,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1619,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1672,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1686,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1706,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1721,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1749,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1846,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1875,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 1898,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2020,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2044,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2086,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2145,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2166,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2190,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2242,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2298,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2353,
+        "arg": "7"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2372,
+        "arg": "17"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2394,
+        "arg": "99"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2416,
+        "arg": "5"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2436,
+        "arg": "11"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2461,
+        "arg": "13"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2493,
+        "arg": "21"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2515,
+        "arg": "33"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2544,
+        "arg": "41"
+      },
+      {
+        "file": "tests/test_domain_randomization.py",
+        "line": 2587,
+        "arg": "53"
+      },
+      {
+        "file": "tests/test_events.py",
+        "line": 359,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_events.py",
+        "line": 421,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_events.py",
+        "line": 462,
+        "arg": "0"
+      },
+      {
+        "file": "tests/test_events.py",
+        "line": 464,
+        "arg": "0"
+      },
+      {
+        "file": "tests/test_lab_api_math.py",
+        "line": 58,
+        "arg": "0"
+      },
+      {
+        "file": "tests/test_lab_api_math.py",
+        "line": 60,
+        "arg": "0"
+      },
+      {
+        "file": "tests/test_projected_gravity_sensor.py",
+        "line": 195,
+        "arg": "0"
+      },
+      {
+        "file": "tests/test_terrain_utils.py",
+        "line": 18,
+        "arg": "0"
+      },
+      {
+        "file": "tests/test_terrain_utils.py",
+        "line": 34,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_terrain_utils.py",
+        "line": 56,
+        "arg": "42"
+      },
+      {
+        "file": "tests/test_terrain_utils.py",
+        "line": 153,
+        "arg": "7"
+      },
+      {
+        "file": "tests/test_velocity_rewards.py",
+        "line": 66,
+        "arg": "0"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [
+      "src/mjlab/scripts/play.py",
+      "src/mjlab/tasks/tracking/scripts/evaluate.py"
+    ],
+    "verdict": "absent",
+    "detail": [
+      {
+        "file": "src/mjlab/scripts/play.py",
+        "headless": false,
+        "num_envs_1": false,
+        "deterministic": false,
+        "noise_off": false,
+        "score": 0
+      },
+      {
+        "file": "src/mjlab/tasks/tracking/scripts/evaluate.py",
+        "headless": false,
+        "num_envs_1": false,
+        "deterministic": false,
+        "noise_off": false,
+        "score": 0
+      }
+    ]
+  },
+  "C3_injection": {
+    "injection_files": [
+      "docs/conf.py",
+      "scripts/benchmarks/generate_report.py",
+      "scripts/benchmarks/measure_throughput.py",
+      "scripts/demos/body_impulse.py",
+      "scripts/demos/contact_sensor_decimation.py",
+      "scripts/demos/differential_ik.py",
+      "scripts/demos/raycast_sensor.py",
+      "scripts/tools/terrain_explorer.py",
+      "src/mjlab/__init__.py",
+      "src/mjlab/actuator/actuator.py",
+      "src/mjlab/actuator/builtin_actuator.py",
+      "src/mjlab/actuator/builtin_group.py",
+      "src/mjlab/actuator/dc_actuator.py",
+      "src/mjlab/actuator/fused_group.py",
+      "src/mjlab/actuator/pd_actuator.py",
+      "src/mjlab/entity/data.py",
+      "src/mjlab/entity/entity.py",
+      "src/mjlab/entity/variants.py",
+      "src/mjlab/envs/manager_based_rl_env.py",
+      "src/mjlab/envs/mdp/events.py",
+      "src/mjlab/envs/mdp/observations.py",
+      "src/mjlab/envs/mdp/rewards.py",
+      "src/mjlab/envs/mdp/terminations.py",
+      "src/mjlab/envs/mdp/actions/actions.py",
+      "src/mjlab/envs/mdp/actions/differential_ik.py",
+      "src/mjlab/envs/mdp/dr/__init__.py",
+      "src/mjlab/envs/mdp/dr/_core.py",
+      "src/mjlab/envs/mdp/dr/_types.py",
+      "src/mjlab/envs/mdp/dr/actuator.py",
+      "src/mjlab/envs/mdp/dr/body.py",
+      "src/mjlab/envs/mdp/dr/camera.py",
+      "src/mjlab/envs/mdp/dr/geom.py",
+      "src/mjlab/envs/mdp/dr/joint.py",
+      "src/mjlab/envs/mdp/dr/light.py",
+      "src/mjlab/envs/mdp/dr/material.py",
+      "src/mjlab/envs/mdp/dr/pair.py",
+      "src/mjlab/envs/mdp/dr/site.py",
+      "src/mjlab/envs/mdp/dr/tendon.py",
+      "src/mjlab/managers/event_manager.py",
+      "src/mjlab/managers/manager_base.py",
+      "src/mjlab/managers/metrics_manager.py",
+      "src/mjlab/managers/observation_manager.py",
+      "src/mjlab/managers/recorder_manager.py",
+      "src/mjlab/managers/reward_manager.py",
+      "src/mjlab/managers/scene_entity_config.py",
+      "src/mjlab/rl/config.py",
+      "src/mjlab/rl/exporter_utils.py",
+      "src/mjlab/rl/runner.py",
+      "src/mjlab/scene/scene.py",
+      "src/mjlab/scripts/csv_to_npz.py",
+      "src/mjlab/scripts/demo.py",
+      "src/mjlab/scripts/gcs.py",
+      "src/mjlab/scripts/play.py",
+      "src/mjlab/scripts/train.py",
+      "src/mjlab/scripts/visualize_terrain.py",
+      "src/mjlab/sensor/camera_sensor.py",
+      "src/mjlab/sensor/contact_sensor.py",
+      "src/mjlab/sensor/raycast_sensor.py",
+      "src/mjlab/sensor/sensor_context.py",
+      "src/mjlab/sensor/terrain_height_sensor.py",
+      "src/mjlab/sim/sim.py",
+      "src/mjlab/sim/sim_data.py",
+      "src/mjlab/tasks/registry.py",
+      "src/mjlab/tasks/cartpole/cartpole_env_cfg.py",
+      "src/mjlab/tasks/manipulation/lift_cube_env_cfg.py",
+      "src/mjlab/tasks/manipulation/mdp/commands.py",
+      "src/mjlab/tasks/manipulation/mdp/observations.py",
+      "src/mjlab/tasks/manipulation/mdp/rewards.py",
+      "src/mjlab/tasks/tracking/tracking_env_cfg.py",
+      "src/mjlab/tasks/tracking/config/g1/env_cfgs.py",
+      "src/mjlab/tasks/tracking/mdp/commands.py",
+      "src/mjlab/tasks/tracking/scripts/evaluate.py",
+      "src/mjlab/tasks/velocity/velocity_env_cfg.py",
+      "src/mjlab/tasks/velocity/config/g1/env_cfgs.py",
+      "src/mjlab/tasks/velocity/config/go1/env_cfgs.py",
+      "src/mjlab/tasks/velocity/mdp/curriculums.py",
+      "src/mjlab/tasks/velocity/mdp/rewards.py",
+      "src/mjlab/tasks/velocity/mdp/terminations.py",
+      "src/mjlab/tasks/velocity/mdp/velocity_command.py",
+      "src/mjlab/terrains/config.py",
+      "src/mjlab/terrains/heightfield_terrains.py",
+      "src/mjlab/terrains/primitive_terrains.py",
+      "src/mjlab/terrains/terrain_entity.py",
+      "src/mjlab/terrains/terrain_generator.py",
+      "src/mjlab/terrains/utils.py",
+      "src/mjlab/utils/gpu.py",
+      "src/mjlab/utils/spaces.py",
+      "src/mjlab/utils/spec.py",
+      "src/mjlab/utils/spec_config.py",
+      "src/mjlab/utils/string.py",
+      "src/mjlab/utils/xml.py",
+      "src/mjlab/utils/buffers/delay_buffer.py",
+      "src/mjlab/utils/lab_api/math.py",
+      "src/mjlab/utils/lab_api/string.py",
+      "src/mjlab/utils/lab_api/tasks/importer.py",
+      "src/mjlab/utils/noise/noise_cfg.py",
+      "src/mjlab/viewer/base.py",
+      "src/mjlab/viewer/debug_visualizer.py",
+      "src/mjlab/viewer/model_sync.py",
+      "src/mjlab/viewer/offscreen_renderer.py",
+      "src/mjlab/viewer/viewer_config.py",
+      "src/mjlab/viewer/native/viewer.py",
+      "src/mjlab/viewer/native/visualizer.py",
+      "src/mjlab/viewer/viser/reward_bar_panel.py",
+      "src/mjlab/viewer/viser/scene.py",
+      "src/mjlab/viewer/viser/term_plotter.py",
+      "src/mjlab/viewer/viser/viewer.py",
+      "tests/test_actions.py",
+      "tests/test_actuator.py",
+      "tests/test_auto_reset.py",
+      "tests/test_builtin_dcmotor_actuator.py",
+      "tests/test_builtin_pd_actuator.py",
+      "tests/test_contact_sensor.py",
+      "tests/test_dc_actuator.py",
+      "tests/test_domain_randomization.py",
+      "tests/test_encoder_bias.py",
+      "tests/test_entity.py",
+      "tests/test_entity_data.py",
+      "tests/test_events.py",
+      "tests/test_flat_patch_sampling.py",
+      "tests/test_fused_group.py",
+      "tests/test_nan_guard.py",
+      "tests/test_observation_delay.py",
+      "tests/test_observation_history.py",
+      "tests/test_observation_nan_handling.py",
+      "tests/test_offscreen_renderer.py",
+      "tests/test_perlin_terrain.py",
+      "tests/test_projected_gravity_sensor.py",
+      "tests/test_raycast_sensor.py",
+      "tests/test_rewards.py",
+      "tests/test_rl_exporter.py",
+      "tests/test_runner.py",
+      "tests/test_scene.py",
+      "tests/test_sim.py",
+      "tests/test_spec_config.py",
+      "tests/test_terminations.py",
+      "tests/test_terrain_config.py",
+      "tests/test_terrains.py",
+      "tests/test_tracking_task.py",
+      "tests/test_tyro_defaults.py",
+      "tests/test_variants.py",
+      "tests/test_velocity_command.py",
+      "tests/test_velocity_rewards.py",
+      "tests/test_video_recorder.py",
+      "tests/test_viewer_tick.py",
+      "tests/test_viser_conversions.py",
+      "tests/test_xml_utils.py",
+      "typings/postprocess_stubs.py"
+    ],
+    "audit_files": [
+      "src/mjlab/envs/mdp/events.py",
+      "src/mjlab/envs/mdp/observations.py",
+      "src/mjlab/envs/mdp/rewards.py",
+      "src/mjlab/envs/mdp/dr/_core.py",
+      "src/mjlab/envs/mdp/dr/actuator.py",
+      "src/mjlab/scene/scene.py",
+      "src/mjlab/scripts/csv_to_npz.py",
+      "src/mjlab/scripts/gcs.py",
+      "src/mjlab/tasks/velocity/mdp/rewards.py",
+      "src/mjlab/utils/spaces.py",
+      "tests/test_builtin_dcmotor_actuator.py",
+      "tests/test_contact_sensor.py",
+      "tests/test_domain_randomization.py",
+      "tests/test_encoder_bias.py",
+      "tests/test_entity.py",
+      "tests/test_events.py",
+      "tests/test_flat_patch_sampling.py",
+      "tests/test_nan_guard.py",
+      "tests/test_observation_delay.py",
+      "tests/test_observation_history.py",
+      "tests/test_perlin_terrain.py",
+      "tests/test_projected_gravity_sensor.py",
+      "tests/test_raycast_sensor.py",
+      "tests/test_rl_exporter.py",
+      "tests/test_runner.py",
+      "tests/test_scene.py",
+      "tests/test_sim.py",
+      "tests/test_spec_config.py",
+      "tests/test_variants.py",
+      "tests/test_velocity_command.py",
+      "tests/test_velocity_rewards.py",
+      "tests/test_video_recorder.py",
+      "tests/test_viewer_tick.py",
+      "tests/test_viser_conversions.py",
+      "tests/test_xml_utils.py"
+    ],
+    "verdict": "has_audit_signal",
+    "evidence": [
+      "src/mjlab/envs/mdp/events.py:153: assert default_root_state is not None",
+      "src/mjlab/envs/mdp/events.py:171: assert default_root_state is not None",
+      "src/mjlab/envs/mdp/events.py:242: assert default_root_state is not None",
+      "src/mjlab/envs/mdp/events.py:290: assert default_joint_pos is not None",
+      "src/mjlab/envs/mdp/events.py:292: assert default_joint_vel is not None"
+    ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

@@ -1,0 +1,17 @@
+{
+  "tag": "r1r_aware",
+  "timestamp": "2026-11-01T22:58:07",
+  "exp_name": "e1_lock",
+  "model_dir": "Nov01_18-41-55_a1_rescue_fault_lock",
+  "checkpoint": 3500,
+  "fault_mode": "lock",
+  "num_envs": 512,
+  "n_episodes": 529,
+  "n_falls": 133,
+  "fall_rate": 0.2514,
+  "rmst_steps": 825.96,
+  "mean_ep_len": 825.96,
+  "n_faulted_envs": 61,
+  "n_physics_changed": 0,
+  "protocol": "fault-only: lock@p=1.0, DR/curriculum OFF, 1001-step cap"
+}

@@ -1,0 +1,87 @@
+{
+  "name": "iit-DLSLab_fault-locomotion-isaaclab",
+  "path": "repos/iit-DLSLab_fault-locomotion-isaaclab",
+  "n_py": 45,
+  "C1_seed": {
+    "seed_flag_files": [
+      "scripts/moe_rsl_rl/play_moe.py",
+      "scripts/moe_rsl_rl/train_moe.py",
+      "scripts/morphosymm_rl/eval_symm.py",
+      "scripts/morphosymm_rl/play_symm.py",
+      "scripts/morphosymm_rl/train_symm.py",
+      "scripts/rsl_rl/play.py",
+      "scripts/rsl_rl/train.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/supervised_learning_networks.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/fault_locomotion/go2_env_cfg.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/fault_locomotion/pegasus_env_cfg.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/supervised_learning_networks.py",
+        "line": 389,
+        "arg": "0"
+      },
+      {
+        "file": "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/supervised_learning_networks.py",
+        "line": 332,
+        "arg": "seed"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [
+      "scripts/rsl_rl/play.py"
+    ],
+    "verdict": "absent",
+    "detail": [
+      {
+        "file": "scripts/rsl_rl/play.py",
+        "headless": false,
+        "num_envs_1": false,
+        "deterministic": false,
+        "noise_off": false,
+        "score": 0
+      }
+    ]
+  },
+  "C3_injection": {
+    "injection_files": [
+      "deploy/locomotion_policy_wrapper.py",
+      "deploy/play_mujoco.py",
+      "deploy/run_controller_ros2.py",
+      "deploy/run_simulator_ros2.py",
+      "deploy/mujoco_utils/mujoco_utils.py",
+      "scripts/list_envs.py",
+      "scripts/moe_rsl_rl/cli_args.py",
+      "scripts/moe_rsl_rl/play_moe.py",
+      "scripts/moe_rsl_rl/train_moe.py",
+      "scripts/morphosymm_rl/cli_args.py",
+      "scripts/morphosymm_rl/eval_symm.py",
+      "scripts/morphosymm_rl/play_symm.py",
+      "scripts/morphosymm_rl/train_symm.py",
+      "scripts/rsl_rl/cli_args.py",
+      "scripts/rsl_rl/play.py",
+      "scripts/rsl_rl/train.py",
+      "source/fault_locomotion_isaaclab/setup.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/assets/go2_asset.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/assets/pegasus_asset.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/hyperparameter_tuning/ppo_tuner.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/hyperparameter_tuning/ppo_tuning_cfg.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/hyperparameter_tuning/util.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/custom_events.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/custom_observations.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/custom_rewards.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/fault_locomotion/__init__.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/fault_locomotion/fault_locomotion_env.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/fault_locomotion/go2_env_cfg.py",
+      "source/fault_locomotion_isaaclab/fault_locomotion_isaaclab/tasks/fault_locomotion/pegasus_env_cfg.py"
+    ],
+    "audit_files": [],
+    "verdict": "no_audit_signal",
+    "evidence": []
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

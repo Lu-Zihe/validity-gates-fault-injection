@@ -1,0 +1,1057 @@
+{
+  "name": "NVlabs_ProtoMotions",
+  "path": "repos/NVlabs_ProtoMotions",
+  "n_py": 699,
+  "C1_seed": {
+    "seed_flag_files": [
+      "data/scripts/visualize_odometer_corruption.py",
+      "examples/env_kinematic_playback.py",
+      "protomotions/components/terrains/terrain_utils.py",
+      "protomotions/launch/training_cli.py",
+      "protomotions/tests/test_expert_sensor_contract.py",
+      "protomotions/tests/test_lepton_launcher.py",
+      "protomotions/tests/test_mujoco_actuators_and_reset.py",
+      "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+      "protomotions/tests/test_retargeting_keypoints.py",
+      "protomotions/tests/test_train_agent_helpers.py",
+      "protomotions/tests/test_train_slurm_site.py",
+      "protomotions/tests/test_train_slurm_startup_retry.py",
+      "protomotions/tests/test_utils_geometry.py",
+      "protomotions/tests/parity/recorder.py",
+      "protomotions/tests/parity/scenarios.py",
+      "protomotions/tests/support/sensor_simulator.py",
+      "protomotions/utils/torch_utils.py",
+      "scripts/benchmark_sensor_derivation.py",
+      "scripts/regenerate_pretrained_bundles.py"
+    ],
+    "routing": [],
+    "set_seed_calls": [
+      {
+        "file": "data/scripts/visualize_odometer_corruption.py",
+        "line": 172,
+        "arg": "args.seed"
+      },
+      {
+        "file": "deployment/sample_context.py",
+        "line": 305,
+        "arg": "0"
+      },
+      {
+        "file": "deployment/native/tests/test_leapp_bundle.py",
+        "line": 61,
+        "arg": "seed"
+      },
+      {
+        "file": "deployment/native/tests/test_leapp_bundle.py",
+        "line": 76,
+        "arg": "0"
+      },
+      {
+        "file": "examples/env_kinematic_playback.py",
+        "line": 199,
+        "arg": "args.seed"
+      },
+      {
+        "file": "examples/env_kinematic_playback.py",
+        "line": 201,
+        "arg": "args.seed"
+      },
+      {
+        "file": "protomotions/components/terrains/terrain.py",
+        "line": 159,
+        "arg": "torch.initial_seed(...)"
+      },
+      {
+        "file": "protomotions/envs/randomness.py",
+        "line": 55,
+        "arg": "derive_seed(...)"
+      },
+      {
+        "file": "protomotions/envs/sensors/runtime.py",
+        "line": 92,
+        "arg": "<expr>"
+      },
+      {
+        "file": "protomotions/launch/training.py",
+        "line": 467,
+        "arg": "<expr>"
+      },
+      {
+        "file": "protomotions/tests/test_agent_utils.py",
+        "line": 76,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_amp_agent_helpers.py",
+        "line": 682,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_amp_agent_helpers.py",
+        "line": 1424,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_amp_agent_helpers.py",
+        "line": 1464,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_amp_ase_model.py",
+        "line": 235,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_amp_ase_model.py",
+        "line": 322,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_amp_ase_model.py",
+        "line": 336,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_anchor_local_goals.py",
+        "line": 41,
+        "arg": "38"
+      },
+      {
+        "file": "protomotions/tests/test_anchor_local_goals.py",
+        "line": 250,
+        "arg": "3"
+      },
+      {
+        "file": "protomotions/tests/test_anchor_local_goals.py",
+        "line": 472,
+        "arg": "27"
+      },
+      {
+        "file": "protomotions/tests/test_anchor_local_goals.py",
+        "line": 346,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/tests/test_ase_agent_helpers.py",
+        "line": 345,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_ase_agent_helpers.py",
+        "line": 649,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_baked_fk.py",
+        "line": 392,
+        "arg": "<expr>"
+      },
+      {
+        "file": "protomotions/tests/test_baked_fk.py",
+        "line": 429,
+        "arg": "<expr>"
+      },
+      {
+        "file": "protomotions/tests/test_baked_fk.py",
+        "line": 488,
+        "arg": "<expr>"
+      },
+      {
+        "file": "protomotions/tests/test_baked_fk.py",
+        "line": 535,
+        "arg": "<expr>"
+      },
+      {
+        "file": "protomotions/tests/test_baked_fk.py",
+        "line": 572,
+        "arg": "11"
+      },
+      {
+        "file": "protomotions/tests/test_baked_fk.py",
+        "line": 616,
+        "arg": "<expr>"
+      },
+      {
+        "file": "protomotions/tests/test_baked_fk.py",
+        "line": 691,
+        "arg": "7"
+      },
+      {
+        "file": "protomotions/tests/test_baked_fk.py",
+        "line": 747,
+        "arg": "42"
+      },
+      {
+        "file": "protomotions/tests/test_baked_fk.py",
+        "line": 1208,
+        "arg": "123"
+      },
+      {
+        "file": "protomotions/tests/test_base_env_helpers.py",
+        "line": 646,
+        "arg": "7"
+      },
+      {
+        "file": "protomotions/tests/test_base_env_public_switches.py",
+        "line": 67,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_base_env_public_switches.py",
+        "line": 77,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_base_env_public_switches.py",
+        "line": 82,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_common_autoencoder.py",
+        "line": 332,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_common_autoencoder.py",
+        "line": 336,
+        "arg": "1"
+      },
+      {
+        "file": "protomotions/tests/test_common_module_container.py",
+        "line": 191,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_common_transformer.py",
+        "line": 142,
+        "arg": "7"
+      },
+      {
+        "file": "protomotions/tests/test_control_components.py",
+        "line": 193,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_control_components.py",
+        "line": 466,
+        "arg": "13"
+      },
+      {
+        "file": "protomotions/tests/test_control_components.py",
+        "line": 1154,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_control_components.py",
+        "line": 1202,
+        "arg": "23"
+      },
+      {
+        "file": "protomotions/tests/test_control_components.py",
+        "line": 1238,
+        "arg": "29"
+      },
+      {
+        "file": "protomotions/tests/test_control_components.py",
+        "line": 1249,
+        "arg": "31"
+      },
+      {
+        "file": "protomotions/tests/test_control_components.py",
+        "line": 1273,
+        "arg": "17"
+      },
+      {
+        "file": "protomotions/tests/test_control_components.py",
+        "line": 1315,
+        "arg": "3"
+      },
+      {
+        "file": "protomotions/tests/test_env_snapshot_completeness.py",
+        "line": 327,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_eval_write_back_mujoco.py",
+        "line": 74,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_eval_write_back_mujoco.py",
+        "line": 158,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/tests/test_hybrid_tracker.py",
+        "line": 222,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_low_pose_termination.py",
+        "line": 34,
+        "arg": "7"
+      },
+      {
+        "file": "protomotions/tests/test_metatron_generic_export.py",
+        "line": 323,
+        "arg": "42"
+      },
+      {
+        "file": "protomotions/tests/test_metatron_observation_contracts.py",
+        "line": 41,
+        "arg": "38"
+      },
+      {
+        "file": "protomotions/tests/test_motion_lib_helpers.py",
+        "line": 270,
+        "arg": "1234"
+      },
+      {
+        "file": "protomotions/tests/test_motion_manager.py",
+        "line": 65,
+        "arg": "123"
+      },
+      {
+        "file": "protomotions/tests/test_motion_manager.py",
+        "line": 208,
+        "arg": "7"
+      },
+      {
+        "file": "protomotions/tests/test_motion_manager.py",
+        "line": 299,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_motion_manager.py",
+        "line": 340,
+        "arg": "11"
+      },
+      {
+        "file": "protomotions/tests/test_odom_corruption.py",
+        "line": 53,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_parity_harness.py",
+        "line": 618,
+        "arg": "99"
+      },
+      {
+        "file": "protomotions/tests/test_placed_reference.py",
+        "line": 248,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_ppo_exploration.py",
+        "line": 427,
+        "arg": "7"
+      },
+      {
+        "file": "protomotions/tests/test_ppo_model_loss.py",
+        "line": 272,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_model.py",
+        "line": 511,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_model.py",
+        "line": 517,
+        "arg": "1"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_model.py",
+        "line": 523,
+        "arg": "2"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+        "line": 221,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+        "line": 231,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+        "line": 301,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+        "line": 379,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+        "line": 459,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+        "line": 585,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+        "line": 428,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+        "line": 601,
+        "arg": "<expr>"
+      },
+      {
+        "file": "protomotions/tests/test_reset_noise_and_history.py",
+        "line": 53,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_scene_and_path_utils.py",
+        "line": 90,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_scene_and_path_utils.py",
+        "line": 138,
+        "arg": "123"
+      },
+      {
+        "file": "protomotions/tests/test_scene_kernels.py",
+        "line": 38,
+        "arg": "3"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 79,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 98,
+        "arg": "1"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 108,
+        "arg": "2"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 119,
+        "arg": "3"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 149,
+        "arg": "4"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 163,
+        "arg": "4"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 191,
+        "arg": "8"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 200,
+        "arg": "6"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 220,
+        "arg": "7"
+      },
+      {
+        "file": "protomotions/tests/test_sensor_noise.py",
+        "line": 180,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_structured_target_sampling.py",
+        "line": 52,
+        "arg": "12"
+      },
+      {
+        "file": "protomotions/tests/test_structured_target_sampling.py",
+        "line": 69,
+        "arg": "45"
+      },
+      {
+        "file": "protomotions/tests/test_structured_target_sampling.py",
+        "line": 71,
+        "arg": "45"
+      },
+      {
+        "file": "protomotions/tests/test_structured_target_sampling.py",
+        "line": 92,
+        "arg": "17"
+      },
+      {
+        "file": "protomotions/tests/test_structured_target_sampling.py",
+        "line": 95,
+        "arg": "17"
+      },
+      {
+        "file": "protomotions/tests/test_structured_target_sampling.py",
+        "line": 212,
+        "arg": "11"
+      },
+      {
+        "file": "protomotions/tests/test_style_goals.py",
+        "line": 108,
+        "arg": "991"
+      },
+      {
+        "file": "protomotions/tests/test_style_goals.py",
+        "line": 126,
+        "arg": "123"
+      },
+      {
+        "file": "protomotions/tests/test_style_goals.py",
+        "line": 174,
+        "arg": "4"
+      },
+      {
+        "file": "protomotions/tests/test_supervised_agent_flow.py",
+        "line": 635,
+        "arg": "5"
+      },
+      {
+        "file": "protomotions/tests/test_termination_rule.py",
+        "line": 273,
+        "arg": "0"
+      },
+      {
+        "file": "protomotions/tests/test_terrain_class.py",
+        "line": 111,
+        "arg": "1234"
+      },
+      {
+        "file": "protomotions/tests/test_terrain_kernel.py",
+        "line": 47,
+        "arg": "7"
+      },
+      {
+        "file": "protomotions/tests/test_terrain_kernel.py",
+        "line": 55,
+        "arg": "11"
+      },
+      {
+        "file": "protomotions/tests/test_velocity_commands.py",
+        "line": 127,
+        "arg": "14"
+      },
+      {
+        "file": "protomotions/tests/parity/recorder.py",
+        "line": 339,
+        "arg": "ACTION_SEED"
+      },
+      {
+        "file": "protomotions/tests/parity/scenarios.py",
+        "line": 220,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/tests/parity/scenarios.py",
+        "line": 682,
+        "arg": "scenario.seed"
+      },
+      {
+        "file": "protomotions/tests/parity/stub_agent.py",
+        "line": 49,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/utils/torch_utils.py",
+        "line": 62,
+        "arg": "seed"
+      },
+      {
+        "file": "protomotions/utils/torch_utils.py",
+        "line": 64,
+        "arg": "seed"
+      }
+    ],
+    "verdict": "declared_and_seeded_routing_unclear",
+    "evidence": []
+  },
+  "C2_eval": {
+    "play_files": [],
+    "verdict": "no_eval_entry",
+    "detail": []
+  },
+  "C3_injection": {
+    "injection_files": [
+      "data/pretrained_models/gpc_prior/soma_bones/experiment_config.py",
+      "data/pretrained_models/motion_tracker/g1-bones-deploy/experiment_config.py",
+      "data/pretrained_models/motion_tracker/soma-bones/experiment_config.py",
+      "data/pretrained_models/motion_tracker/soma_bones_fsq/experiment_config.py",
+      "data/scripts/bvh.py",
+      "data/scripts/compose_mjcf_from_neutral_joints.py",
+      "data/scripts/contact_detection.py",
+      "data/scripts/convert_amass_to_motionlib.py",
+      "data/scripts/convert_g1_csv_to_proto.py",
+      "data/scripts/convert_mjcf_to_usd.py",
+      "data/scripts/convert_phuma_to_motionlib.py",
+      "data/scripts/convert_pyroki_retargeted_robot_motions_to_proto.py",
+      "data/scripts/create_motion_split_yaml.py",
+      "data/scripts/extract_keypoints_from_single_motion.py",
+      "data/scripts/extract_retargeting_input_keypoints_from_packaged_motionlib.py",
+      "data/scripts/filter_self_penetration.py",
+      "data/scripts/process_grab.py",
+      "data/scripts/visualize_odometer_corruption.py",
+      "deployment/contract.py",
+      "deployment/export_to_onnx.py",
+      "deployment/motion_utils.py",
+      "deployment/state_utils.py",
+      "deployment/test_tracker_mujoco.py",
+      "deployment/tracker_inputs.py",
+      "deployment/native/bench/gpc_tensorrt_benchmark.py",
+      "deployment/native/examples/gpc_policy_adapter.py",
+      "deployment/native/examples/pico_input.py",
+      "deployment/native/examples/policy_artifact.py",
+      "deployment/native/examples/time_series_recorder.py",
+      "deployment/native/tests/test_leapp_bundle.py",
+      "deployment/native/tests/test_metatron_native_schema.py",
+      "deployment/native/tests/test_metatron_v1_mujoco_model.py",
+      "deployment/native/tools/build_metatron_tensorrt.py",
+      "deployment/native/tools/check_metatron_history.py",
+      "deployment/native/tools/export_gpc_policy.py",
+      "deployment/native/tools/export_metatron_fk.py",
+      "deployment/native/tools/make_metatron_fk_fixture.py",
+      "deployment/native/tools/metatron_v1_mujoco_model.py",
+      "deployment/native/tools/metatron_v1_reference.py",
+      "deployment/native/tools/pico_usb_bridge.py",
+      "deployment/native/tools/prepare_gpc_policy.py",
+      "deployment/native/tools/prepare_metatron_v1_policy.py",
+      "deployment/native/tools/validate_gpc_tensorrt.py",
+      "deployment/native/tools/validate_metatron_graphsafe.py",
+      "docs/source/conf.py",
+      "examples/env_kinematic_playback.py",
+      "examples/motion_libs_visualizer.py",
+      "examples/random_pose_visualizer.py",
+      "examples/visualize_smpl_motion.py",
+      "examples/visualize_soma_scenes.py",
+      "examples/benchmark/isaacgym_bench.py",
+      "examples/benchmark/isaaclab_bench.py",
+      "examples/data/rigv1-vaulting/g1-obstacle.py",
+      "examples/data/rigv1-vaulting/rigv1-obstacle.py",
+      "examples/experiments/format.py",
+      "examples/experiments/add/mlp.py",
+      "examples/experiments/amp/mlp.py",
+      "examples/experiments/ase/mlp.py",
+      "examples/experiments/gpc/prior.py",
+      "examples/experiments/gpc/prior_context.py",
+      "examples/experiments/gpc/sft_target_prior_peft.py",
+      "examples/experiments/gpc/steering_prior_peft.py",
+      "examples/experiments/gpc/target_prior_peft.py",
+      "examples/experiments/gpc/task_steering_headvel_prior_peft_amp.py",
+      "examples/experiments/gpc/task_target_prior_peft_amp.py",
+      "examples/experiments/masked_mimic/deployable_g1_observations.py",
+      "examples/experiments/masked_mimic/transformer.py",
+      "examples/experiments/metatron/g1_student.py",
+      "examples/experiments/metatron/g1_teacher.py",
+      "examples/experiments/metatron/soma_student.py",
+      "examples/experiments/metatron/soma_teacher.py",
+      "examples/experiments/mimic/fsq.py",
+      "examples/experiments/mimic/mlp.py",
+      "examples/experiments/mimic/mlp_bm_l2c2.py",
+      "examples/experiments/mimic/mlp_complex_terrain.py",
+      "examples/experiments/path_follower/mlp.py",
+      "examples/experiments/steering/mlp.py",
+      "examples/tutorial/0_create_simulator.py",
+      "examples/tutorial/1_add_terrain.py",
+      "examples/tutorial/2_load_robot.py",
+      "examples/tutorial/3_scene_creation.py",
+      "examples/tutorial/4_basic_environment.py",
+      "examples/tutorial/5_motion_manager.py",
+      "examples/tutorial/6_mimic_environment.py",
+      "examples/tutorial/7_deepmimic.py",
+      "protomotions/assets.py",
+      "protomotions/cli.py",
+      "protomotions/inference_agent.py",
+      "protomotions/train_agent.py",
+      "protomotions/train_lepton.py",
+      "protomotions/train_slurm.py",
+      "protomotions/agents/amp/component.py",
+      "protomotions/agents/amp/config.py",
+      "protomotions/agents/ase/agent.py",
+      "protomotions/agents/ase/config.py",
+      "protomotions/agents/base_agent/agent.py",
+      "protomotions/agents/base_agent/config.py",
+      "protomotions/agents/base_agent/model.py",
+      "protomotions/agents/common/common.py",
+      "protomotions/agents/common/config.py",
+      "protomotions/agents/common/fsq_config.py",
+      "protomotions/agents/common/pretrained.py",
+      "protomotions/agents/common/supervision.py",
+      "protomotions/agents/common/autoencoder/config.py",
+      "protomotions/agents/evaluators/aggregate_metrics.py",
+      "protomotions/agents/evaluators/base_evaluator.py",
+      "protomotions/agents/evaluators/config.py",
+      "protomotions/agents/evaluators/manager.py",
+      "protomotions/agents/evaluators/metrics.py",
+      "protomotions/agents/evaluators/mimic_evaluator.py",
+      "protomotions/agents/evaluators/smoothness_calculator.py",
+      "protomotions/agents/fine_tuning/config.py",
+      "protomotions/agents/optimizer/muon.py",
+      "protomotions/agents/peft/actor.py",
+      "protomotions/agents/peft/adapters.py",
+      "protomotions/agents/peft/config.py",
+      "protomotions/agents/peft/prior_amp_config.py",
+      "protomotions/agents/peft/prior_config.py",
+      "protomotions/agents/peft/prior_with_peft.py",
+      "protomotions/agents/peft/sft_model.py",
+      "protomotions/agents/ppo/agent.py",
+      "protomotions/agents/ppo/config.py",
+      "protomotions/agents/supervised/agent.py",
+      "protomotions/agents/supervised/config.py",
+      "protomotions/agents/supervised/latent_prior_config.py",
+      "protomotions/agents/supervised/masked_mimic_config.py",
+      "protomotions/agents/utils/metering.py",
+      "protomotions/agents/utils/normalization.py",
+      "protomotions/components/motion_lib.py",
+      "protomotions/components/pose_lib.py",
+      "protomotions/components/scene_lib.py",
+      "protomotions/components/terrains/config.py",
+      "protomotions/components/terrains/subterrain_generator.py",
+      "protomotions/envs/component_manager.py",
+      "protomotions/envs/context.py",
+      "protomotions/envs/context_check.py",
+      "protomotions/envs/context_paths.py",
+      "protomotions/envs/context_sources.py",
+      "protomotions/envs/context_views.py",
+      "protomotions/envs/mdp_component.py",
+      "protomotions/envs/reset_noise.py",
+      "protomotions/envs/steps.py",
+      "protomotions/envs/action/action_functions.py",
+      "protomotions/envs/action/config.py",
+      "protomotions/envs/base_env/build.py",
+      "protomotions/envs/base_env/config.py",
+      "protomotions/envs/base_env/env.py",
+      "protomotions/envs/base_env/reset/__init__.py",
+      "protomotions/envs/base_env/reset/motion.py",
+      "protomotions/envs/base_env/reset/perturbation.py",
+      "protomotions/envs/base_env/reset/pose.py",
+      "protomotions/envs/base_env/reset/recovery.py",
+      "protomotions/envs/base_env/reset/spawn.py",
+      "protomotions/envs/control/base.py",
+      "protomotions/envs/control/masked_mimic_control.py",
+      "protomotions/envs/control/path_follower_control.py",
+      "protomotions/envs/control/steering_control.py",
+      "protomotions/envs/control/target_control.py",
+      "protomotions/envs/control/masked_mimic_tasks/controller.py",
+      "protomotions/envs/motion_manager/config.py",
+      "protomotions/envs/motion_manager/mimic_motion_manager.py",
+      "protomotions/envs/motion_manager/motion_manager.py",
+      "protomotions/envs/obs/humanoid_historical.py",
+      "protomotions/envs/obs/masked_mimic.py",
+      "protomotions/envs/obs/masked_mimic_velocity_command.py",
+      "protomotions/envs/obs/nearest_surface_obs.py",
+      "protomotions/envs/obs/path.py",
+      "protomotions/envs/obs/steering.py",
+      "protomotions/envs/obs/target_poses.py",
+      "protomotions/envs/rewards/__init__.py",
+      "protomotions/envs/rewards/meta.py",
+      "protomotions/envs/rewards/regularization.py",
+      "protomotions/envs/rewards/task.py",
+      "protomotions/envs/rewards/tracking.py",
+      "protomotions/envs/sensors/config.py",
+      "protomotions/envs/sensors/estimation.py",
+      "protomotions/envs/sensors/noise.py",
+      "protomotions/envs/terminations/__init__.py",
+      "protomotions/envs/terminations/base.py",
+      "protomotions/envs/terminations/tracking.py",
+      "protomotions/launch/inference.py",
+      "protomotions/launch/startup.py",
+      "protomotions/launch/training.py",
+      "protomotions/launch/training_cli.py",
+      "protomotions/robot_configs/amp.py",
+      "protomotions/robot_configs/base.py",
+      "protomotions/robot_configs/g1.py",
+      "protomotions/robot_configs/h1_2.py",
+      "protomotions/robot_configs/motor_classes.py",
+      "protomotions/robot_configs/smpl.py",
+      "protomotions/robot_configs/smplx.py",
+      "protomotions/robot_configs/soma23.py",
+      "protomotions/simulator/factory.py",
+      "protomotions/simulator/base_simulator/config.py",
+      "protomotions/simulator/base_simulator/contacts.py",
+      "protomotions/simulator/base_simulator/record.py",
+      "protomotions/simulator/base_simulator/robot_mass_properties.py",
+      "protomotions/simulator/base_simulator/simulator.py",
+      "protomotions/simulator/base_simulator/simulator_state.py",
+      "protomotions/simulator/base_simulator/user_interface.py",
+      "protomotions/simulator/base_simulator/utils.py",
+      "protomotions/simulator/isaacgym/config.py",
+      "protomotions/simulator/isaacgym/simulator.py",
+      "protomotions/simulator/isaaclab/config.py",
+      "protomotions/simulator/isaaclab/simulator.py",
+      "protomotions/simulator/isaaclab/utils/collision_baking.py",
+      "protomotions/simulator/isaaclab/utils/materials.py",
+      "protomotions/simulator/isaaclab/utils/mjcf_to_usd.py",
+      "protomotions/simulator/isaaclab/utils/scene.py",
+      "protomotions/simulator/isaaclab/utils/usd_body_paths.py",
+      "protomotions/simulator/mujoco/config.py",
+      "protomotions/simulator/mujoco/simulator.py",
+      "protomotions/simulator/newton/config.py",
+      "protomotions/simulator/newton/simulator.py",
+      "protomotions/tests/test_action_functions.py",
+      "protomotions/tests/test_action_history_lag.py",
+      "protomotions/tests/test_amp_agent_helpers.py",
+      "protomotions/tests/test_amp_ase_config.py",
+      "protomotions/tests/test_anchor_local_goals.py",
+      "protomotions/tests/test_ase_agent_helpers.py",
+      "protomotions/tests/test_assets_resolution.py",
+      "protomotions/tests/test_baked_fk.py",
+      "protomotions/tests/test_baked_fk_velocities.py",
+      "protomotions/tests/test_base_agent_runtime_helpers.py",
+      "protomotions/tests/test_base_env_helpers.py",
+      "protomotions/tests/test_base_env_public_switches.py",
+      "protomotions/tests/test_base_env_surface.py",
+      "protomotions/tests/test_base_evaluator_helpers.py",
+      "protomotions/tests/test_base_simulator_lifecycle.py",
+      "protomotions/tests/test_body_mass_inertia_scaling.py",
+      "protomotions/tests/test_collision_baking.py",
+      "protomotions/tests/test_common_module_container.py",
+      "protomotions/tests/test_config_annotations_py38_syntax.py",
+      "protomotions/tests/test_config_schema.py",
+      "protomotions/tests/test_config_utils.py",
+      "protomotions/tests/test_contact_matrix.py",
+      "protomotions/tests/test_context_check.py",
+      "protomotions/tests/test_context_views_and_component_factories.py",
+      "protomotions/tests/test_control_and_builder_helpers.py",
+      "protomotions/tests/test_control_components.py",
+      "protomotions/tests/test_cross_simulator_robot_friction.py",
+      "protomotions/tests/test_deploy_tracker_inputs.py",
+      "protomotions/tests/test_deployment_contract.py",
+      "protomotions/tests/test_discrete_latent_prior_config.py",
+      "protomotions/tests/test_env_component_helpers.py",
+      "protomotions/tests/test_env_snapshot_completeness.py",
+      "protomotions/tests/test_eval_write_back_mujoco.py",
+      "protomotions/tests/test_evaluation_recipe_contracts.py",
+      "protomotions/tests/test_example_experiment_configs.py",
+      "protomotions/tests/test_export_contract_coverage.py",
+      "protomotions/tests/test_fine_tuning_agent_helpers.py",
+      "protomotions/tests/test_flat_context.py",
+      "protomotions/tests/test_fsq_prior_latent_loss.py",
+      "protomotions/tests/test_humanoid_and_target_observations.py",
+      "protomotions/tests/test_hybrid_tracker.py",
+      "protomotions/tests/test_inference_agent_script.py",
+      "protomotions/tests/test_inference_derivation.py",
+      "protomotions/tests/test_isaacgym_friction_mode.py",
+      "protomotions/tests/test_isaaclab_mjcf_usd.py",
+      "protomotions/tests/test_isaaclab_physx_params.py",
+      "protomotions/tests/test_isaaclab_robot_friction.py",
+      "protomotions/tests/test_lepton_launcher.py",
+      "protomotions/tests/test_lepton_train_loop.py",
+      "protomotions/tests/test_mdp_component_from_kernel.py",
+      "protomotions/tests/test_metatron_g1_recipe.py",
+      "protomotions/tests/test_metatron_soma_recipe.py",
+      "protomotions/tests/test_mimic_evaluator_helpers.py",
+      "protomotions/tests/test_motion_lib_helpers.py",
+      "protomotions/tests/test_mujoco_actuators_and_reset.py",
+      "protomotions/tests/test_mujoco_keyboard.py",
+      "protomotions/tests/test_muon_optimizer.py",
+      "protomotions/tests/test_native_goals.py",
+      "protomotions/tests/test_native_steering.py",
+      "protomotions/tests/test_nearest_surface_obs.py",
+      "protomotions/tests/test_newton_contact_body_labels.py",
+      "protomotions/tests/test_newton_contact_matrix.py",
+      "protomotions/tests/test_newton_domain_randomization.py",
+      "protomotions/tests/test_newton_simulator_fk.py",
+      "protomotions/tests/test_newton_warmstart.py",
+      "protomotions/tests/test_object_asset_domain_randomization.py",
+      "protomotions/tests/test_odom_corruption.py",
+      "protomotions/tests/test_parity_harness.py",
+      "protomotions/tests/test_pose_lib_helpers.py",
+      "protomotions/tests/test_ppo_model_loss.py",
+      "protomotions/tests/test_pretrained_model_cards.py",
+      "protomotions/tests/test_pretrained_trackers.py",
+      "protomotions/tests/test_prior_peft_agent_helpers.py",
+      "protomotions/tests/test_prior_peft_model.py",
+      "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+      "protomotions/tests/test_projectile_defaults.py",
+      "protomotions/tests/test_real_writer_loader_paths.py",
+      "protomotions/tests/test_recipe_component_snapshot.py",
+      "protomotions/tests/test_recipe_stages.py",
+      "protomotions/tests/test_reset_noise_and_history.py",
+      "protomotions/tests/test_retargeting_fps_metadata.py",
+      "protomotions/tests/test_retargeting_keypoints.py",
+      "protomotions/tests/test_reward_kernels.py",
+      "protomotions/tests/test_robot_config_helpers.py",
+      "protomotions/tests/test_robot_facts_d1.py",
+      "protomotions/tests/test_robot_imu_declaration.py",
+      "protomotions/tests/test_robot_marker_inertias.py",
+      "protomotions/tests/test_rotations_conversions.py",
+      "protomotions/tests/test_scene_lib_empty.py",
+      "protomotions/tests/test_scene_lib_objects.py",
+      "protomotions/tests/test_scene_lib_runtime.py",
+      "protomotions/tests/test_scene_lib_scenes.py",
+      "protomotions/tests/test_scene_object_options.py",
+      "protomotions/tests/test_self_contacts.py",
+      "protomotions/tests/test_sensor_estimation.py",
+      "protomotions/tests/test_sensor_measurement.py",
+      "protomotions/tests/test_sensor_noise.py",
+      "protomotions/tests/test_simulator_factory_and_utils.py",
+      "protomotions/tests/test_simulator_state_and_config.py",
+      "protomotions/tests/test_smoothness_calculator.py",
+      "protomotions/tests/test_step_phases.py",
+      "protomotions/tests/test_steps.py",
+      "protomotions/tests/test_structured_target_sampling.py",
+      "protomotions/tests/test_supervised_agent_flow.py",
+      "protomotions/tests/test_termination_rule.py",
+      "protomotions/tests/test_terminations_helpers.py",
+      "protomotions/tests/test_terrain_class.py",
+      "protomotions/tests/test_terrain_kernel.py",
+      "protomotions/tests/test_terrain_utils_and_generators.py",
+      "protomotions/tests/test_train_slurm_site.py",
+      "protomotions/tests/test_train_slurm_startup_retry.py",
+      "protomotions/tests/test_train_slurm_watchdog.py",
+      "protomotions/tests/test_training_utils.py",
+      "protomotions/tests/test_transformer_peft.py",
+      "protomotions/tests/test_unified_controller.py",
+      "protomotions/tests/test_velocity_commands.py",
+      "protomotions/tests/parity/__init__.py",
+      "protomotions/tests/parity/__main__.py",
+      "protomotions/tests/parity/mutations.py",
+      "protomotions/tests/parity/scenarios.py",
+      "protomotions/tests/parity/spies.py",
+      "protomotions/tests/support/recipe_stages.py",
+      "protomotions/tests/support/sensor_simulator.py",
+      "protomotions/tests/support/task_inputs.py",
+      "protomotions/utils/config_builder.py",
+      "protomotions/utils/config_schema.py",
+      "protomotions/utils/config_utils.py",
+      "protomotions/utils/fabric_config.py",
+      "protomotions/utils/inference_utils.py",
+      "protomotions/utils/retargeting_fps.py",
+      "protomotions/utils/rotations.py",
+      "protomotions/utils/simulator_imports.py",
+      "pyroki/batch_retarget_to_g1_from_keypoints.py",
+      "pyroki/batch_retarget_to_h1_2_from_keypoints.py",
+      "scripts/benchmark_sensor_derivation.py",
+      "scripts/check_backend_reset.py",
+      "scripts/check_contact_matrix.py",
+      "scripts/check_g1_racer_browser.py",
+      "scripts/check_metatron_demo_browser.py",
+      "scripts/check_model_licenses.py",
+      "scripts/convert_obj_scenes_to_usd.py",
+      "scripts/download_metatron.py",
+      "scripts/identify_robot_facing_axis.py",
+      "scripts/regenerate_pretrained_bundles.py",
+      "scripts/samp_detect_goal_states.py",
+      "scripts/subset_motion_lib.py",
+      "usd_convert/convert_mjcf_to_usd.py",
+      "usd_convert/convert_robot_mjcf_to_usda.py",
+      "usd_convert/flatten_mjcf.py",
+      "usd_convert/patch_usd_visual_meshes.py"
+    ],
+    "audit_files": [
+      "data/scripts/process_grab.py",
+      "deployment/export_to_onnx.py",
+      "deployment/native/tests/test_leapp_bundle.py",
+      "deployment/native/tests/test_metatron_native_schema.py",
+      "deployment/native/tools/check_metatron_history.py",
+      "examples/tutorial/5_motion_manager.py",
+      "protomotions/train_agent.py",
+      "protomotions/components/motion_lib.py",
+      "protomotions/components/pose_lib.py",
+      "protomotions/simulator/base_simulator/simulator.py",
+      "protomotions/simulator/base_simulator/utils.py",
+      "protomotions/tests/test_action_functions.py",
+      "protomotions/tests/test_action_history_lag.py",
+      "protomotions/tests/test_amp_agent_helpers.py",
+      "protomotions/tests/test_anchor_local_goals.py",
+      "protomotions/tests/test_assets_resolution.py",
+      "protomotions/tests/test_baked_fk.py",
+      "protomotions/tests/test_baked_fk_velocities.py",
+      "protomotions/tests/test_base_agent_runtime_helpers.py",
+      "protomotions/tests/test_base_env_helpers.py",
+      "protomotions/tests/test_base_env_public_switches.py",
+      "protomotions/tests/test_base_evaluator_helpers.py",
+      "protomotions/tests/test_base_simulator_lifecycle.py",
+      "protomotions/tests/test_body_mass_inertia_scaling.py",
+      "protomotions/tests/test_config_schema.py",
+      "protomotions/tests/test_contact_matrix.py",
+      "protomotions/tests/test_control_and_builder_helpers.py",
+      "protomotions/tests/test_control_components.py",
+      "protomotions/tests/test_cross_simulator_robot_friction.py",
+      "protomotions/tests/test_deploy_tracker_inputs.py",
+      "protomotions/tests/test_env_component_helpers.py",
+      "protomotions/tests/test_env_snapshot_completeness.py",
+      "protomotions/tests/test_eval_write_back_mujoco.py",
+      "protomotions/tests/test_example_experiment_configs.py",
+      "protomotions/tests/test_export_contract_coverage.py",
+      "protomotions/tests/test_hybrid_tracker.py",
+      "protomotions/tests/test_isaaclab_mjcf_usd.py",
+      "protomotions/tests/test_isaaclab_robot_friction.py",
+      "protomotions/tests/test_lepton_launcher.py",
+      "protomotions/tests/test_metatron_g1_recipe.py",
+      "protomotions/tests/test_mimic_evaluator_helpers.py",
+      "protomotions/tests/test_motion_lib_helpers.py",
+      "protomotions/tests/test_mujoco_actuators_and_reset.py",
+      "protomotions/tests/test_mujoco_keyboard.py",
+      "protomotions/tests/test_native_goals.py",
+      "protomotions/tests/test_native_steering.py",
+      "protomotions/tests/test_newton_contact_body_labels.py",
+      "protomotions/tests/test_newton_contact_matrix.py",
+      "protomotions/tests/test_newton_warmstart.py",
+      "protomotions/tests/test_odom_corruption.py",
+      "protomotions/tests/test_parity_harness.py",
+      "protomotions/tests/test_ppo_model_loss.py",
+      "protomotions/tests/test_pretrained_trackers.py",
+      "protomotions/tests/test_prior_peft_reference_checkpoint.py",
+      "protomotions/tests/test_real_writer_loader_paths.py",
+      "protomotions/tests/test_retargeting_keypoints.py",
+      "protomotions/tests/test_reward_kernels.py",
+      "protomotions/tests/test_robot_config_helpers.py",
+      "protomotions/tests/test_robot_imu_declaration.py",
+      "protomotions/tests/test_robot_marker_inertias.py",
+      "protomotions/tests/test_rotations_conversions.py",
+      "protomotions/tests/test_scene_lib_objects.py",
+      "protomotions/tests/test_self_contacts.py",
+      "protomotions/tests/test_sensor_estimation.py",
+      "protomotions/tests/test_sensor_measurement.py",
+      "protomotions/tests/test_sensor_noise.py",
+      "protomotions/tests/test_simulator_factory_and_utils.py",
+      "protomotions/tests/test_step_phases.py",
+      "protomotions/tests/test_structured_target_sampling.py",
+      "protomotions/tests/test_supervised_agent_flow.py",
+      "protomotions/tests/test_terrain_class.py",
+      "protomotions/tests/test_terrain_utils_and_generators.py",
+      "protomotions/tests/test_train_slurm_startup_retry.py",
+      "protomotions/tests/test_unified_controller.py",
+      "protomotions/tests/test_velocity_commands.py",
+      "protomotions/utils/rotations.py",
+      "scripts/benchmark_sensor_derivation.py",
+      "scripts/check_backend_reset.py",
+      "scripts/check_contact_matrix.py",
+      "scripts/check_metatron_demo_browser.py",
+      "scripts/convert_obj_scenes_to_usd.py",
+      "scripts/download_metatron.py",
+      "scripts/identify_robot_facing_axis.py",
+      "usd_convert/convert_robot_mjcf_to_usda.py",
+      "usd_convert/flatten_mjcf.py"
+    ],
+    "verdict": "has_audit_signal",
+    "evidence": [
+      "data/scripts/process_grab.py:407: # Verify the dimensions",
+      "deployment/export_to_onnx.py:625: # Verify the deployable obs keys are covered by our obs module. For",
+      "deployment/export_to_onnx.py:653: # 9. Collect sample inputs and verify forward pass",
+      "deployment/native/tests/test_leapp_bundle.py:125: torch.testing.assert_close(",
+      "deployment/native/tests/test_leapp_bundle.py:171: torch.testing.assert_close("
+    ]
+  },
+  "manual_review": "待人工复核：C1 需确认 seed 是否传入 set_seed 的实参；C3 需确认 assert 是否真的守在注入点上"
+}

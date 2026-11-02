@@ -1,0 +1,13 @@
+repo,sha,n_fetched,n_py_total,C1,c1_confident,C1_evidence,C2,C3,C3_inject_files,C3_audit_files
+amazon-far/holosoma,b739a6cb,15,647,no_seed_flag,False,,no_eval_entry,no_audit_signal,14,0
+antonilo/rl_locomotion,f71db819,5,20,declared_and_seeded_routing_unclear,False,,no_eval_entry,no_audit_signal,2,0
+DLR-RM/stable-baselines3,0cdcd200,4,97,declared_but_no_seed_call,False,,no_eval_entry,has_audit_signal,3,1
+Genesis-Embodied-AI/genesis-world,4cedab01,15,477,declared_but_no_seed_call,False,,no_eval_entry,no_audit_signal,10,0
+google-deepmind/mujoco_playground,12ad7f38,12,116,declared_and_seeded_routing_unclear,False,,no_eval_entry,no_audit_signal,8,0
+google/brax,c8605294,15,144,no_seed_flag,False,,no_eval_entry,has_audit_signal,5,1
+iit-DLSLab/fault-locomotion-isaaclab,ce2c85ef,15,45,declared_but_no_seed_call,False,,absent,no_audit_signal,9,0
+isaac-sim/IsaacLab,210ee799,13,2592,declared_and_seeded_routing_unclear,False,,partial,has_audit_signal,5,1
+LeCAR-Lab/ASAP,df5320cc,6,104,no_seed_flag,True,,no_eval_entry,no_audit_signal,2,0
+mujocolab/mjlab,8bb2bc9e,15,291,no_seed_flag,True,,absent,no_audit_signal,7,0
+Toni-SM/skrl,e43d04d4,15,520,declared_and_seeded_routing_unclear,False,,no_eval_entry,no_audit_signal,14,0
+vwxyzjn/cleanrl,fe8d8a03,11,80,declared_and_seeded_routing_unclear,False,,no_eval_entry,no_injection_code,0,0
