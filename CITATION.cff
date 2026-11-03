@@ -13,6 +13,7 @@ authors:
   - family-names: "Lu"
     given-names: "Zihe"
     orcid: "https://orcid.org/0009-0006-5228-5847"
+    affiliation: "Complutense College, Wuhan University of Science and Technology, Wuhan 430065, China"
 repository-code: "https://github.com/Lu-Zihe/validity-gates-fault-injection"
 license: MIT
 keywords:
